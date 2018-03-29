@@ -8,7 +8,7 @@ CREATE TABLE "postprocessing" (
 	apply INTEGER DEFAULT 1,
 	PRIMARY KEY(ogc_fid)
 );
-INSERT INTO `postprocessing` (ogc_fid,sql_query,order,comment,lang,apply) VALUES (1,'CREATE TYPE $$DBSCHEMA.maengel_topic AS ENUM
+INSERT INTO `postprocessing` VALUES (1,'CREATE TYPE $$DBSCHEMA.maengel_topic AS ENUM
 (
  ''Bodenbedeckung'',
  ''Einzelobjekte''
@@ -1172,11 +1172,19 @@ SELECT t_ili_tid, selbstrecht_von, nummerteilgrundstueck, geometrie,
        flaechenmass, st_area(geometrie) as flaeche, qualitaet, qualitaet_txt
   FROM $$DBSCHEMA.liegenschaften_selbstrecht',3,'Was in table inserts',NULL,1),
  (86,'INSERT INTO $$DBSCHEMA.z_hgp_ls_linie (ogc_fid, geometrie)
-select * from(
-SELECT DISTINCT
- gemeindegrenzen_hoheitsgrenzpunkt.ogc_fid,  st_CollectionExtract(gemeindegrenzen_hoheitsgrenzpunkt.geometrie,1) as geometrie
- FROM $$DBSCHEMA.gemeindegrenzen_gemeindegrenze, $$DBSCHEMA.gemeindegrenzen_hoheitsgrenzpunkt
- WHERE st_touches(gemeindegrenzen_gemeindegrenze.geometrie, gemeindegrenzen_hoheitsgrenzpunkt.geometrie) IS False) as foo where geometrytype(geometrie) = ''POINT''',3,'Was in table inserts',NULL,1),
+SELECT
+  hgp.ogc_fid,
+  hgp.geometrie
+FROM
+$$DBSCHEMA.gemeindegrenzen_hoheitsgrenzpunkt AS hgp,
+(
+ SELECT
+  ST_Union(geometrie) as geometrie
+ FROM
+  $$DBSCHEMA.gemeindegrenzen_gemeindegrenze
+) AS gemgre
+WHERE
+  ST_Touches(hgp.geometrie, gemgre.geometrie) = False',3,'Was in table inserts',NULL,1),
  (87,'INSERT INTO $$DBSCHEMA.z_v_ls_nk (ls_fid,nk_fid,geometrie,flaeche)
 SELECT *
 FROM
