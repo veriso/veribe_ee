@@ -116,12 +116,12 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "postgres"
-            layer["title"] = _translate("VeriSO_EE_BB_Minimalflaechen", "Gebäude kleiner 12qm", None)
+            layer["title"] = _translate("VeriSO_EE_BB_Minimalflaechen", "Gebäude kleiner 10qm", None)
             layer["readonly"] = True 
             layer["featuretype"] = "bodenbedeckung_boflaeche"
             layer["geom"] = "geometrie"
             layer["key"] = "ogc_fid"            
-            layer["sql"] = "art in(0) AND st_area(geometrie) < 12"
+            layer["sql"] = "art in(0) AND st_area(geometrie) < 10"
             layer["group"] = group
             layer["style"] = "bodenbedeckung/kleiner_wald.qml"
             vlayerGeb = self.layer_loader.load(layer, False, True)
@@ -162,7 +162,7 @@ class ComplexCheck(ComplexCheckBase):
             QMessageBox.information( None, "Surfaces plus petites que criteres de surface", "<b>Flaechen unterhalb Flaechenkriterien:</b> <br>" 
                                     + "<table>" 
 				    + "<tr> <td>BB pro LS / CS par BF (10m2): </td> <td>" + str(BB) +  "</td> </tr>"
-                                    + "<tr> <td>Wasserbecken /bassin (20m2): </td> <td>" + str(Wb) +  "</td> </tr>"                                + "<tr> <td>Gebaeude / batiment (12m2): </td> <td>" + str(Geb) +  "</td> </tr>"                                + "<tr> <td>Wald / foret (800m2): </td> <td>" + str(Wald) +  "</td> </tr>" 
+                                    + "<tr> <td>Wasserbecken /bassin (20m2): </td> <td>" + str(Wb) +  "</td> </tr>"                                + "<tr> <td>Gebaeude / batiment (10m2): </td> <td>" + str(Geb) +  "</td> </tr>"                                + "<tr> <td>Wald / foret (800m2): </td> <td>" + str(Wald) +  "</td> </tr>" 
                                     + "<tr> <td>TS 1/2 / NT 1/2 (100m2) : </td> <td>" + str(TS1) +  "</td> </tr>" 
                                     + "<tr> <td>TS 3 / NT 3 (1000m2): </td> <td>" + str(TS3) +  "</td> </tr>" 
                                     + "<tr> <td>TS 4/5  / NT 4/5 (2500m2): </td> <td>" + str(TS4) +  "</td> </tr>" 
