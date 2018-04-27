@@ -1123,31 +1123,42 @@ SELECT DISTINCT b.ogc_fid,b.geometrie
   WHERE st_touches(b.geometrie, liegenschaften_projselbstrecht.geometrie) IS TRUE
 );',3,'Was in table inserts',NULL,1),
  (81,'INSERT INTO $$DBSCHEMA.z_v_bb_ls (bb_ogc_fid,bb_qualitaet,bb_qualitaet_txt,art,art_txt,ls_ogc_fid,liegenschaft_von,nummerteilgrundstueck,flaechenmass,geometrie,flaeche,ls_flaeche)
+WITH 
+    bbed AS 
+    (
+    SELECT ST_MakeValid(bodenbedeckung_boflaeche.geometrie) AS val_geom, *
+    FROM $$DBSCHEMA.bodenbedeckung_boflaeche
+    ),
 
-SELECT *
-FROM
-(
-SELECT
-  bodenbedeckung_boflaeche.ogc_fid as bb_ogc_fid,
-  bodenbedeckung_boflaeche.qualitaet as bb_qualitaet,
-  bodenbedeckung_boflaeche.qualitaet_txt as bb_qualitaet_txt,
-  bodenbedeckung_boflaeche.art,
-  bodenbedeckung_boflaeche.art_txt,
-  liegenschaften_liegenschaft.ogc_fid as ls_ogc_fid,
-  liegenschaften_liegenschaft.liegenschaft_von,
-  liegenschaften_liegenschaft.nummerteilgrundstueck,
-  liegenschaften_liegenschaft.flaechenmass,
-  ST_Multi(ST_CollectionExtract(ST_intersection(ST_MakeValid(bodenbedeckung_boflaeche.geometrie),ST_MakeValid(liegenschaften_liegenschaft.geometrie)),3)) as geometrie,
-  ST_area (ST_intersection(ST_MakeValid(bodenbedeckung_boflaeche.geometrie),ST_MakeValid(liegenschaften_liegenschaft.geometrie))) as flaeche,
-ST_area (ST_MakeValid(liegenschaften_liegenschaft.geometrie)) as ls_flaeche
-FROM
-  $$DBSCHEMA.bodenbedeckung_boflaeche,
-  $$DBSCHEMA.liegenschaften_liegenschaft
-WHERE
-  ST_intersects(ST_MakeValid(bodenbedeckung_boflaeche.geometrie),ST_MakeValid(liegenschaften_liegenschaft.geometrie))=true --and
-  --geometrytype(ST_intersection(bodenbedeckung_boflaeche.geometrie,liegenschaften_liegenschaft.geometrie)) = ''POLYGON''
- ) as foo
- WHERE (geometrytype(geometrie) = ''POLYGON'' OR geometrytype(geometrie) = ''MULTIPOLYGON'') AND NOT ST_IsEmpty(geometrie)',3,'Was in table inserts',NULL,1),
+    lieg AS 
+    (
+    SELECT ST_MakeValid(liegenschaften_liegenschaft.geometrie) AS val_geom, *
+    FROM $$DBSCHEMA.liegenschaften_liegenschaft
+    ),
+
+    foo AS 
+    (
+    SELECT 
+      bodenbedeckung_boflaeche.ogc_fid AS bb_ogc_fid,
+      bodenbedeckung_boflaeche.qualitaet AS bb_qualitaet,
+      bodenbedeckung_boflaeche.qualitaet_txt AS bb_qualitaet_txt,
+      bodenbedeckung_boflaeche.art,
+      bodenbedeckung_boflaeche.art_txt,
+      liegenschaften_liegenschaft.ogc_fid AS ls_ogc_fid,
+      liegenschaften_liegenschaft.liegenschaft_von,
+      liegenschaften_liegenschaft.nummerteilgrundstueck,
+      liegenschaften_liegenschaft.flaechenmass,
+      ST_Multi(ST_CollectionExtract(ST_intersection(bodenbedeckung_boflaeche.val_geom,liegenschaften_liegenschaft.val_geom),3)) AS geometrie,
+      ST_area (ST_intersection(bodenbedeckung_boflaeche.val_geom,liegenschaften_liegenschaft.val_geom)) AS flaeche,
+      ST_area (liegenschaften_liegenschaft.val_geom) AS ls_flaeche
+    FROM
+      bbed AS bodenbedeckung_boflaeche,
+      lieg AS liegenschaften_liegenschaft
+    WHERE ST_intersects(bodenbedeckung_boflaeche.val_geom,liegenschaften_liegenschaft.val_geom)=true
+     )
+
+    SELECT * FROM foo
+    WHERE (geometrytype(geometrie) = ''POLYGON'' OR geometrytype(geometrie) = ''MULTIPOLYGON'') AND NOT ST_IsEmpty(geometrie)',3,'Was in table inserts',NULL,1),
  (82,'INSERT INTO $$DBSCHEMA.z_ls_entstehung (ls_ogc_fid, geometrie,nummer, entstehung)
 SELECT ls.ogc_fid, ls.geometrie,
 gs.nummer, gs.entstehung
