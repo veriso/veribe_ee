@@ -150,18 +150,6 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "postgres"
-            layer["title"] = _translate("VeriSO_EE_basis","Hoheitsgrenzpunkt - Bolzen,Rohr",None)
-            layer["readonly"] = True
-            layer["featuretype"] = "gemeindegrenzen_hoheitsgrenzpunkt"
-            layer["geom"] = "geometrie"
-            layer["group"] = group2
-            layer["key"] = "ogc_fid"
-            layer["sql"] = "punktzeichen in (2,3)"
-            layer["style"] = "bodenbedeckung/hgp_bolzen.qml"
-            vlayer = self.layer_loader.load(layer, False, True)
-
-            layer = {}
-            layer["type"] = "postgres"
             layer["title"] = _translate("VeriSO_EE_basis","Hoheitsgrenzpunkt - Kreuz",None)
             layer["readonly"] = True
             layer["featuretype"] = "gemeindegrenzen_hoheitsgrenzpunkt"
@@ -174,13 +162,25 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "postgres"
-            layer["title"] = _translate("VeriSO_EE_basis","Hoheitsgrenzpunkt - Stein",None)
+            layer["title"] = _translate("VeriSO_EE_basis","Hoheitsgrenzpunkt - Bolzen,Rohr,Pfahl",None)
             layer["readonly"] = True
             layer["featuretype"] = "gemeindegrenzen_hoheitsgrenzpunkt"
             layer["geom"] = "geometrie"
             layer["group"] = group2
             layer["key"] = "ogc_fid"
-            layer["sql"] = "punktzeichen in (0)"
+            layer["sql"] = "punktzeichen in (2,3,4)"
+            layer["style"] = "bodenbedeckung/hgp_bolzen.qml"
+            vlayer = self.layer_loader.load(layer, False, True)
+
+            layer = {}
+            layer["type"] = "postgres"
+            layer["title"] = _translate("VeriSO_EE_basis","Hoheitsgrenzpunkt - Stein,Kunststoffzeichen",None)
+            layer["readonly"] = True
+            layer["featuretype"] = "gemeindegrenzen_hoheitsgrenzpunkt"
+            layer["geom"] = "geometrie"
+            layer["group"] = group2
+            layer["key"] = "ogc_fid"
+            layer["sql"] = "punktzeichen in (0,1)"
             layer["style"] = "bodenbedeckung/hgp_stein.qml"
             vlayer = self.layer_loader.load(layer, False, True)
  
@@ -198,18 +198,6 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "postgres"
-            layer["title"] = _translate("VeriSO_EE_basis","Grenzpunkt - Bolzen,Rohr",None)
-            layer["readonly"] = True
-            layer["featuretype"] = "liegenschaften_grenzpunkt"
-            layer["geom"] = "geometrie"
-            layer["group"] = group2
-            layer["key"] = "ogc_fid"
-            layer["sql"] = "punktzeichen in (2,3)"
-            layer["style"] = "bodenbedeckung/gp_bolzen.qml"
-            vlayer = self.layer_loader.load(layer, False, True)
-
-            layer = {}
-            layer["type"] = "postgres"
             layer["title"] = _translate("VeriSO_EE_basis","Grenzpunkt - Kreuz",None)
             layer["readonly"] = True
             layer["featuretype"] = "liegenschaften_grenzpunkt"
@@ -222,13 +210,25 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "postgres"
-            layer["title"] = _translate("VeriSO_EE_basis","Grenzpunkt - Stein",None)
+            layer["title"] = _translate("VeriSO_EE_basis","Grenzpunkt - Bolzen,Rohr,Pfahl",None)
             layer["readonly"] = True
             layer["featuretype"] = "liegenschaften_grenzpunkt"
             layer["geom"] = "geometrie"
             layer["group"] = group2
             layer["key"] = "ogc_fid"
-            layer["sql"] = "punktzeichen in (0)"
+            layer["sql"] = "punktzeichen in (2,3,4)"
+            layer["style"] = "bodenbedeckung/gp_bolzen.qml"
+            vlayer = self.layer_loader.load(layer, False, True)
+
+            layer = {}
+            layer["type"] = "postgres"
+            layer["title"] = _translate("VeriSO_EE_basis","Grenzpunkt - Stein,Kunststoffzeichen",None)
+            layer["readonly"] = True
+            layer["featuretype"] = "liegenschaften_grenzpunkt"
+            layer["geom"] = "geometrie"
+            layer["group"] = group2
+            layer["key"] = "ogc_fid"
+            layer["sql"] = "punktzeichen in (0,1)"
             layer["style"] = "bodenbedeckung/gp_stein.qml"
             vlayer = self.layer_loader.load(layer, False, True)
 

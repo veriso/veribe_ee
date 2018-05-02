@@ -91,7 +91,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Wanderwege', None),
-                'url': 'http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?',
                 'layers': 'GEODB.WANDERNS_WEGE',
                 'format': 'image/png'
             }
@@ -468,8 +468,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'AV EO Linien', None),
-                'url': 'http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_avrwms_d_fk/MapServer/WMSServer?',
-                'layers': 'Einzelobjekte Linien',
+                'url': 'https://geodienste.ch/db/av/deu?',
+                'layers': 'SOLI',
                 'format': 'image/png'
             }
             vlayer = self.layer_loader.load(layer, True, True)
@@ -478,8 +478,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'AV EO Flaechen', None),
-                'url': 'http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_avrwms_d_fk/MapServer/WMSServer?',
-                'layers': 'Einzelobjekte Flaeche',
+                'url': 'https://geodienste.ch/db/av/deu?',
+                'layers': 'SOSF',
                 'format': 'image/png'
             }
             vlayer = self.layer_loader.load(layer, True, True)
@@ -488,9 +488,9 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'AV Bodenbedeckung', None),
-                'url': 'http://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_avrwms_d_fk/MapServer/WMSServer?',
-                'layers': 'Bodenbedeckung farbig',
-                'format': 'image/png'
+                'url': 'https://geodienste.ch/db/av/deu?',
+                'layers': 'Bodenbedeckung',
+                'format': 'image/jpeg'
             }
             vlayer = self.layer_loader.load(layer, False, True)
 
@@ -498,7 +498,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'swissimage (50%)', None),
-                'url': 'http://wms.swisstopo.admin.ch/wss/httpauth/swisstopowms?',
+                'url': 'https://wms.swisstopo.admin.ch/?',
                 'layers': 'ch.swisstopo.swissimage',
                 'format': 'image/jpeg',
                 'style': 'baselayer/swissimage_50.qml'
@@ -509,7 +509,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'swissimage (100%)', None),
-                'url': 'http://wms.swisstopo.admin.ch/wss/httpauth/swisstopowms?',
+                'url': 'https://wms.swisstopo.admin.ch/?',
                 'layers': 'ch.swisstopo.swissimage',
                 'format': 'image/jpeg',
             }

@@ -171,12 +171,12 @@ class ComplexCheck(ComplexCheckBase):
 
             QMessageBox.information( None, "Statistique points limites", "<b>Statistik Grenzpunkte:</b> <br>" 
                                     + "<table>"
-+ "<tr> <td>Anzahl GP's/ Nombre PL: </td> <td>" + str(genGP) +  "</td> </tr>" 
++ "<tr> <td>Anzahl GP's / Nombre PL: </td> <td>" + str(genGP) +  "</td> </tr>" 
 
-                                    + "<tr> <td>Genauigkeit / précision < AV93 / MO93: </td> <td>" + str(GP) +  "</td> </tr>"    
-+ "<tr> <td>unzuverlaessige GP's / PL fiabilité insuffisante: </td> <td>" + str(unzuv) +  "</td> </tr>"
-                                    + "<tr> <td>unversicherte GP's / PL non matérialisés: </td> <td>" + str(unvGP) +  "</td> </tr>" 
-+ "<tr> <td>GP nicht exakt definiert / PL pas défini exactement : </td> <td>" + str(unex) +  "</td> </tr>"
+                                    + "<tr> <td>Genauigkeit / precision < AV93 / MO93: </td> <td>" + str(GP) +  "</td> </tr>"    
++ "<tr> <td>unzuverlaessige GP's / PL fiabilite insuffisante: </td> <td>" + str(unzuv) +  "</td> </tr>"
+                                    + "<tr> <td>unversicherte GP's / PL non materialises: </td> <td>" + str(unvGP) +  "</td> </tr>" 
++ "<tr> <td>GP nicht exakt definiert / PL pas defini exactement : </td> <td>" + str(unex) +  "</td> </tr>"
                            + "</table>")
 
 
