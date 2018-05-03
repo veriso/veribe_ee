@@ -36,7 +36,7 @@
           <prop k="angle_expression" v="altori"/>
           <prop k="color" v="#000000"/>
           <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="svg/av_grundbuchplan/symbol_e_wasserbecken_stehendes_gewaesser.svg"/>
+          <prop k="name" v="grundbuchplan/symbol_e_wasserbecken_stehendes_gewaesser.svg"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
@@ -57,7 +57,7 @@
           <prop k="angle_expression" v="altori"/>
           <prop k="color" v="#000000"/>
           <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="svg/av_grundbuchplan/symbol_a_fliessrichtung.svg"/>
+          <prop k="name" v="grundbuchplan/symbol_a_fliessrichtung.svg"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
@@ -78,7 +78,7 @@
           <prop k="angle_expression" v="altori"/>
           <prop k="color" v="#000000"/>
           <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="svg/av_grundbuchplan/symbol_e_wasserbecken_stehendes_gewaesser.svg"/>
+          <prop k="name" v="grundbuchplan/symbol_e_wasserbecken_stehendes_gewaesser.svg"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
@@ -121,7 +121,7 @@
           <prop k="angle_expression" v="altori"/>
           <prop k="color" v="#000000"/>
           <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="svg/av_grundbuchplan/symbol_c_schilfguertel.svg"/>
+          <prop k="name" v="grundbuchplan/symbol_c_schilfguertel.svg"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
@@ -141,7 +141,7 @@
           <prop k="angle" v="0"/>
           <prop k="color" v="#000000"/>
           <prop k="horizontal_anchor_point" v="1"/>
-          <prop k="name" v="svg/av_grundbuchplan/symbol_b_reben.svg"/>
+          <prop k="name" v="grundbuchplan/symbol_b_reben.svg"/>
           <prop k="offset" v="0,0"/>
           <prop k="offset_map_unit_scale" v="0,0"/>
           <prop k="offset_unit" v="MM"/>
