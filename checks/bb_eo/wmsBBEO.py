@@ -47,7 +47,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["type"] = "wms"
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "gesch. geol. Objekte", None)
-            layer["url"] ="https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?"
+            layer["url"] ="https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
             layer["layers"] ="GEODB.GGO_GGOP"
             layer["format"] ="image/png"
             #layer["crs"] ="EPSG:21781"
@@ -58,7 +58,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["type"] = "wms"
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "Lawinienverb.", None)
-            layer["url"] ="https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
+            layer["url"] ="https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?"
             layer["layers"] ="GEODB.SCHBLAW_SBLAWP,GEODB.SCHBLAW_SBLAW"
             layer["format"] ="image/png"
             #layer["crs"] ="EPSG:21781"
