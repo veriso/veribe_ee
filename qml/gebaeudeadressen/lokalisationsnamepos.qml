@@ -59,7 +59,7 @@
     <property key="labeling/distMapUnitMaxScale" value="0"/>
     <property key="labeling/distMapUnitMinScale" value="0"/>
     <property key="labeling/enabled" value="true"/>
-    <property key="labeling/fieldName" value="text"/>
+    <property key="labeling/fieldName" value="atext"/>
     <property key="labeling/fontBold" value="false"/>
     <property key="labeling/fontCapitals" value="0"/>
     <property key="labeling/fontFamily" value="CadastraCondensed"/>
