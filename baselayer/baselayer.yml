@@ -86,42 +86,42 @@ baselayer:
     de: Kantonsgrenzsteine
     fr: Kantonsgrenzsteine
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: Kantonsgrenzsteine
+  layers: GEODB.STEINV_KTGRST
   format: image/png
 - type: wms
   title:
     de: Historische Grenzsteine
     fr: Historische Grenzsteine
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: Historische Grenzsteine
+  layers: GEODB.STEINV_HISTGRST
   format: image/png
 - type: wms
   title:
     de: Stundensteine
     fr: Stundensteine
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: Stundensteine
+  layers: GEODB.STEINV_STDST
   format: image/png
 - type: wms
   title:
     de: Planeinteilung Nomenklatur
     fr: Planeinteilung Nomenklatur
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: Planeinteilung Nomenklatur
+  layers: GEODB.NOMKL_NOMKLPL
   format: image/png
 - type: wms
   title:
     de: AMO anerkannter Stand
     fr: AMO anerkannter Stand
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: Anerkannter Stand
+  layers: GEODB.AMO_ACTSTAT
   format: image/png
 - type: wms
   title:
     de: AMO In Arbeit
     fr: AMO In Arbeit
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: In Arbeit stehende Perimeter
+  layers: GEODB.AMO_LOT
   format: image/png
 - type: wms
   title:
