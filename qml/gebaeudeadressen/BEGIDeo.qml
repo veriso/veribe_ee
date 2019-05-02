@@ -1,147 +1,201 @@
-<qgis hasScaleBasedVisibilityFlag="0" maximumScale="1e+08" minimumScale="0" version="1.8.0-Lisboa">
-  <transparencyLevelInt>255</transparencyLevelInt>
-  <renderer-v2 symbollevels="0" type="singleSymbol">
-    <symbols>
-      <symbol alpha="1" name="0" outputUnit="MM" type="marker">
-        <layer class="SimpleMarker" locked="0" pass="0">
-          <prop k="angle" v="0" />
-          <prop k="color" v="255,0,0,255" />
-          <prop k="color_border" v="255,0,0,255" />
-          <prop k="name" v="circle" />
-          <prop k="offset" v="0,0" />
-          <prop k="size" v="0.75" />
-        </layer>
-      </symbol>
-    </symbols>
-    <rotation field="" />
-    <sizescale field="" />
-  </renderer-v2>
-  <customproperties>
-    <property key="labeling" value="pal" />
-    <property key="labeling/addDirectionSymbol" value="false" />
-    <property key="labeling/bufferColorB" value="255" />
-    <property key="labeling/bufferColorG" value="255" />
-    <property key="labeling/bufferColorR" value="255" />
-    <property key="labeling/bufferSize" value="2" />
-    <property key="labeling/dataDefinedProperty0" value="" />
-    <property key="labeling/dataDefinedProperty1" value="" />
-    <property key="labeling/dataDefinedProperty10" value="" />
-    <property key="labeling/dataDefinedProperty11" value="" />
-    <property key="labeling/dataDefinedProperty12" value="" />
-    <property key="labeling/dataDefinedProperty13" value="" />
-    <property key="labeling/dataDefinedProperty14" value="" />
-    <property key="labeling/dataDefinedProperty2" value="" />
-    <property key="labeling/dataDefinedProperty3" value="" />
-    <property key="labeling/dataDefinedProperty4" value="" />
-    <property key="labeling/dataDefinedProperty5" value="" />
-    <property key="labeling/dataDefinedProperty6" value="" />
-    <property key="labeling/dataDefinedProperty7" value="" />
-    <property key="labeling/dataDefinedProperty8" value="" />
-    <property key="labeling/dataDefinedProperty9" value="" />
-    <property key="labeling/decimals" value="0" />
-    <property key="labeling/dist" value="0" />
-    <property key="labeling/distInMapUnits" value="false" />
-    <property key="labeling/enabled" value="true" />
-    <property key="labeling/fieldName" value="'BE-GID:  ' || &quot;nummer&quot;  || '\nEGID: '|| CASE WHEN (&quot;gwr_egid&quot; IS NULL) THEN '-' ELSE  &quot;gwr_egid&quot; END" />
-    <property key="labeling/fontFamily" value="Cantarell" />
-    <property key="labeling/fontItalic" value="false" />
-    <property key="labeling/fontSize" value="10" />
-    <property key="labeling/fontSizeInMapUnits" value="false" />
-    <property key="labeling/fontStrikeout" value="false" />
-    <property key="labeling/fontUnderline" value="false" />
-    <property key="labeling/fontWeight" value="50" />
-    <property key="labeling/formatNumbers" value="false" />
-    <property key="labeling/isExpression" value="true" />
-    <property key="labeling/labelPerPart" value="false" />
-    <property key="labeling/mergeLines" value="false" />
-    <property key="labeling/minFeatureSize" value="0" />
-    <property key="labeling/obstacle" value="true" />
-    <property key="labeling/placement" value="0" />
-    <property key="labeling/placementFlags" value="0" />
-    <property key="labeling/plussign" value="true" />
-    <property key="labeling/priority" value="5" />
-    <property key="labeling/scaleMax" value="5000" />
-    <property key="labeling/scaleMin" value="1" />
-    <property key="labeling/textColorB" value="0" />
-    <property key="labeling/textColorG" value="70" />
-    <property key="labeling/textColorR" value="212" />
-    <property key="labeling/wrapChar" value="" />
-  </customproperties>
-  <displayfield>ogc_fid</displayfield>
-  <label>0</label>
-  <labelfield>nummer</labelfield>
-  <labelattributes>
-    <label fieldname="nummer" text="Beschriftung" />
-    <family fieldname="" name="Cantarell" />
-    <size fieldname="" units="pt" value="10" />
-    <bold fieldname="" on="0" />
-    <italic fieldname="" on="0" />
-    <underline fieldname="" on="0" />
-    <strikeout fieldname="" on="0" />
-    <color blue="0" fieldname="" green="85" red="255" />
-    <x fieldname="" />
-    <y fieldname="" />
-    <offset units="pt" x="5" xfieldname="" y="0" yfieldname="" />
-    <angle auto="0" fieldname="" value="0" />
-    <alignment fieldname="" value="right" />
-    <buffercolor blue="255" fieldname="" green="255" red="255" />
-    <buffersize fieldname="" units="pt" value="4" />
-    <bufferenabled fieldname="" on="1" />
-    <multilineenabled fieldname="" on="" />
-    <selectedonly on="" />
-  </labelattributes>
-  <edittypes>
-    <edittype name="gebaeudenummer_von" type="0" />
-    <edittype name="gem_bfs" type="0" />
-    <edittype name="groesse" type="0" />
-    <edittype name="groesse_txt" type="0" />
-    <edittype name="gwr_egid" type="0" />
-    <edittype name="hali" type="0" />
-    <edittype name="hali_txt" type="0" />
-    <edittype name="lieferdatum" type="0" />
-    <edittype name="los" type="0" />
-    <edittype name="nbident" type="0" />
-    <edittype name="nummer" type="0" />
-    <edittype name="objektnummer_von" type="0" />
-    <edittype name="ogc_fid" type="0" />
-    <edittype name="ori" type="0" />
-    <edittype name="tid" type="0" />
-    <edittype name="vali" type="0" />
-    <edittype name="vali_txt" type="0" />
-  </edittypes>
-  <editform />
-  <editforminit />
-  <annotationform />
-  <attributeactions />
-  <overlay display="false" type="diagram">
-    <renderer item_interpretation="linear">
-      <diagramitem size="0" value="0" />
-      <diagramitem size="0" value="0" />
-    </renderer>
-    <factory sizeUnits="MM" type="Pie">
-      <wellknownname>Pie</wellknownname>
-      <classificationfield>0</classificationfield>
-    </factory>
-    <scalingAttribute>0</scalingAttribute>
-  </overlay>
-<labeling type="simple">
-  <settings>
-    <text-style blendMode="0" fieldName="nummer" fontCapitals="0" fontFamily="Cantarell" fontItalic="0" fontLetterSpacing="0" fontSize="10" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point" fontStrikeout="0" fontUnderline="0" fontWeight="50" fontWordSpacing="0" isExpression="0" multilineHeight="1" namedStyle="Book" previewBkgrdColor="#ffffff" textColor="255,0,85" textOpacity="1" useSubstitutions="0">
-      <text-buffer bufferBlendMode="0" bufferColor="255,255,255" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="1" bufferOpacity="1" bufferSize="4" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" />
-      <background shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeDraw="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetX="0" shapeOffsetY="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeRadiiX="0" shapeRadiiY="0" shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeSizeUnit="MM" shapeSizeX="0" shapeSizeY="0" shapeType="0" />
-      <shadow shadowBlendMode="6" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowScale="100" shadowUnder="0" />
-      <substitutions />
-    </text-style>
-    <text-format addDirectionSymbol="0" autoWrapLength="0" decimals="3" formatNumbers="0" leftDirectionSymbol="&lt;" multilineAlign="3" placeDirectionSymbol="0" plussign="0" reverseDirectionSymbol="0" rightDirectionSymbol="&gt;" useMaxLineLengthForAutoWrap="1" wrapChar="" />
-    <placement centroidInside="0" centroidWhole="0" dist="0" distMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" fitInPolygonOnly="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" offsetType="0" offsetUnits="MM" placement="1" placementFlags="10" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" priority="5" quadOffset="4" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" xOffset="0" yOffset="0" />
-    <rendering displayAll="0" drawLabels="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" maxNumLabels="2000" mergeLines="0" minFeatureSize="0" obstacle="1" obstacleFactor="1" obstacleType="0" scaleMax="0" scaleMin="0" scaleVisibility="0" upsidedownLabels="0" zIndex="0" />
-    <dd_properties>
-      <Option type="Map">
-        <Option name="name" type="QString" value="" />
-        <Option name="properties" />
-        <Option name="type" type="QString" value="collection" />
-      </Option>
-    </dd_properties>
-  </settings>
-  </labeling>
-  </qgis>
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="2.18.16" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+ <edittypes>
+  <edittype widgetv2type="TextEdit" name="ogc_fid">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="tid">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="objektnummer_von">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="nummer">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="gwr_egid">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="nbident">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="ori">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="hali">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="hali_txt">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="vali">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="vali_txt">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="groesse">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="groesse_txt">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="gem_bfs">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="los">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="lieferdatum">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+ </edittypes>
+ <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+  <symbols>
+   <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+    <layer pass="0" class="SimpleMarker" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="255,0,0,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,0,0,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="0.75"/>
+     <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+    </layer>
+   </symbol>
+  </symbols>
+  <rotation/>
+  <sizescale scalemethod="diameter"/>
+ </renderer-v2>
+ <labeling type="simple"/>
+ <customproperties>
+  <property key="labeling" value="pal"/>
+  <property key="labeling/addDirectionSymbol" value="false"/>
+  <property key="labeling/bufferColorB" value="255"/>
+  <property key="labeling/bufferColorG" value="255"/>
+  <property key="labeling/bufferColorR" value="255"/>
+  <property key="labeling/bufferSize" value="2"/>
+  <property key="labeling/decimals" value="0"/>
+  <property key="labeling/dist" value="0"/>
+  <property key="labeling/distInMapUnits" value="false"/>
+  <property key="labeling/enabled" value="true"/>
+  <property key="labeling/fieldName" value="'BE-GID:  ' || &quot;nummer&quot;  || '\nEGID: '|| CASE WHEN (&quot;gwr_egid&quot; IS NULL) THEN '-' ELSE  &quot;gwr_egid&quot; END"/>
+  <property key="labeling/fontFamily" value="Cantarell"/>
+  <property key="labeling/fontItalic" value="false"/>
+  <property key="labeling/fontSize" value="10"/>
+  <property key="labeling/fontSizeInMapUnits" value="false"/>
+  <property key="labeling/fontStrikeout" value="false"/>
+  <property key="labeling/fontUnderline" value="false"/>
+  <property key="labeling/fontWeight" value="50"/>
+  <property key="labeling/formatNumbers" value="false"/>
+  <property key="labeling/isExpression" value="true"/>
+  <property key="labeling/labelPerPart" value="false"/>
+  <property key="labeling/mergeLines" value="false"/>
+  <property key="labeling/minFeatureSize" value="0"/>
+  <property key="labeling/obstacle" value="true"/>
+  <property key="labeling/placement" value="0"/>
+  <property key="labeling/placementFlags" value="0"/>
+  <property key="labeling/plussign" value="true"/>
+  <property key="labeling/priority" value="5"/>
+  <property key="labeling/scaleMax" value="5000"/>
+  <property key="labeling/scaleMin" value="1"/>
+  <property key="labeling/textColorB" value="0"/>
+  <property key="labeling/textColorG" value="70"/>
+  <property key="labeling/textColorR" value="212"/>
+  <property key="labeling/wrapChar" value=""/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerTransparency>0</layerTransparency>
+ <displayfield>ogc_fid</displayfield>
+ <label>0</label>
+ <labelfield>nummer</labelfield>
+ <labelattributes>
+  <label fieldname="nummer" text="Beschriftung"/>
+  <family fieldname="" name="Cantarell"/>
+  <size fieldname="" units="pt" value="10"/>
+  <bold fieldname="" on="0"/>
+  <italic fieldname="" on="0"/>
+  <underline fieldname="" on="0"/>
+  <strikeout fieldname="" on="0"/>
+  <color fieldname="" red="255" blue="0" green="85"/>
+  <x fieldname=""/>
+  <y fieldname=""/>
+  <offset x="5" y="0" units="pt" yfieldname="" xfieldname=""/>
+  <angle fieldname="" value="0" auto="0"/>
+  <alignment fieldname="" value="right"/>
+  <buffercolor fieldname="" red="255" blue="255" green="255"/>
+  <buffersize fieldname="" units="pt" value="4"/>
+  <bufferenabled fieldname="" on="1"/>
+  <multilineenabled fieldname="" on=""/>
+  <selectedonly on=""/>
+ </labelattributes>
+ <annotationform></annotationform>
+ <aliases>
+  <alias field="ogc_fid" index="0" name=""/>
+  <alias field="tid" index="1" name=""/>
+  <alias field="objektnummer_von" index="2" name=""/>
+  <alias field="nummer" index="3" name=""/>
+  <alias field="gwr_egid" index="4" name=""/>
+  <alias field="nbident" index="5" name=""/>
+  <alias field="ori" index="6" name=""/>
+  <alias field="hali" index="7" name=""/>
+  <alias field="hali_txt" index="8" name=""/>
+  <alias field="vali" index="9" name=""/>
+  <alias field="vali_txt" index="10" name=""/>
+  <alias field="groesse" index="11" name=""/>
+  <alias field="groesse_txt" index="12" name=""/>
+  <alias field="gem_bfs" index="13" name=""/>
+  <alias field="los" index="14" name=""/>
+  <alias field="lieferdatum" index="15" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <attributeactions default="-1"/>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns/>
+ </attributetableconfig>
+ <editform></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <widgets/>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <defaults>
+  <default field="ogc_fid" expression=""/>
+  <default field="tid" expression=""/>
+  <default field="objektnummer_von" expression=""/>
+  <default field="nummer" expression=""/>
+  <default field="gwr_egid" expression=""/>
+  <default field="nbident" expression=""/>
+  <default field="ori" expression=""/>
+  <default field="hali" expression=""/>
+  <default field="hali_txt" expression=""/>
+  <default field="vali" expression=""/>
+  <default field="vali_txt" expression=""/>
+  <default field="groesse" expression=""/>
+  <default field="groesse_txt" expression=""/>
+  <default field="gem_bfs" expression=""/>
+  <default field="los" expression=""/>
+  <default field="lieferdatum" expression=""/>
+ </defaults>
+ <previewExpression></previewExpression>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>
