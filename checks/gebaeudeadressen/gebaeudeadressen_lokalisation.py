@@ -216,7 +216,7 @@ class ComplexCheck(ComplexCheckBase):
                 return
 
             feat = QgsFeature()
-            id = vlayer_lokalisationsname.selectedFeaturesIds()[0]
+            id = vlayer_lokalisationsname.selectedFeatureIds()[0]
             feat = vlayer_lokalisationsname.selectedFeatures()[0]
             idx = ids.index(id)
 
@@ -288,9 +288,7 @@ class ComplexCheck(ComplexCheckBase):
             self.iface.mapCanvas().refresh()
 
             iter = vlayer_lokalisation.getFeatures()
-            x, y = 0.0, 0.0
-            prinzip, attributeprovisorisch, offiziell, status,
-            inaenderung, art = "", "", "", "", "", ""
+            prinzip, attributeprovisorisch, offiziell, status, inaenderung, art = "", "", "", "", "", ""
 
             # only one feature is selected
             for feature in iter:
@@ -322,45 +320,21 @@ class ComplexCheck(ComplexCheckBase):
                 inaenderung = feature.attributes()[inaenderung_idx]
                 art = feature.attributes()[art_idx]
 
-            map_extent = self.canvas.extent()
-            x = map_extent.xMinimum()
-            y = map_extent.yMaximum()
-
-            text_item_found = False
-            items = self.iface.mapCanvas().scene().items()
-            for i in range(len(items)):
-                try:
-                    name = items[i].data(0)
-                    if str(name) == "LokalisationsInfo":
-                        text_item = items[i]
-                        text_item_found = True
-                except Exception as e:
-                    pass
-
-            if not text_item_found:
-                text_item = QgsTextAnnotationItem(self.canvas)
-                text_item.setData(0, "LokalisationsInfo")
-
-            text_item.setMapPositionFixed(False)
-            text_item.setFrameBorderWidth(0.0)
-            text_item.setFrameColor(QColor(250, 250, 250, 255))
-            text_item.setFrameBackgroundColor(QColor(250, 250, 250, 255))
+            text_item = QgsTextAnnotation()
+            text_item.setHasFixedMapPosition(False)
+            text_item.setMapLayer(vlayer_lokalisationsname)
             text_item.setFrameSize(QSizeF(250, 150))
             text_document = QTextDocument()
             text_document.setHtml(
                 "<table style='font-size:12px;'><tr><td>Lok.Name: </td><td>" + lokalisationsname + "</td></tr><tr><td>T_ILI_TID: </td><td>" + str(benannte) + "</td></tr> <tr><td>Num.prinzip: </td><td>" + prinzip + "</td></tr> <tr><td>Attr. prov.: </td><td>" + attributeprovisorisch + "</td></tr> <tr><td>ist offiziell: </td><td>" + offiziell + "</td></tr> <tr><td>Status: </td><td>" + status + "</td></tr> <tr><td>in Aenderung: </td><td>" + inaenderung + "</td></tr> <tr><td>Art: </td><td>" + art + "</td></tr>  </table>")
             text_item.setDocument(text_document)
 
-            # Workaround: das erste Mal passt die Position nicht...???
-            point = QgsPoint(x + 10 * self.canvas.mapUnitsPerPixel(),
-                             y - 10 * self.canvas.mapUnitsPerPixel())
-            text_item.setMapPosition(point)
-            text_item.update()
+            QgsMapCanvasAnnotationItem(text_item, self.canvas)
 
             self.iface.mapCanvas().refresh()
 
             try:
-                vlayer_lokalisationsname.setSelectedFeatures([ids[idx + 1]])
+                vlayer_lokalisationsname.selectByIds([ids[idx + 1]])
             except IndexError:
                 self.iface.messageBar().pushMessage(
                     "Information",
