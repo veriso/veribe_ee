@@ -1,89 +1,98 @@
-<qgis hasScaleBasedVisibilityFlag="0" maxLabelScale="1e+08" maximumScale="1e+08" minLabelScale="0" minimumScale="0" scaleBasedLabelVisibilityFlag="0" version="1.7.0-Wroclaw">
-  <transparencyLevelInt>255</transparencyLevelInt>
-  <singlesymbol>
-    <symbol>
-      <lowervalue />
-      <uppervalue />
-      <label />
-      <pointsymbol>hard:circle</pointsymbol>
-      <pointsize>2</pointsize>
-      <pointsizeunits>pixels</pointsizeunits>
-      <rotationclassificationfieldname />
-      <scaleclassificationfieldname />
-      <symbolfieldname />
-      <outlinecolor blue="0" green="0" red="255" />
-      <outlinestyle>SolidLine</outlinestyle>
-      <outlinewidth>0.71</outlinewidth>
-      <fillcolor blue="127" green="255" red="255" />
-      <fillpattern>NoBrush</fillpattern>
-      <texturepath />
-    </symbol>
-  </singlesymbol>
-  <customproperties />
-  <displayfield>ogc_fid</displayfield>
-  <label>0</label>
-  <labelattributes>
-    <label fieldname="" text="Beschriftung" />
-    <family fieldname="" name="Ubuntu" />
-    <size fieldname="" units="pt" value="12" />
-    <bold fieldname="" on="0" />
-    <italic fieldname="" on="0" />
-    <underline fieldname="" on="0" />
-    <strikeout fieldname="" on="0" />
-    <color blue="0" fieldname="" green="0" red="0" />
-    <x fieldname="" />
-    <y fieldname="" />
-    <offset units="pt" x="0" xfieldname="" y="0" yfieldname="" />
-    <angle auto="0" fieldname="" value="0" />
-    <alignment fieldname="" value="center" />
-    <buffercolor blue="255" fieldname="" green="255" red="255" />
-    <buffersize fieldname="" units="pt" value="1" />
-    <bufferenabled fieldname="" on="" />
-    <multilineenabled fieldname="" on="" />
-    <selectedonly on="" />
-  </labelattributes>
-  <edittypes>
-    <edittype name="entstehung" type="0" />
-    <edittype name="gem_bfs" type="0" />
-    <edittype name="gemeindegrenze_von" type="0" />
-    <edittype name="lieferdatum" type="0" />
-    <edittype name="los" type="0" />
-    <edittype name="ogc_fid" type="0" />
-    <edittype name="tid" type="0" />
-  </edittypes>
-  <editform />
-  <editforminit />
-  <annotationform />
-  <attributeactions />
-  <overlay display="false" type="diagram">
-    <renderer item_interpretation="linear">
-      <diagramitem size="0" value="0" />
-      <diagramitem size="0" value="0" />
-    </renderer>
-    <factory sizeUnits="MM" type="Pie">
-      <wellknownname>Pie</wellknownname>
-      <classificationfield>0</classificationfield>
-    </factory>
-    <scalingAttribute>0</scalingAttribute>
-  </overlay>
-<labeling type="simple">
-  <settings>
-    <text-style blendMode="0" fieldName="" fontCapitals="0" fontFamily="Ubuntu" fontItalic="0" fontLetterSpacing="0" fontSize="12" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point" fontStrikeout="0" fontUnderline="0" fontWeight="50" fontWordSpacing="0" isExpression="0" multilineHeight="1" namedStyle="Book" previewBkgrdColor="#ffffff" textColor="0,0,0" textOpacity="1" useSubstitutions="0">
-      <text-buffer bufferBlendMode="0" bufferColor="255,255,255" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="1" bufferOpacity="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" />
-      <background shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeDraw="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetX="0" shapeOffsetY="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeRadiiX="0" shapeRadiiY="0" shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeSizeUnit="MM" shapeSizeX="0" shapeSizeY="0" shapeType="0" />
-      <shadow shadowBlendMode="6" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowScale="100" shadowUnder="0" />
-      <substitutions />
-    </text-style>
-    <text-format addDirectionSymbol="0" autoWrapLength="0" decimals="3" formatNumbers="0" leftDirectionSymbol="&lt;" multilineAlign="3" placeDirectionSymbol="0" plussign="0" reverseDirectionSymbol="0" rightDirectionSymbol="&gt;" useMaxLineLengthForAutoWrap="1" wrapChar="" />
-    <placement centroidInside="0" centroidWhole="0" dist="0" distMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" fitInPolygonOnly="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" offsetType="0" offsetUnits="MM" placement="1" placementFlags="10" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" priority="5" quadOffset="4" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" xOffset="0" yOffset="0" />
-    <rendering displayAll="0" drawLabels="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" maxNumLabels="2000" mergeLines="0" minFeatureSize="0" obstacle="1" obstacleFactor="1" obstacleType="0" scaleMax="0" scaleMin="0" scaleVisibility="0" upsidedownLabels="0" zIndex="0" />
-    <dd_properties>
-      <Option type="Map">
-        <Option name="name" type="QString" value="" />
-        <Option name="properties" />
-        <Option name="type" type="QString" value="collection" />
-      </Option>
-    </dd_properties>
-  </settings>
-  </labeling>
-  </qgis>
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="2.18.16" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+ <edittypes>
+  <edittype widgetv2type="TextEdit" name="ogc_fid">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="t_ili_tid">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="entstehung">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+  <edittype widgetv2type="TextEdit" name="gemeindegrenze_von">
+   <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+  </edittype>
+ </edittypes>
+ <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+  <symbols>
+   <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+    <layer pass="0" class="SimpleFill" locked="0">
+     <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+     <prop k="color" v="255,255,127,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,0,0,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.71"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="no"/>
+    </layer>
+   </symbol>
+  </symbols>
+  <rotation/>
+  <sizescale scalemethod="diameter"/>
+ </renderer-v2>
+ <labeling type="simple"/>
+ <customproperties/>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerTransparency>0</layerTransparency>
+ <displayfield>ogc_fid</displayfield>
+ <label>0</label>
+ <labelattributes>
+  <label fieldname="" text="Beschriftung"/>
+  <family fieldname="" name="Ubuntu"/>
+  <size fieldname="" units="pt" value="12"/>
+  <bold fieldname="" on="0"/>
+  <italic fieldname="" on="0"/>
+  <underline fieldname="" on="0"/>
+  <strikeout fieldname="" on="0"/>
+  <color fieldname="" red="0" blue="0" green="0"/>
+  <x fieldname=""/>
+  <y fieldname=""/>
+  <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+  <angle fieldname="" value="0" auto="0"/>
+  <alignment fieldname="" value="center"/>
+  <buffercolor fieldname="" red="255" blue="255" green="255"/>
+  <buffersize fieldname="" units="pt" value="1"/>
+  <bufferenabled fieldname="" on=""/>
+  <multilineenabled fieldname="" on=""/>
+  <selectedonly on=""/>
+ </labelattributes>
+ <annotationform></annotationform>
+ <aliases>
+  <alias field="ogc_fid" index="0" name=""/>
+  <alias field="t_ili_tid" index="1" name=""/>
+  <alias field="entstehung" index="2" name=""/>
+  <alias field="gemeindegrenze_von" index="3" name=""/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <attributeactions default="-1"/>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns/>
+ </attributetableconfig>
+ <editform></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <widgets/>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <defaults>
+  <default field="ogc_fid" expression=""/>
+  <default field="t_ili_tid" expression=""/>
+  <default field="entstehung" expression=""/>
+  <default field="gemeindegrenze_von" expression=""/>
+ </defaults>
+ <previewExpression></previewExpression>
+ <layerGeometryType>2</layerGeometryType>
+</qgis>
