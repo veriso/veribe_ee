@@ -1,83 +1,228 @@
-<qgis hasScaleBasedVisibilityFlag="0" maximumScale="1e+08" minimumScale="0" version="1.8.0-Lisboa">
-  <transparencyLevelInt>255</transparencyLevelInt>
-  <renderer-v2 symbollevels="0" type="singleSymbol">
-    <symbols>
-      <symbol alpha="0.811765" name="0" outputUnit="MM" type="marker">
-        <layer class="SimpleMarker" locked="0" pass="0">
-          <prop k="angle" v="0" />
-          <prop k="color" v="255,255,0,255" />
-          <prop k="color_border" v="255,0,0,255" />
-          <prop k="name" v="circle" />
-          <prop k="offset" v="0,0" />
-          <prop k="size" v="5" />
-        </layer>
-        <layer class="SimpleMarker" locked="0" pass="0">
-          <prop k="angle" v="0" />
-          <prop k="color" v="255,0,127,255" />
-          <prop k="color_border" v="255,0,127,255" />
-          <prop k="name" v="cross2" />
-          <prop k="offset" v="0,0" />
-          <prop k="size" v="5" />
-        </layer>
-      </symbol>
-    </symbols>
-    <rotation field="" />
-    <sizescale field="" />
-  </renderer-v2>
-  <customproperties />
-  <displayfield>z_ls_nk_pkt_fid</displayfield>
-  <label>0</label>
-  <labelattributes>
-    <label fieldname="" text="Beschriftung" />
-    <family fieldname="" name="Cantarell" />
-    <size fieldname="" units="pt" value="12" />
-    <bold fieldname="" on="0" />
-    <italic fieldname="" on="0" />
-    <underline fieldname="" on="0" />
-    <strikeout fieldname="" on="0" />
-    <color blue="0" fieldname="" green="0" red="0" />
-    <x fieldname="" />
-    <y fieldname="" />
-    <offset units="pt" x="0" xfieldname="" y="0" yfieldname="" />
-    <angle auto="0" fieldname="" value="0" />
-    <alignment fieldname="" value="center" />
-    <buffercolor blue="255" fieldname="" green="255" red="255" />
-    <buffersize fieldname="" units="pt" value="1" />
-    <bufferenabled fieldname="" on="" />
-    <multilineenabled fieldname="" on="" />
-    <selectedonly on="" />
-  </labelattributes>
-  <edittypes>
-    <edittype name="flaeche" type="0" />
-    <edittype name="gem_bfs" type="0" />
-    <edittype name="lieferdatum" type="0" />
-    <edittype name="los" type="0" />
-    <edittype name="ls_fid" type="0" />
-    <edittype name="nk_fid" type="0" />
-    <edittype name="z_ls_nk_pkt_fid" type="0" />
-  </edittypes>
-  <editform />
-  <editforminit />
-  <annotationform />
-  <attributeactions />
-<labeling type="simple">
-  <settings>
-    <text-style blendMode="0" fieldName="" fontCapitals="0" fontFamily="Cantarell" fontItalic="0" fontLetterSpacing="0" fontSize="12" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point" fontStrikeout="0" fontUnderline="0" fontWeight="50" fontWordSpacing="0" isExpression="0" multilineHeight="1" namedStyle="Book" previewBkgrdColor="#ffffff" textColor="0,0,0" textOpacity="1" useSubstitutions="0">
-      <text-buffer bufferBlendMode="0" bufferColor="255,255,255" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="1" bufferOpacity="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" />
-      <background shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeDraw="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetX="0" shapeOffsetY="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeRadiiX="0" shapeRadiiY="0" shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeSizeUnit="MM" shapeSizeX="0" shapeSizeY="0" shapeType="0" />
-      <shadow shadowBlendMode="6" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowScale="100" shadowUnder="0" />
-      <substitutions />
-    </text-style>
-    <text-format addDirectionSymbol="0" autoWrapLength="0" decimals="3" formatNumbers="0" leftDirectionSymbol="&lt;" multilineAlign="3" placeDirectionSymbol="0" plussign="0" reverseDirectionSymbol="0" rightDirectionSymbol="&gt;" useMaxLineLengthForAutoWrap="1" wrapChar="" />
-    <placement centroidInside="0" centroidWhole="0" dist="0" distMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" fitInPolygonOnly="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" offsetType="0" offsetUnits="MM" placement="1" placementFlags="10" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" priority="5" quadOffset="4" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" xOffset="0" yOffset="0" />
-    <rendering displayAll="0" drawLabels="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" maxNumLabels="2000" mergeLines="0" minFeatureSize="0" obstacle="1" obstacleFactor="1" obstacleType="0" scaleMax="0" scaleMin="0" scaleVisibility="0" upsidedownLabels="0" zIndex="0" />
-    <dd_properties>
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis labelsEnabled="0" simplifyDrawingHints="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" simplifyLocal="1" version="3.4.4-Madeira" maxScale="0" minScale="1e+8" readOnly="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 forceraster="0" enableorderby="0" type="singleSymbol" symbollevels="0">
+  <symbols>
+   <symbol alpha="0.82" name="0" type="marker" clip_to_extent="1" force_rhr="0">
+    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="255,255,0,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,0,0,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="5"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
       <Option type="Map">
-        <Option name="name" type="QString" value="" />
-        <Option name="properties" />
-        <Option name="type" type="QString" value="collection" />
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
-    </dd_properties>
+     </data_defined_properties>
+    </layer>
+    <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="255,0,127,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="cross2"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="255,0,127,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="diameter"/>
+     <prop k="size" v="5"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <labeling type="simple">
+  <settings>
+   <text-style namedStyle="Book" blendMode="0" fontSizeUnit="Point" previewBkgrdColor="#ffffff" fontLetterSpacing="0" textColor="0,0,0,255" fontStrikeout="0" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" textOpacity="1" useSubstitutions="0" fontUnderline="0" fontCapitals="0" fontWeight="50" isExpression="0" fieldName="" fontSize="12" fontFamily="Sans Serif" fontWordSpacing="0">
+    <text-buffer bufferDraw="1" bufferSizeUnits="Point" bufferNoFill="1" bufferSize="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="255,255,255,255" bufferOpacity="1" bufferJoinStyle="128"/>
+    <background shapeOffsetUnit="MM" shapeSizeUnit="MM" shapeOffsetX="0" shapeDraw="0" shapeSizeX="0" shapeRadiiY="0" shapeRotationType="0" shapeJoinStyle="64" shapeBlendMode="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeBorderWidth="0" shapeRadiiUnit="MM" shapeSizeY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeFillColor="255,255,255,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeSVGFile="" shapeSizeType="0" shapeRotation="0" shapeType="0" shapeOpacity="1"/>
+    <shadow shadowOffsetUnit="MM" shadowScale="100" shadowOffsetAngle="135" shadowOffsetDist="1" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowUnder="0" shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7"/>
+    <substitutions/>
+   </text-style>
+   <text-format decimals="3" multilineAlign="3" reverseDirectionSymbol="0" autoWrapLength="0" formatNumbers="0" rightDirectionSymbol=">" placeDirectionSymbol="0" addDirectionSymbol="0" wrapChar="" plussign="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;"/>
+   <placement quadOffset="4" maxCurvedCharAngleOut="-25" distMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" offsetUnits="MM" offsetType="0" placementFlags="10" xOffset="0" fitInPolygonOnly="0" distUnits="MM" centroidInside="0" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" centroidWhole="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" placement="1" maxCurvedCharAngleIn="25" dist="0" priority="5"/>
+   <rendering scaleVisibility="0" obstacle="1" obstacleType="0" fontLimitPixelSize="0" fontMinPixelSize="3" minFeatureSize="0" zIndex="0" upsidedownLabels="0" mergeLines="0" limitNumLabels="0" displayAll="0" scaleMin="0" drawLabels="1" fontMaxPixelSize="10000" scaleMax="0" maxNumLabels="2000" labelPerPart="0" obstacleFactor="1"/>
+   <dd_properties>
+    <Option type="Map">
+     <Option name="name" type="QString" value=""/>
+     <Option name="properties"/>
+     <Option name="type" type="QString" value="collection"/>
+    </Option>
+   </dd_properties>
   </settings>
-  </labeling>
-  </qgis>
+ </labeling>
+ <customproperties>
+  <property key="embeddedWidgets/count" value="0"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory penColor="#000000" width="15" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" labelPlacementMethod="XHeight" sizeType="MM" penWidth="0" diagramOrientation="Up" maxScaleDenominator="1e+8" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" lineSizeType="MM" rotationOffset="270" backgroundAlpha="255" backgroundColor="#ffffff" minimumSize="0" height="15" enabled="0" opacity="1" penAlpha="255" scaleDependency="Area">
+   <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings dist="0" linePlacementFlags="18" placement="0" obstacle="0" zIndex="0" priority="0" showAll="1">
+  <properties>
+   <Option type="Map">
+    <Option name="name" type="QString" value=""/>
+    <Option name="properties"/>
+    <Option name="type" type="QString" value="collection"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="z_ls_nk_pkt_fid">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="ls_fid">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="nk_fid">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="flaeche">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias field="z_ls_nk_pkt_fid" name="" index="0"/>
+  <alias field="ls_fid" name="" index="1"/>
+  <alias field="nk_fid" name="" index="2"/>
+  <alias field="flaeche" name="" index="3"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default field="z_ls_nk_pkt_fid" expression="" applyOnUpdate="0"/>
+  <default field="ls_fid" expression="" applyOnUpdate="0"/>
+  <default field="nk_fid" expression="" applyOnUpdate="0"/>
+  <default field="flaeche" expression="" applyOnUpdate="0"/>
+ </defaults>
+ <constraints>
+  <constraint field="z_ls_nk_pkt_fid" unique_strength="1" exp_strength="0" notnull_strength="1" constraints="3"/>
+  <constraint field="ls_fid" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
+  <constraint field="nk_fid" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
+  <constraint field="flaeche" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint field="z_ls_nk_pkt_fid" exp="" desc=""/>
+  <constraint field="ls_fid" exp="" desc=""/>
+  <constraint field="nk_fid" exp="" desc=""/>
+  <constraint field="flaeche" exp="" desc=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+  <columns>
+   <column name="z_ls_nk_pkt_fid" type="field" width="-1" hidden="0"/>
+   <column name="ls_fid" type="field" width="-1" hidden="0"/>
+   <column name="nk_fid" type="field" width="-1" hidden="0"/>
+   <column name="flaeche" type="field" width="-1" hidden="0"/>
+   <column type="actions" width="-1" hidden="1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="flaeche"/>
+  <field editable="1" name="ls_fid"/>
+  <field editable="1" name="nk_fid"/>
+  <field editable="1" name="z_ls_nk_pkt_fid"/>
+ </editable>
+ <labelOnTop>
+  <field name="flaeche" labelOnTop="0"/>
+  <field name="ls_fid" labelOnTop="0"/>
+  <field name="nk_fid" labelOnTop="0"/>
+  <field name="z_ls_nk_pkt_fid" labelOnTop="0"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>z_ls_nk_pkt_fid</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>

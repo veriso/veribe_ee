@@ -1,101 +1,349 @@
-<qgis hasScaleBasedVisibilityFlag="0" maxLabelScale="1e+08" maximumScale="1e+08" minLabelScale="0" minimumScale="0" scaleBasedLabelVisibilityFlag="0" version="1.7.0-Wroclaw">
-  <transparencyLevelInt>255</transparencyLevelInt>
-  <singlesymbol>
-    <symbol>
-      <lowervalue />
-      <uppervalue />
-      <label />
-      <pointsymbol>hard:triangle</pointsymbol>
-      <pointsize>2</pointsize>
-      <pointsizeunits>pixels</pointsizeunits>
-      <rotationclassificationfieldname />
-      <scaleclassificationfieldname />
-      <symbolfieldname />
-      <outlinecolor blue="0" green="0" red="0" />
-      <outlinestyle>SolidLine</outlinestyle>
-      <outlinewidth>0.26</outlinewidth>
-      <fillcolor blue="127" green="0" red="170" />
-      <fillpattern>SolidPattern</fillpattern>
-      <texturepath null="1" />
-    </symbol>
-  </singlesymbol>
-  <customproperties />
-  <displayfield>ogc_fid</displayfield>
-  <label>0</label>
-  <labelattributes>
-    <label fieldname="" text="Beschriftung" />
-    <family fieldname="" name="Ubuntu" />
-    <size fieldname="" units="pt" value="12" />
-    <bold fieldname="" on="0" />
-    <italic fieldname="" on="0" />
-    <underline fieldname="" on="0" />
-    <strikeout fieldname="" on="0" />
-    <color blue="0" fieldname="" green="0" red="0" />
-    <x fieldname="" />
-    <y fieldname="" />
-    <offset units="pt" x="0" xfieldname="" y="0" yfieldname="" />
-    <angle auto="0" fieldname="" value="0" />
-    <alignment fieldname="" value="center" />
-    <buffercolor blue="255" fieldname="" green="255" red="255" />
-    <buffersize fieldname="" units="pt" value="1" />
-    <bufferenabled fieldname="" on="" />
-    <multilineenabled fieldname="" on="" />
-    <selectedonly on="" />
-  </labelattributes>
-  <edittypes>
-    <edittype name="entstehung" type="0" />
-    <edittype name="gem_bfs" type="0" />
-    <edittype name="hoehegen" type="0" />
-    <edittype name="hoehegeom" type="0" />
-    <edittype name="hoehezuv" type="0" />
-    <edittype name="hoehezuv_txt" type="0" />
-    <edittype name="lagegen" type="0" />
-    <edittype name="lagezuv" type="0" />
-    <edittype name="lagezuv_txt" type="0" />
-    <edittype name="lieferdatum" type="0" />
-    <edittype name="los" type="0" />
-    <edittype name="nbident" type="0" />
-    <edittype name="nummer" type="0" />
-    <edittype name="ogc_fid" type="0" />
-    <edittype name="protokoll" type="0" />
-    <edittype name="protokoll_txt" type="0" />
-    <edittype name="punktzeichen" type="0" />
-    <edittype name="punktzeichen_txt" type="0" />
-    <edittype name="tid" type="0" />
-  </edittypes>
-  <editform />
-  <editforminit />
-  <annotationform />
-  <attributeactions />
-  <overlay display="false" type="diagram">
-    <renderer item_interpretation="linear">
-      <diagramitem size="0" value="0" />
-      <diagramitem size="0" value="0" />
-    </renderer>
-    <factory sizeUnits="MM" type="Pie">
-      <wellknownname>Pie</wellknownname>
-      <classificationfield>0</classificationfield>
-    </factory>
-    <scalingAttribute>0</scalingAttribute>
-  </overlay>
-<labeling type="simple">
-  <settings>
-    <text-style blendMode="0" fieldName="" fontCapitals="0" fontFamily="Ubuntu" fontItalic="0" fontLetterSpacing="0" fontSize="12" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point" fontStrikeout="0" fontUnderline="0" fontWeight="50" fontWordSpacing="0" isExpression="0" multilineHeight="1" namedStyle="Book" previewBkgrdColor="#ffffff" textColor="0,0,0" textOpacity="1" useSubstitutions="0">
-      <text-buffer bufferBlendMode="0" bufferColor="255,255,255" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="1" bufferOpacity="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" />
-      <background shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeDraw="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetX="0" shapeOffsetY="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeRadiiX="0" shapeRadiiY="0" shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeSizeUnit="MM" shapeSizeX="0" shapeSizeY="0" shapeType="0" />
-      <shadow shadowBlendMode="6" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowScale="100" shadowUnder="0" />
-      <substitutions />
-    </text-style>
-    <text-format addDirectionSymbol="0" autoWrapLength="0" decimals="3" formatNumbers="0" leftDirectionSymbol="&lt;" multilineAlign="3" placeDirectionSymbol="0" plussign="0" reverseDirectionSymbol="0" rightDirectionSymbol="&gt;" useMaxLineLengthForAutoWrap="1" wrapChar="" />
-    <placement centroidInside="0" centroidWhole="0" dist="0" distMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" fitInPolygonOnly="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" offsetType="0" offsetUnits="MM" placement="1" placementFlags="10" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" priority="5" quadOffset="4" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" xOffset="0" yOffset="0" />
-    <rendering displayAll="0" drawLabels="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" maxNumLabels="2000" mergeLines="0" minFeatureSize="0" obstacle="1" obstacleFactor="1" obstacleType="0" scaleMax="0" scaleMin="0" scaleVisibility="0" upsidedownLabels="0" zIndex="0" />
-    <dd_properties>
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis minScale="1e+8" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" simplifyDrawingHints="0" styleCategories="AllStyleCategories" readOnly="0" maxScale="0" simplifyMaxScale="1" version="3.4.4-Madeira" labelsEnabled="0" simplifyDrawingTol="1" simplifyLocal="1">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
+  <symbols>
+   <symbol clip_to_extent="1" name="0" alpha="1" type="marker" force_rhr="0">
+    <layer locked="0" class="SimpleMarker" pass="0" enabled="1">
+     <prop v="0" k="angle"/>
+     <prop v="170,0,127,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="triangle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="2" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
       <Option type="Map">
-        <Option name="name" type="QString" value="" />
-        <Option name="properties" />
-        <Option name="type" type="QString" value="collection" />
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
-    </dd_properties>
-  </settings>
-  </labeling>
-  </qgis>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <customproperties>
+  <property key="embeddedWidgets/count" value="0"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+  <DiagramCategory sizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" rotationOffset="270" diagramOrientation="Up" scaleBasedVisibility="0" backgroundAlpha="255" opacity="1" width="15" lineSizeType="MM" scaleDependency="Area" height="15" sizeType="MM" maxScaleDenominator="1e+8" minScaleDenominator="0" penWidth="0" backgroundColor="#ffffff" penAlpha="255" minimumSize="0" penColor="#000000" barWidth="5" enabled="0" lineSizeScale="3x:0,0,0,0,0,0">
+   <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings zIndex="0" priority="0" obstacle="0" linePlacementFlags="18" placement="0" dist="0" showAll="1">
+  <properties>
+   <Option type="Map">
+    <Option name="name" type="QString" value=""/>
+    <Option name="properties"/>
+    <Option name="type" type="QString" value="collection"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="ogc_fid">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="t_ili_tid">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="nbident">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="nummer">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="hoehegeom">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="lagegen">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="lagezuv">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="lagezuv_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="hoehegen">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="hoehezuv">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="hoehezuv_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="punktzeichen">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="punktzeichen_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="protokoll">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="protokoll_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="entstehung">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias name="" index="0" field="ogc_fid"/>
+  <alias name="" index="1" field="t_ili_tid"/>
+  <alias name="" index="2" field="nbident"/>
+  <alias name="" index="3" field="nummer"/>
+  <alias name="" index="4" field="hoehegeom"/>
+  <alias name="" index="5" field="lagegen"/>
+  <alias name="" index="6" field="lagezuv"/>
+  <alias name="" index="7" field="lagezuv_txt"/>
+  <alias name="" index="8" field="hoehegen"/>
+  <alias name="" index="9" field="hoehezuv"/>
+  <alias name="" index="10" field="hoehezuv_txt"/>
+  <alias name="" index="11" field="punktzeichen"/>
+  <alias name="" index="12" field="punktzeichen_txt"/>
+  <alias name="" index="13" field="protokoll"/>
+  <alias name="" index="14" field="protokoll_txt"/>
+  <alias name="" index="15" field="entstehung"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default applyOnUpdate="0" expression="" field="ogc_fid"/>
+  <default applyOnUpdate="0" expression="" field="t_ili_tid"/>
+  <default applyOnUpdate="0" expression="" field="nbident"/>
+  <default applyOnUpdate="0" expression="" field="nummer"/>
+  <default applyOnUpdate="0" expression="" field="hoehegeom"/>
+  <default applyOnUpdate="0" expression="" field="lagegen"/>
+  <default applyOnUpdate="0" expression="" field="lagezuv"/>
+  <default applyOnUpdate="0" expression="" field="lagezuv_txt"/>
+  <default applyOnUpdate="0" expression="" field="hoehegen"/>
+  <default applyOnUpdate="0" expression="" field="hoehezuv"/>
+  <default applyOnUpdate="0" expression="" field="hoehezuv_txt"/>
+  <default applyOnUpdate="0" expression="" field="punktzeichen"/>
+  <default applyOnUpdate="0" expression="" field="punktzeichen_txt"/>
+  <default applyOnUpdate="0" expression="" field="protokoll"/>
+  <default applyOnUpdate="0" expression="" field="protokoll_txt"/>
+  <default applyOnUpdate="0" expression="" field="entstehung"/>
+ </defaults>
+ <constraints>
+  <constraint constraints="3" notnull_strength="1" unique_strength="1" exp_strength="0" field="ogc_fid"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="t_ili_tid"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="nbident"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="nummer"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="hoehegeom"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="lagegen"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="lagezuv"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="lagezuv_txt"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="hoehegen"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="hoehezuv"/>
+  <constraint constraints="0" notnull_strength="0" unique_strength="0" exp_strength="0" field="hoehezuv_txt"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="punktzeichen"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="punktzeichen_txt"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="protokoll"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="protokoll_txt"/>
+  <constraint constraints="1" notnull_strength="1" unique_strength="0" exp_strength="0" field="entstehung"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint exp="" desc="" field="ogc_fid"/>
+  <constraint exp="" desc="" field="t_ili_tid"/>
+  <constraint exp="" desc="" field="nbident"/>
+  <constraint exp="" desc="" field="nummer"/>
+  <constraint exp="" desc="" field="hoehegeom"/>
+  <constraint exp="" desc="" field="lagegen"/>
+  <constraint exp="" desc="" field="lagezuv"/>
+  <constraint exp="" desc="" field="lagezuv_txt"/>
+  <constraint exp="" desc="" field="hoehegen"/>
+  <constraint exp="" desc="" field="hoehezuv"/>
+  <constraint exp="" desc="" field="hoehezuv_txt"/>
+  <constraint exp="" desc="" field="punktzeichen"/>
+  <constraint exp="" desc="" field="punktzeichen_txt"/>
+  <constraint exp="" desc="" field="protokoll"/>
+  <constraint exp="" desc="" field="protokoll_txt"/>
+  <constraint exp="" desc="" field="entstehung"/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+ </attributeactions>
+ <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+  <columns>
+   <column name="ogc_fid" hidden="0" type="field" width="-1"/>
+   <column name="t_ili_tid" hidden="0" type="field" width="-1"/>
+   <column name="nbident" hidden="0" type="field" width="-1"/>
+   <column name="nummer" hidden="0" type="field" width="-1"/>
+   <column name="hoehegeom" hidden="0" type="field" width="-1"/>
+   <column name="lagegen" hidden="0" type="field" width="-1"/>
+   <column name="lagezuv" hidden="0" type="field" width="-1"/>
+   <column name="lagezuv_txt" hidden="0" type="field" width="-1"/>
+   <column name="hoehegen" hidden="0" type="field" width="-1"/>
+   <column name="hoehezuv" hidden="0" type="field" width="-1"/>
+   <column name="hoehezuv_txt" hidden="0" type="field" width="-1"/>
+   <column name="punktzeichen" hidden="0" type="field" width="-1"/>
+   <column name="punktzeichen_txt" hidden="0" type="field" width="-1"/>
+   <column name="protokoll" hidden="0" type="field" width="-1"/>
+   <column name="protokoll_txt" hidden="0" type="field" width="-1"/>
+   <column name="entstehung" hidden="0" type="field" width="-1"/>
+   <column hidden="1" type="actions" width="-1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field editable="1" name="entstehung"/>
+  <field editable="1" name="hoehegen"/>
+  <field editable="1" name="hoehegeom"/>
+  <field editable="1" name="hoehezuv"/>
+  <field editable="1" name="hoehezuv_txt"/>
+  <field editable="1" name="lagegen"/>
+  <field editable="1" name="lagezuv"/>
+  <field editable="1" name="lagezuv_txt"/>
+  <field editable="1" name="nbident"/>
+  <field editable="1" name="nummer"/>
+  <field editable="1" name="ogc_fid"/>
+  <field editable="1" name="protokoll"/>
+  <field editable="1" name="protokoll_txt"/>
+  <field editable="1" name="punktzeichen"/>
+  <field editable="1" name="punktzeichen_txt"/>
+  <field editable="1" name="t_ili_tid"/>
+ </editable>
+ <labelOnTop>
+  <field name="entstehung" labelOnTop="0"/>
+  <field name="hoehegen" labelOnTop="0"/>
+  <field name="hoehegeom" labelOnTop="0"/>
+  <field name="hoehezuv" labelOnTop="0"/>
+  <field name="hoehezuv_txt" labelOnTop="0"/>
+  <field name="lagegen" labelOnTop="0"/>
+  <field name="lagezuv" labelOnTop="0"/>
+  <field name="lagezuv_txt" labelOnTop="0"/>
+  <field name="nbident" labelOnTop="0"/>
+  <field name="nummer" labelOnTop="0"/>
+  <field name="ogc_fid" labelOnTop="0"/>
+  <field name="protokoll" labelOnTop="0"/>
+  <field name="protokoll_txt" labelOnTop="0"/>
+  <field name="punktzeichen" labelOnTop="0"/>
+  <field name="punktzeichen_txt" labelOnTop="0"/>
+  <field name="t_ili_tid" labelOnTop="0"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>ogc_fid</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>
