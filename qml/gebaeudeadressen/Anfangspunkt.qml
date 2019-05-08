@@ -1,78 +1,243 @@
-<qgis hasScaleBasedVisibilityFlag="0" maximumScale="1e+08" minimumScale="0" version="1.7.0-Trunk">
-  <transparencyLevelInt>255</transparencyLevelInt>
-  <renderer-v2 symbollevels="0" type="singleSymbol">
-    <symbols>
-      <symbol alpha="1" name="0" outputUnit="MM" type="marker">
-        <layer class="SimpleMarker" locked="0" pass="0">
-          <prop k="angle" v="0" />
-          <prop k="color" v="0,170,255,255" />
-          <prop k="color_border" v="0,0,0,255" />
-          <prop k="name" v="circle" />
-          <prop k="offset" v="0,0" />
-          <prop k="size" v="3" />
-        </layer>
-      </symbol>
-    </symbols>
-    <rotation field="" />
-    <sizescale field="" />
-  </renderer-v2>
-  <displayfield>ogc_fid</displayfield>
-  <label>0</label>
-  <labelattributes>
-    <label fieldname="" text="Beschriftung" />
-    <family fieldname="" name="Ubuntu" />
-    <size fieldname="" units="pt" value="12" />
-    <bold fieldname="" on="0" />
-    <italic fieldname="" on="0" />
-    <underline fieldname="" on="0" />
-    <strikeout fieldname="" on="0" />
-    <color blue="0" fieldname="" green="0" red="0" />
-    <x fieldname="" />
-    <y fieldname="" />
-    <offset units="pt" x="0" xfieldname="" y="0" yfieldname="" />
-    <angle auto="0" fieldname="" value="0" />
-    <alignment fieldname="" value="center" />
-    <buffercolor blue="255" fieldname="" green="255" red="255" />
-    <buffersize fieldname="" units="pt" value="1" />
-    <bufferenabled fieldname="" on="" />
-    <multilineenabled fieldname="" on="" />
-    <selectedonly on="" />
-  </labelattributes>
-  <edittypes>
-    <edittype name="gem_bfs" type="0" />
-    <edittype name="geometrie" type="0" />
-    <edittype name="istachse" type="0" />
-    <edittype name="istachse_txt" type="0" />
-    <edittype name="lieferdatum" type="0" />
-    <edittype name="los" type="0" />
-    <edittype name="ogc_fid" type="0" />
-    <edittype name="ordnung" type="0" />
-    <edittype name="strassenstueck_von" type="0" />
-    <edittype name="t_ili_tid" type="0" />
-  </edittypes>
-  <editform />
-  <editforminit />
-  <annotationform />
-  <attributeactions />
-  <customproperties />
-<labeling type="simple">
-  <settings>
-    <text-style blendMode="0" fieldName="" fontCapitals="0" fontFamily="Ubuntu" fontItalic="0" fontLetterSpacing="0" fontSize="12" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="Point" fontStrikeout="0" fontUnderline="0" fontWeight="50" fontWordSpacing="0" isExpression="0" multilineHeight="1" namedStyle="Book" previewBkgrdColor="#ffffff" textColor="0,0,0" textOpacity="1" useSubstitutions="0">
-      <text-buffer bufferBlendMode="0" bufferColor="255,255,255" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="1" bufferOpacity="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" />
-      <background shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeDraw="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetX="0" shapeOffsetY="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeRadiiX="0" shapeRadiiY="0" shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeSizeUnit="MM" shapeSizeX="0" shapeSizeY="0" shapeType="0" />
-      <shadow shadowBlendMode="6" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowScale="100" shadowUnder="0" />
-      <substitutions />
-    </text-style>
-    <text-format addDirectionSymbol="0" autoWrapLength="0" decimals="3" formatNumbers="0" leftDirectionSymbol="&lt;" multilineAlign="3" placeDirectionSymbol="0" plussign="0" reverseDirectionSymbol="0" rightDirectionSymbol="&gt;" useMaxLineLengthForAutoWrap="1" wrapChar="" />
-    <placement centroidInside="0" centroidWhole="0" dist="0" distMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" fitInPolygonOnly="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" offsetType="0" offsetUnits="MM" placement="1" placementFlags="10" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" priority="5" quadOffset="4" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" xOffset="0" yOffset="0" />
-    <rendering displayAll="0" drawLabels="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" maxNumLabels="2000" mergeLines="0" minFeatureSize="0" obstacle="1" obstacleFactor="1" obstacleType="0" scaleMax="0" scaleMin="0" scaleVisibility="0" upsidedownLabels="0" zIndex="0" />
-    <dd_properties>
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" minScale="1e+8" simplifyDrawingHints="0" styleCategories="AllStyleCategories" labelsEnabled="0" simplifyMaxScale="1" simplifyDrawingTol="1" version="3.4.4-Madeira" simplifyLocal="1" readOnly="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
+  <symbols>
+   <symbol alpha="1" name="0" clip_to_extent="1" type="marker" force_rhr="0">
+    <layer enabled="1" pass="0" locked="0" class="SimpleMarker">
+     <prop v="0" k="angle"/>
+     <prop v="0,170,255,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="circle" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="diameter" k="scale_method"/>
+     <prop v="3" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
       <Option type="Map">
-        <Option name="name" type="QString" value="" />
-        <Option name="properties" />
-        <Option name="type" type="QString" value="collection" />
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
-    </dd_properties>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <labeling type="simple">
+  <settings>
+   <text-style fontUnderline="0" textColor="0,0,0,255" multilineHeight="1" isExpression="0" fontSizeUnit="Point" fontWeight="50" fieldName="" fontCapitals="0" fontWordSpacing="0" namedStyle="Book" fontItalic="0" fontFamily="Sans Serif" fontSize="12" fontStrikeout="0" previewBkgrdColor="#ffffff" blendMode="0" useSubstitutions="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontLetterSpacing="0" textOpacity="1">
+    <text-buffer bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferOpacity="1" bufferSizeUnits="Point" bufferNoFill="1" bufferJoinStyle="128" bufferColor="255,255,255,255" bufferDraw="1"/>
+    <background shapeBorderColor="128,128,128,255" shapeOffsetUnit="MM" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeSizeUnit="MM" shapeRadiiUnit="MM" shapeSizeY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeSVGFile="" shapeRotation="0" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeRadiiY="0" shapeBorderWidth="0" shapeSizeX="0" shapeType="0" shapeSizeType="0" shapeOpacity="1" shapeDraw="0"/>
+    <shadow shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowDraw="0" shadowRadius="1.5" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7" shadowOffsetAngle="135" shadowOffsetDist="1" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowScale="100" shadowUnder="0" shadowRadiusUnit="MM"/>
+    <substitutions/>
+   </text-style>
+   <text-format wrapChar="" autoWrapLength="0" multilineAlign="3" placeDirectionSymbol="0" plussign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" formatNumbers="0" decimals="3"/>
+   <placement repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" offsetType="0" placementFlags="10" placement="1" maxCurvedCharAngleOut="-25" yOffset="0" xOffset="0" centroidInside="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" repeatDistanceUnits="MM" fitInPolygonOnly="0" centroidWhole="0" maxCurvedCharAngleIn="25" rotationAngle="0" dist="0" offsetUnits="MM" preserveRotation="1" priority="5" distUnits="MM"/>
+   <rendering scaleMax="0" scaleVisibility="0" scaleMin="0" upsidedownLabels="0" displayAll="0" drawLabels="1" obstacleType="0" minFeatureSize="0" limitNumLabels="0" obstacle="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" mergeLines="0" labelPerPart="0" obstacleFactor="1" maxNumLabels="2000" zIndex="0" fontMinPixelSize="3"/>
+   <dd_properties>
+    <Option type="Map">
+     <Option name="name" type="QString" value=""/>
+     <Option name="properties"/>
+     <Option name="type" type="QString" value="collection"/>
+    </Option>
+   </dd_properties>
   </settings>
-  </labeling>
-  </qgis>
+ </labeling>
+ <customproperties>
+  <property key="embeddedWidgets/count" value="0"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory minimumSize="0" height="15" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" sizeType="MM" maxScaleDenominator="1e+8" opacity="1" width="15" lineSizeType="MM" scaleBasedVisibility="0" labelPlacementMethod="XHeight" penAlpha="255" barWidth="5" rotationOffset="270" penWidth="0" enabled="0" penColor="#000000" minScaleDenominator="0" backgroundAlpha="255">
+   <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings dist="0" obstacle="0" showAll="1" priority="0" zIndex="0" placement="0" linePlacementFlags="18">
+  <properties>
+   <Option type="Map">
+    <Option name="name" type="QString" value=""/>
+    <Option name="properties"/>
+    <Option name="type" type="QString" value="collection"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="ogc_fid">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="t_ili_tid">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="ordnung">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="istachse">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="istachse_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="strassenstueck_von">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="geometrie">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias name="" index="0" field="ogc_fid"/>
+  <alias name="" index="1" field="t_ili_tid"/>
+  <alias name="" index="2" field="ordnung"/>
+  <alias name="" index="3" field="istachse"/>
+  <alias name="" index="4" field="istachse_txt"/>
+  <alias name="" index="5" field="strassenstueck_von"/>
+  <alias name="" index="6" field="geometrie"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default expression="" applyOnUpdate="0" field="ogc_fid"/>
+  <default expression="" applyOnUpdate="0" field="t_ili_tid"/>
+  <default expression="" applyOnUpdate="0" field="ordnung"/>
+  <default expression="" applyOnUpdate="0" field="istachse"/>
+  <default expression="" applyOnUpdate="0" field="istachse_txt"/>
+  <default expression="" applyOnUpdate="0" field="strassenstueck_von"/>
+  <default expression="" applyOnUpdate="0" field="geometrie"/>
+ </defaults>
+ <constraints>
+  <constraint constraints="3" unique_strength="1" exp_strength="0" field="ogc_fid" notnull_strength="1"/>
+  <constraint constraints="0" unique_strength="0" exp_strength="0" field="t_ili_tid" notnull_strength="0"/>
+  <constraint constraints="1" unique_strength="0" exp_strength="0" field="ordnung" notnull_strength="1"/>
+  <constraint constraints="1" unique_strength="0" exp_strength="0" field="istachse" notnull_strength="1"/>
+  <constraint constraints="1" unique_strength="0" exp_strength="0" field="istachse_txt" notnull_strength="1"/>
+  <constraint constraints="1" unique_strength="0" exp_strength="0" field="strassenstueck_von" notnull_strength="1"/>
+  <constraint constraints="0" unique_strength="0" exp_strength="0" field="geometrie" notnull_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint field="ogc_fid" desc="" exp=""/>
+  <constraint field="t_ili_tid" desc="" exp=""/>
+  <constraint field="ordnung" desc="" exp=""/>
+  <constraint field="istachse" desc="" exp=""/>
+  <constraint field="istachse_txt" desc="" exp=""/>
+  <constraint field="strassenstueck_von" desc="" exp=""/>
+  <constraint field="geometrie" desc="" exp=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+ </attributeactions>
+ <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+  <columns>
+   <column name="ogc_fid" type="field" width="-1" hidden="0"/>
+   <column name="t_ili_tid" type="field" width="-1" hidden="0"/>
+   <column name="ordnung" type="field" width="-1" hidden="0"/>
+   <column name="istachse" type="field" width="-1" hidden="0"/>
+   <column name="istachse_txt" type="field" width="-1" hidden="0"/>
+   <column name="strassenstueck_von" type="field" width="-1" hidden="0"/>
+   <column name="geometrie" type="field" width="-1" hidden="0"/>
+   <column type="actions" width="-1" hidden="1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field name="geometrie" editable="1"/>
+  <field name="istachse" editable="1"/>
+  <field name="istachse_txt" editable="1"/>
+  <field name="ogc_fid" editable="1"/>
+  <field name="ordnung" editable="1"/>
+  <field name="strassenstueck_von" editable="1"/>
+  <field name="t_ili_tid" editable="1"/>
+ </editable>
+ <labelOnTop>
+  <field name="geometrie" labelOnTop="0"/>
+  <field name="istachse" labelOnTop="0"/>
+  <field name="istachse_txt" labelOnTop="0"/>
+  <field name="ogc_fid" labelOnTop="0"/>
+  <field name="ordnung" labelOnTop="0"/>
+  <field name="strassenstueck_von" labelOnTop="0"/>
+  <field name="t_ili_tid" labelOnTop="0"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>ogc_fid</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>
