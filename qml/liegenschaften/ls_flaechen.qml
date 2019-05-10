@@ -1,18 +1,18 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.4.4-Madeira" readOnly="0" styleCategories="AllStyleCategories" simplifyDrawingHints="1" maxScale="0" simplifyMaxScale="1" minScale="1e+8" simplifyDrawingTol="1" labelsEnabled="1" simplifyAlgorithm="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0">
+<qgis styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyLocal="1" maxScale="0" simplifyDrawingHints="1" simplifyMaxScale="1" version="3.4.4-Madeira" labelsEnabled="1" simplifyDrawingTol="1" readOnly="0" hasScaleBasedVisibilityFlag="0" minScale="1e+8">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 enableorderby="0" type="RuleRenderer" symbollevels="0" forceraster="0">
+ <renderer-v2 enableorderby="0" symbollevels="0" type="RuleRenderer" forceraster="0">
   <rules key="{2cdbefb9-b625-48d7-bf4b-3e45fd704aeb}">
    <rule filter="qualitaet_txt = 'AV93' and (( $area -0.55>&quot;flaechenmass&quot; ) or ( $area +0.55&lt; &quot;flaechenmass&quot; ) )" label="AV93 / MO93" key="{0029f964-6608-478a-8284-7c0964a0e7c6}" symbol="0"/>
    <rule filter="qualitaet_txt &lt;> 'AV93' and (( $area -0.55> &quot;flaechenmass&quot; ) or ( $area +0.55&lt; &quot;flaechenmass&quot; ) )" label="andere Qualität / autres de qualité" key="{12bb080d-e08d-44b2-a172-424a8f28755b}" symbol="1"/>
   </rules>
   <symbols>
-   <symbol alpha="1" force_rhr="0" name="0" type="fill" clip_to_extent="1">
-    <layer locked="0" pass="0" enabled="1" class="LinePatternFill">
+   <symbol name="0" type="fill" clip_to_extent="1" force_rhr="0" alpha="1">
+    <layer class="LinePatternFill" enabled="1" pass="0" locked="0">
      <prop v="45" k="angle"/>
      <prop v="164,87,208,255" k="color"/>
      <prop v="5" k="distance"/>
@@ -28,13 +28,13 @@
      <prop v="MM" k="outline_width_unit"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option name="name" value="" type="QString"/>
+       <Option name="name" type="QString" value=""/>
        <Option name="properties"/>
-       <Option name="type" value="collection" type="QString"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
      </data_defined_properties>
-     <symbol alpha="1" force_rhr="0" name="@0@0" type="line" clip_to_extent="1">
-      <layer locked="0" pass="0" enabled="1" class="SimpleLine">
+     <symbol name="@0@0" type="line" clip_to_extent="1" force_rhr="0" alpha="1">
+      <layer class="SimpleLine" enabled="1" pass="0" locked="0">
        <prop v="square" k="capstyle"/>
        <prop v="5;2" k="customdash"/>
        <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -53,15 +53,15 @@
        <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
        <data_defined_properties>
         <Option type="Map">
-         <Option name="name" value="" type="QString"/>
+         <Option name="name" type="QString" value=""/>
          <Option name="properties"/>
-         <Option name="type" value="collection" type="QString"/>
+         <Option name="type" type="QString" value="collection"/>
         </Option>
        </data_defined_properties>
       </layer>
      </symbol>
     </layer>
-    <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+    <layer class="SimpleFill" enabled="1" pass="0" locked="0">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
      <prop v="0,0,255,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
@@ -75,15 +75,15 @@
      <prop v="no" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option name="name" value="" type="QString"/>
+       <Option name="name" type="QString" value=""/>
        <Option name="properties"/>
-       <Option name="type" value="collection" type="QString"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
      </data_defined_properties>
     </layer>
    </symbol>
-   <symbol alpha="1" force_rhr="0" name="1" type="fill" clip_to_extent="1">
-    <layer locked="0" pass="0" enabled="1" class="SimpleFill">
+   <symbol name="1" type="fill" clip_to_extent="1" force_rhr="0" alpha="1">
+    <layer class="SimpleFill" enabled="1" pass="0" locked="0">
      <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
      <prop v="211,142,21,255" k="color"/>
      <prop v="bevel" k="joinstyle"/>
@@ -97,9 +97,9 @@
      <prop v="no" k="style"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option name="name" value="" type="QString"/>
+       <Option name="name" type="QString" value=""/>
        <Option name="properties"/>
-       <Option name="type" value="collection" type="QString"/>
+       <Option name="type" type="QString" value="collection"/>
       </Option>
      </data_defined_properties>
     </layer>
@@ -108,28 +108,26 @@
  </renderer-v2>
  <labeling type="simple">
   <settings>
-   <text-style useSubstitutions="0" textColor="255,0,0,255" fontStrikeout="0" multilineHeight="1" fontWordSpacing="0" fontLetterSpacing="0" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" isExpression="1" fieldName="'Differenz:  '   ||   tostring(  (0.01*(toint( (&quot;flaechenmass&quot; - &quot;flaeche&quot;)*100)))) || &#xa;'\nFlaechenmass:  '   ||   &quot;flaechenmass&quot;  || '\nberechnete Flaeche: '   ||   tostring(  (0.01*(toint( (&quot;flaeche&quot;)*100)))) &#xa;" fontSize="11" fontFamily="Sans Serif" blendMode="0" fontCapitals="0" fontSizeUnit="Point" fontUnderline="0" namedStyle="Normal" fontItalic="0" previewBkgrdColor="#ffffff" textOpacity="1">
-    <text-buffer bufferDraw="1" bufferNoFill="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferSizeUnits="MM" bufferColor="255,255,255,255" bufferOpacity="1" bufferJoinStyle="64" bufferSize="3"/>
-    <background shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeOffsetY="0" shapeRadiiX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeSizeType="0" shapeOpacity="1" shapeRadiiY="0" shapeRotation="0" shapeBorderColor="128,128,128,255" shapeRadiiUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetUnit="MM" shapeBorderWidth="0" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeSVGFile="" shapeType="0" shapeSizeX="0" shapeOffsetX="0" shapeSizeY="0"/>
-    <shadow shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowRadius="1.5" shadowColor="0,0,0,255" shadowUnder="0" shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowOpacity="0.7" shadowRadiusAlphaOnly="0" shadowOffsetGlobal="1" shadowRadiusUnit="MM" shadowBlendMode="6" shadowOffsetUnit="MM"/>
+   <text-style blendMode="0" fontWeight="50" fontUnderline="0" fontFamily="Sans Serif" fontCapitals="0" fontItalic="0" fontSizeUnit="Point" isExpression="1" fontLetterSpacing="0" fieldName="'Differenz:  '   ||   tostring(  round((0.01*(toint( (&quot;flaechenmass&quot; - &quot;flaeche&quot;)*100))), 2)) || &#xa;'\nFlaechenmass:  '   ||   round(&quot;flaechenmass&quot;, 2)  || '\nberechnete Flaeche: '   ||   tostring(  round((0.01*(toint( (&quot;flaeche&quot;)*100))), 2)) &#xa;" namedStyle="Normal" fontSize="11" fontWordSpacing="0" previewBkgrdColor="#ffffff" fontSizeMapUnitScale="3x:0,0,0,0,0,0" multilineHeight="1" textColor="0,0,0,255" fontStrikeout="0" useSubstitutions="0" textOpacity="1">
+    <text-buffer bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="MM" bufferSize="3" bufferOpacity="1" bufferJoinStyle="64" bufferColor="255,255,255,255" bufferDraw="1" bufferBlendMode="0" bufferNoFill="0"/>
+    <background shapeRadiiX="0" shapeBlendMode="0" shapeRotation="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeOffsetUnit="MM" shapeBorderWidthUnit="MM" shapeSizeX="0" shapeBorderColor="128,128,128,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeType="0" shapeSizeType="0" shapeDraw="0" shapeOffsetX="0" shapeSizeUnit="MM" shapeRadiiY="0" shapeBorderWidth="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeSVGFile="" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeSizeY="0" shapeFillColor="255,255,255,255" shapeOpacity="1"/>
+    <shadow shadowOffsetAngle="135" shadowBlendMode="6" shadowUnder="0" shadowOffsetGlobal="1" shadowRadius="1.5" shadowRadiusUnit="MM" shadowDraw="0" shadowOpacity="0.7" shadowScale="100" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowOffsetUnit="MM" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1"/>
     <substitutions/>
    </text-style>
-   <text-format rightDirectionSymbol=">" decimals="3" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" multilineAlign="4294967295" wrapChar="" plussign="0" formatNumbers="0" placeDirectionSymbol="0" addDirectionSymbol="0" autoWrapLength="0" useMaxLineLengthForAutoWrap="1"/>
-   <placement labelOffsetMapUnitScale="3x:0,0,0,0,0,0" placement="1" centroidInside="0" repeatDistance="0" maxCurvedCharAngleOut="-25" distUnits="MM" repeatDistanceUnits="MM" offsetType="0" distMapUnitScale="3x:0,0,0,0,0,0" dist="0" centroidWhole="0" preserveRotation="1" xOffset="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" placementFlags="10" priority="5" yOffset="0" quadOffset="4" maxCurvedCharAngleIn="25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" fitInPolygonOnly="0" offsetUnits="MapUnit" rotationAngle="0"/>
-   <rendering obstacleFactor="1" maxNumLabels="2000" fontMaxPixelSize="10000" upsidedownLabels="0" zIndex="0" labelPerPart="0" minFeatureSize="0" scaleMin="0" displayAll="0" scaleMax="0" obstacle="1" obstacleType="0" drawLabels="1" mergeLines="0" fontLimitPixelSize="0" scaleVisibility="0" fontMinPixelSize="3" limitNumLabels="0"/>
+   <text-format wrapChar="" multilineAlign="0" formatNumbers="0" autoWrapLength="0" leftDirectionSymbol="&lt;" useMaxLineLengthForAutoWrap="1" plussign="1" placeDirectionSymbol="0" decimals="18" rightDirectionSymbol=">" addDirectionSymbol="0" reverseDirectionSymbol="0"/>
+   <placement maxCurvedCharAngleOut="-25" preserveRotation="1" maxCurvedCharAngleIn="25" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" centroidInside="0" yOffset="0" centroidWhole="0" distUnits="MM" offsetType="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" dist="0" priority="5" repeatDistanceUnits="MM" distMapUnitScale="3x:0,0,0,0,0,0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" placementFlags="10" xOffset="0" placement="1" rotationAngle="0" fitInPolygonOnly="0" quadOffset="4" offsetUnits="MapUnit" repeatDistance="0"/>
+   <rendering minFeatureSize="0" obstacleType="0" scaleVisibility="0" drawLabels="1" zIndex="0" obstacle="1" scaleMin="0" fontLimitPixelSize="0" maxNumLabels="2000" fontMaxPixelSize="10000" displayAll="0" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" upsidedownLabels="0" obstacleFactor="1" scaleMax="0" mergeLines="0"/>
    <dd_properties>
     <Option type="Map">
-     <Option name="name" value="" type="QString"/>
+     <Option name="name" type="QString" value=""/>
      <Option name="properties"/>
-     <Option name="type" value="collection" type="QString"/>
+     <Option name="type" type="QString" value="collection"/>
     </Option>
    </dd_properties>
   </settings>
  </labeling>
  <customproperties>
-  <property key="dualview/previewExpressions">
-   <value>ogc_fid</value>
-  </property>
+  <property key="dualview/previewExpressions" value="ogc_fid"/>
   <property key="embeddedWidgets/count" value="0"/>
   <property key="labeling" value="pal"/>
   <property key="labeling/addDirectionSymbol" value="false"/>
@@ -278,21 +276,22 @@
  <blendMode>0</blendMode>
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
- <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory maxScaleDenominator="1e+8" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" enabled="0" width="15" scaleBasedVisibility="0" lineSizeType="MM" rotationOffset="270" backgroundAlpha="255" penColor="#000000" barWidth="5" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" sizeType="MM" backgroundColor="#ffffff" minimumSize="0" labelPlacementMethod="XHeight" penAlpha="255" height="15" minScaleDenominator="0" penWidth="0" opacity="1">
-   <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+ <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+  <DiagramCategory minimumSize="0" opacity="1" minScaleDenominator="0" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" backgroundColor="#ffffff" lineSizeType="MM" rotationOffset="270" penAlpha="255" backgroundAlpha="255" penColor="#000000" maxScaleDenominator="1e+8" enabled="0" width="15" labelPlacementMethod="XHeight" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" height="15" penWidth="0" sizeType="MM" barWidth="5">
+   <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
+   <attribute color="#000000" label="" field=""/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings linePlacementFlags="18" zIndex="0" placement="1" showAll="1" priority="0" dist="0" obstacle="0">
+ <DiagramLayerSettings zIndex="0" linePlacementFlags="18" priority="0" obstacle="0" dist="0" placement="1" showAll="1">
   <properties>
    <Option type="Map">
-    <Option name="name" value="" type="QString"/>
+    <Option name="name" type="QString" value=""/>
     <Option name="properties"/>
-    <Option name="type" value="collection" type="QString"/>
+    <Option name="type" type="QString" value="collection"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
- <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
   <activeChecks/>
   <checkConfiguration/>
  </geometryOptions>
@@ -311,7 +310,7 @@
     </config>
    </editWidget>
   </field>
-  <field name="selbstrecht_von">
+  <field name="liegenschaft_von">
    <editWidget type="TextEdit">
     <config>
      <Option/>
@@ -376,77 +375,77 @@
   </field>
  </fieldConfiguration>
  <aliases>
-  <alias field="ogc_fid" index="0" name=""/>
-  <alias field="tid" index="1" name=""/>
-  <alias field="selbstrecht_von" index="2" name=""/>
-  <alias field="nummerteilgrundstueck" index="3" name=""/>
-  <alias field="flaechenmass" index="4" name=""/>
-  <alias field="flaeche" index="5" name=""/>
-  <alias field="qualitaet" index="6" name=""/>
-  <alias field="qualitaet_txt" index="7" name=""/>
-  <alias field="gem_bfs" index="8" name=""/>
-  <alias field="los" index="9" name=""/>
-  <alias field="lieferdatum" index="10" name=""/>
+  <alias index="0" name="" field="ogc_fid"/>
+  <alias index="1" name="" field="tid"/>
+  <alias index="2" name="" field="liegenschaft_von"/>
+  <alias index="3" name="" field="nummerteilgrundstueck"/>
+  <alias index="4" name="" field="flaechenmass"/>
+  <alias index="5" name="" field="flaeche"/>
+  <alias index="6" name="" field="qualitaet"/>
+  <alias index="7" name="" field="qualitaet_txt"/>
+  <alias index="8" name="" field="gem_bfs"/>
+  <alias index="9" name="" field="los"/>
+  <alias index="10" name="" field="lieferdatum"/>
  </aliases>
  <excludeAttributesWMS/>
  <excludeAttributesWFS/>
  <defaults>
-  <default field="ogc_fid" applyOnUpdate="0" expression=""/>
-  <default field="tid" applyOnUpdate="0" expression=""/>
-  <default field="selbstrecht_von" applyOnUpdate="0" expression=""/>
-  <default field="nummerteilgrundstueck" applyOnUpdate="0" expression=""/>
-  <default field="flaechenmass" applyOnUpdate="0" expression=""/>
-  <default field="flaeche" applyOnUpdate="0" expression=""/>
-  <default field="qualitaet" applyOnUpdate="0" expression=""/>
-  <default field="qualitaet_txt" applyOnUpdate="0" expression=""/>
-  <default field="gem_bfs" applyOnUpdate="0" expression=""/>
-  <default field="los" applyOnUpdate="0" expression=""/>
-  <default field="lieferdatum" applyOnUpdate="0" expression=""/>
+  <default applyOnUpdate="0" expression="" field="ogc_fid"/>
+  <default applyOnUpdate="0" expression="" field="tid"/>
+  <default applyOnUpdate="0" expression="" field="liegenschaft_von"/>
+  <default applyOnUpdate="0" expression="" field="nummerteilgrundstueck"/>
+  <default applyOnUpdate="0" expression="" field="flaechenmass"/>
+  <default applyOnUpdate="0" expression="" field="flaeche"/>
+  <default applyOnUpdate="0" expression="" field="qualitaet"/>
+  <default applyOnUpdate="0" expression="" field="qualitaet_txt"/>
+  <default applyOnUpdate="0" expression="" field="gem_bfs"/>
+  <default applyOnUpdate="0" expression="" field="los"/>
+  <default applyOnUpdate="0" expression="" field="lieferdatum"/>
  </defaults>
  <constraints>
-  <constraint field="ogc_fid" exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3"/>
-  <constraint field="tid" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="selbstrecht_von" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="nummerteilgrundstueck" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="flaechenmass" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="flaeche" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="qualitaet" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="qualitaet_txt" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="gem_bfs" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="los" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="lieferdatum" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+  <constraint notnull_strength="1" constraints="3" unique_strength="1" field="ogc_fid" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="tid" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="liegenschaft_von" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="nummerteilgrundstueck" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="flaechenmass" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="flaeche" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="qualitaet" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="qualitaet_txt" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="gem_bfs" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="los" exp_strength="0"/>
+  <constraint notnull_strength="0" constraints="0" unique_strength="0" field="lieferdatum" exp_strength="0"/>
  </constraints>
  <constraintExpressions>
-  <constraint field="ogc_fid" exp="" desc=""/>
-  <constraint field="tid" exp="" desc=""/>
-  <constraint field="selbstrecht_von" exp="" desc=""/>
-  <constraint field="nummerteilgrundstueck" exp="" desc=""/>
-  <constraint field="flaechenmass" exp="" desc=""/>
-  <constraint field="flaeche" exp="" desc=""/>
-  <constraint field="qualitaet" exp="" desc=""/>
-  <constraint field="qualitaet_txt" exp="" desc=""/>
-  <constraint field="gem_bfs" exp="" desc=""/>
-  <constraint field="los" exp="" desc=""/>
-  <constraint field="lieferdatum" exp="" desc=""/>
+  <constraint exp="" desc="" field="ogc_fid"/>
+  <constraint exp="" desc="" field="tid"/>
+  <constraint exp="" desc="" field="liegenschaft_von"/>
+  <constraint exp="" desc="" field="nummerteilgrundstueck"/>
+  <constraint exp="" desc="" field="flaechenmass"/>
+  <constraint exp="" desc="" field="flaeche"/>
+  <constraint exp="" desc="" field="qualitaet"/>
+  <constraint exp="" desc="" field="qualitaet_txt"/>
+  <constraint exp="" desc="" field="gem_bfs"/>
+  <constraint exp="" desc="" field="los"/>
+  <constraint exp="" desc="" field="lieferdatum"/>
  </constraintExpressions>
  <expressionfields/>
  <attributeactions>
   <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
  </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+ <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
   <columns>
-   <column width="-1" name="ogc_fid" type="field" hidden="0"/>
-   <column width="-1" name="tid" type="field" hidden="0"/>
-   <column width="-1" name="selbstrecht_von" type="field" hidden="0"/>
-   <column width="-1" name="nummerteilgrundstueck" type="field" hidden="0"/>
-   <column width="-1" name="flaechenmass" type="field" hidden="0"/>
-   <column width="-1" name="flaeche" type="field" hidden="0"/>
-   <column width="-1" name="qualitaet" type="field" hidden="0"/>
-   <column width="-1" name="qualitaet_txt" type="field" hidden="0"/>
-   <column width="-1" name="gem_bfs" type="field" hidden="0"/>
-   <column width="-1" name="los" type="field" hidden="0"/>
-   <column width="-1" name="lieferdatum" type="field" hidden="0"/>
-   <column width="-1" type="actions" hidden="1"/>
+   <column width="-1" name="ogc_fid" hidden="0" type="field"/>
+   <column width="-1" name="tid" hidden="0" type="field"/>
+   <column width="-1" name="nummerteilgrundstueck" hidden="0" type="field"/>
+   <column width="-1" name="flaechenmass" hidden="0" type="field"/>
+   <column width="-1" name="flaeche" hidden="0" type="field"/>
+   <column width="-1" name="qualitaet" hidden="0" type="field"/>
+   <column width="-1" name="qualitaet_txt" hidden="0" type="field"/>
+   <column width="-1" name="gem_bfs" hidden="0" type="field"/>
+   <column width="-1" name="los" hidden="0" type="field"/>
+   <column width="-1" name="lieferdatum" hidden="0" type="field"/>
+   <column width="-1" hidden="1" type="actions"/>
+   <column width="-1" name="liegenschaft_von" hidden="0" type="field"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
@@ -477,30 +476,32 @@ def my_form_open(dialog, layer, feature):
  <featformsuppress>0</featformsuppress>
  <editorlayout>generatedlayout</editorlayout>
  <editable>
-  <field editable="1" name="flaeche"/>
-  <field editable="1" name="flaechenmass"/>
-  <field editable="1" name="gem_bfs"/>
-  <field editable="1" name="lieferdatum"/>
-  <field editable="1" name="los"/>
-  <field editable="1" name="nummerteilgrundstueck"/>
-  <field editable="1" name="ogc_fid"/>
-  <field editable="1" name="qualitaet"/>
-  <field editable="1" name="qualitaet_txt"/>
-  <field editable="1" name="selbstrecht_von"/>
-  <field editable="1" name="tid"/>
+  <field name="flaeche" editable="1"/>
+  <field name="flaechenmass" editable="1"/>
+  <field name="gem_bfs" editable="1"/>
+  <field name="lieferdatum" editable="1"/>
+  <field name="liegenschaft_von" editable="1"/>
+  <field name="los" editable="1"/>
+  <field name="nummerteilgrundstueck" editable="1"/>
+  <field name="ogc_fid" editable="1"/>
+  <field name="qualitaet" editable="1"/>
+  <field name="qualitaet_txt" editable="1"/>
+  <field name="selbstrecht_von" editable="1"/>
+  <field name="tid" editable="1"/>
  </editable>
  <labelOnTop>
-  <field labelOnTop="0" name="flaeche"/>
-  <field labelOnTop="0" name="flaechenmass"/>
-  <field labelOnTop="0" name="gem_bfs"/>
-  <field labelOnTop="0" name="lieferdatum"/>
-  <field labelOnTop="0" name="los"/>
-  <field labelOnTop="0" name="nummerteilgrundstueck"/>
-  <field labelOnTop="0" name="ogc_fid"/>
-  <field labelOnTop="0" name="qualitaet"/>
-  <field labelOnTop="0" name="qualitaet_txt"/>
-  <field labelOnTop="0" name="selbstrecht_von"/>
-  <field labelOnTop="0" name="tid"/>
+  <field name="flaeche" labelOnTop="0"/>
+  <field name="flaechenmass" labelOnTop="0"/>
+  <field name="gem_bfs" labelOnTop="0"/>
+  <field name="lieferdatum" labelOnTop="0"/>
+  <field name="liegenschaft_von" labelOnTop="0"/>
+  <field name="los" labelOnTop="0"/>
+  <field name="nummerteilgrundstueck" labelOnTop="0"/>
+  <field name="ogc_fid" labelOnTop="0"/>
+  <field name="qualitaet" labelOnTop="0"/>
+  <field name="qualitaet_txt" labelOnTop="0"/>
+  <field name="selbstrecht_von" labelOnTop="0"/>
+  <field name="tid" labelOnTop="0"/>
  </labelOnTop>
  <widgets/>
  <previewExpression>ogc_fid</previewExpression>

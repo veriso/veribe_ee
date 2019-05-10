@@ -1,60 +1,33 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis labelsEnabled="0" simplifyDrawingHints="1" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" simplifyLocal="1" version="3.4.4-Madeira" maxScale="0" minScale="1e+8" readOnly="0">
+<qgis simplifyAlgorithm="0" simplifyDrawingHints="1" simplifyMaxScale="1" readOnly="0" hasScaleBasedVisibilityFlag="0" maxScale="0" labelsEnabled="0" simplifyLocal="1" version="3.4.4-Madeira" simplifyDrawingTol="1" minScale="1e+8" styleCategories="AllStyleCategories">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 forceraster="0" enableorderby="0" type="categorizedSymbol" attr="entstehung" symbollevels="0">
-  <source-symbol>
-   <symbol alpha="1" name="0" type="fill" clip_to_extent="1" force_rhr="0">
-    <layer class="SimpleFill" pass="0" enabled="1" locked="0">
-     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="color" v="180,220,247,255"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="35,35,35,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0.26"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="style" v="solid"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-  </source-symbol>
-  <rotation/>
-  <sizescale/>
- </renderer-v2>
+ <renderer-v2 type="nullSymbol"/>
  <labeling type="simple">
   <settings>
-   <text-style namedStyle="Book" blendMode="0" fontSizeUnit="Point" previewBkgrdColor="#ffffff" fontLetterSpacing="0" textColor="0,0,0,255" fontStrikeout="0" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" textOpacity="1" useSubstitutions="0" fontUnderline="0" fontCapitals="0" fontWeight="50" isExpression="0" fieldName="" fontSize="12" fontFamily="Sans Serif" fontWordSpacing="0">
-    <text-buffer bufferDraw="1" bufferSizeUnits="Point" bufferNoFill="1" bufferSize="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="255,255,255,255" bufferOpacity="1" bufferJoinStyle="128"/>
-    <background shapeOffsetUnit="MM" shapeSizeUnit="MM" shapeOffsetX="0" shapeDraw="0" shapeSizeX="0" shapeRadiiY="0" shapeRotationType="0" shapeJoinStyle="64" shapeBlendMode="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeBorderWidth="0" shapeRadiiUnit="MM" shapeSizeY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeFillColor="255,255,255,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeSVGFile="" shapeSizeType="0" shapeRotation="0" shapeType="0" shapeOpacity="1"/>
-    <shadow shadowOffsetUnit="MM" shadowScale="100" shadowOffsetAngle="135" shadowOffsetDist="1" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowUnder="0" shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7"/>
+   <text-style fontStrikeout="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" textOpacity="1" fontSize="12" fontCapitals="0" fieldName="" fontUnderline="0" fontSizeUnit="Point" blendMode="0" multilineHeight="1" useSubstitutions="0" fontItalic="0" previewBkgrdColor="#ffffff" fontFamily="Sans Serif" fontWeight="50" isExpression="0" fontWordSpacing="0" fontLetterSpacing="0" textColor="0,0,0,255" namedStyle="Book">
+    <text-buffer bufferBlendMode="0" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" bufferColor="255,255,255,255" bufferOpacity="1"/>
+    <background shapeBorderWidthUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeOffsetY="0" shapeBlendMode="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeJoinStyle="64" shapeSizeType="0" shapeRadiiX="0" shapeRadiiUnit="MM" shapeType="0" shapeSizeX="0" shapeRotationType="0" shapeOffsetX="0" shapeOpacity="1" shapeRadiiY="0" shapeDraw="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidth="0" shapeSVGFile="" shapeOffsetUnit="MM" shapeRotation="0" shapeFillColor="255,255,255,255"/>
+    <shadow shadowRadiusAlphaOnly="0" shadowUnder="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7" shadowBlendMode="6" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusUnit="MM" shadowRadius="1.5" shadowScale="100" shadowOffsetUnit="MM" shadowOffsetDist="1" shadowDraw="0"/>
     <substitutions/>
    </text-style>
-   <text-format decimals="3" multilineAlign="3" reverseDirectionSymbol="0" autoWrapLength="0" formatNumbers="0" rightDirectionSymbol=">" placeDirectionSymbol="0" addDirectionSymbol="0" wrapChar="" plussign="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;"/>
-   <placement quadOffset="4" maxCurvedCharAngleOut="-25" distMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" offsetUnits="MM" offsetType="0" placementFlags="10" xOffset="0" fitInPolygonOnly="0" distUnits="MM" centroidInside="0" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" centroidWhole="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" placement="1" maxCurvedCharAngleIn="25" dist="0" priority="5"/>
-   <rendering scaleVisibility="0" obstacle="1" obstacleType="0" fontLimitPixelSize="0" fontMinPixelSize="3" minFeatureSize="0" zIndex="0" upsidedownLabels="0" mergeLines="0" limitNumLabels="0" displayAll="0" scaleMin="0" drawLabels="1" fontMaxPixelSize="10000" scaleMax="0" maxNumLabels="2000" labelPerPart="0" obstacleFactor="1"/>
+   <text-format useMaxLineLengthForAutoWrap="1" plussign="0" multilineAlign="3" formatNumbers="0" decimals="3" leftDirectionSymbol="&lt;" wrapChar="" addDirectionSymbol="0" reverseDirectionSymbol="0" rightDirectionSymbol=">" placeDirectionSymbol="0" autoWrapLength="0"/>
+   <placement centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" rotationAngle="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" xOffset="0" quadOffset="4" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" placement="1" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" repeatDistance="0" repeatDistanceUnits="MM" priority="5" placementFlags="10" dist="0" preserveRotation="1" fitInPolygonOnly="0" offsetType="0" offsetUnits="MM" yOffset="0" centroidInside="0" maxCurvedCharAngleOut="-25"/>
+   <rendering scaleVisibility="0" obstacleType="0" scaleMin="0" fontLimitPixelSize="0" displayAll="0" limitNumLabels="0" obstacleFactor="1" scaleMax="0" maxNumLabels="2000" drawLabels="1" fontMinPixelSize="3" labelPerPart="0" obstacle="1" zIndex="0" fontMaxPixelSize="10000" mergeLines="0" upsidedownLabels="0" minFeatureSize="0"/>
    <dd_properties>
     <Option type="Map">
-     <Option name="name" type="QString" value=""/>
+     <Option value="" name="name" type="QString"/>
      <Option name="properties"/>
-     <Option name="type" type="QString" value="collection"/>
+     <Option value="collection" name="type" type="QString"/>
     </Option>
    </dd_properties>
   </settings>
  </labeling>
  <customproperties>
-  <property key="embeddedWidgets/count" value="0"/>
+  <property value="0" key="embeddedWidgets/count"/>
   <property key="variableNames"/>
   <property key="variableValues"/>
  </customproperties>
@@ -62,16 +35,17 @@
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory penColor="#000000" width="15" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" labelPlacementMethod="XHeight" sizeType="MM" penWidth="0" diagramOrientation="Up" maxScaleDenominator="1e+8" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" lineSizeType="MM" rotationOffset="270" backgroundAlpha="255" backgroundColor="#ffffff" minimumSize="0" height="15" enabled="0" opacity="1" penAlpha="255" scaleDependency="Area">
-   <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
+  <DiagramCategory minScaleDenominator="0" penColor="#000000" labelPlacementMethod="XHeight" backgroundColor="#ffffff" penAlpha="255" opacity="1" scaleBasedVisibility="0" width="15" barWidth="5" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" sizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+8" scaleDependency="Area" height="15" backgroundAlpha="255" sizeType="MM" diagramOrientation="Up" minimumSize="0" enabled="0" penWidth="0" lineSizeType="MM">
+   <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+   <attribute color="#000000" label="" field=""/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings dist="0" linePlacementFlags="18" placement="1" obstacle="0" zIndex="0" priority="0" showAll="1">
+ <DiagramLayerSettings linePlacementFlags="18" priority="0" dist="0" placement="1" showAll="1" obstacle="0" zIndex="0">
   <properties>
    <Option type="Map">
-    <Option name="name" type="QString" value=""/>
+    <Option value="" name="name" type="QString"/>
     <Option name="properties"/>
-    <Option name="type" type="QString" value="collection"/>
+    <Option value="collection" name="type" type="QString"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
@@ -131,57 +105,57 @@
   </field>
  </fieldConfiguration>
  <aliases>
-  <alias field="ogc_fid" name="" index="0"/>
-  <alias field="ls_ogc_fid" name="" index="1"/>
-  <alias field="nummer" name="" index="2"/>
-  <alias field="entstehung" name="" index="3"/>
-  <alias field="gem_bfs" name="" index="4"/>
-  <alias field="lieferdatum" name="" index="5"/>
-  <alias field="los" name="" index="6"/>
+  <alias index="0" name="" field="ogc_fid"/>
+  <alias index="1" name="" field="ls_ogc_fid"/>
+  <alias index="2" name="" field="nummer"/>
+  <alias index="3" name="" field="entstehung"/>
+  <alias index="4" name="" field="gem_bfs"/>
+  <alias index="5" name="" field="lieferdatum"/>
+  <alias index="6" name="" field="los"/>
  </aliases>
  <excludeAttributesWMS/>
  <excludeAttributesWFS/>
  <defaults>
-  <default field="ogc_fid" expression="" applyOnUpdate="0"/>
-  <default field="ls_ogc_fid" expression="" applyOnUpdate="0"/>
-  <default field="nummer" expression="" applyOnUpdate="0"/>
-  <default field="entstehung" expression="" applyOnUpdate="0"/>
-  <default field="gem_bfs" expression="" applyOnUpdate="0"/>
-  <default field="lieferdatum" expression="" applyOnUpdate="0"/>
-  <default field="los" expression="" applyOnUpdate="0"/>
+  <default applyOnUpdate="0" expression="" field="ogc_fid"/>
+  <default applyOnUpdate="0" expression="" field="ls_ogc_fid"/>
+  <default applyOnUpdate="0" expression="" field="nummer"/>
+  <default applyOnUpdate="0" expression="" field="entstehung"/>
+  <default applyOnUpdate="0" expression="" field="gem_bfs"/>
+  <default applyOnUpdate="0" expression="" field="lieferdatum"/>
+  <default applyOnUpdate="0" expression="" field="los"/>
  </defaults>
  <constraints>
-  <constraint field="ogc_fid" unique_strength="1" exp_strength="0" notnull_strength="1" constraints="3"/>
-  <constraint field="ls_ogc_fid" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="nummer" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="entstehung" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="gem_bfs" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="lieferdatum" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="los" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
+  <constraint notnull_strength="1" constraints="3" exp_strength="0" unique_strength="1" field="ogc_fid"/>
+  <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="ls_ogc_fid"/>
+  <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="nummer"/>
+  <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="entstehung"/>
+  <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="gem_bfs"/>
+  <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="lieferdatum"/>
+  <constraint notnull_strength="0" constraints="0" exp_strength="0" unique_strength="0" field="los"/>
  </constraints>
  <constraintExpressions>
-  <constraint field="ogc_fid" exp="" desc=""/>
-  <constraint field="ls_ogc_fid" exp="" desc=""/>
-  <constraint field="nummer" exp="" desc=""/>
-  <constraint field="entstehung" exp="" desc=""/>
-  <constraint field="gem_bfs" exp="" desc=""/>
-  <constraint field="lieferdatum" exp="" desc=""/>
-  <constraint field="los" exp="" desc=""/>
+  <constraint desc="" field="ogc_fid" exp=""/>
+  <constraint desc="" field="ls_ogc_fid" exp=""/>
+  <constraint desc="" field="nummer" exp=""/>
+  <constraint desc="" field="entstehung" exp=""/>
+  <constraint desc="" field="gem_bfs" exp=""/>
+  <constraint desc="" field="lieferdatum" exp=""/>
+  <constraint desc="" field="los" exp=""/>
  </constraintExpressions>
  <expressionfields/>
  <attributeactions>
-  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
  </attributeactions>
- <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+ <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
   <columns>
-   <column name="ogc_fid" type="field" width="-1" hidden="0"/>
-   <column name="ls_ogc_fid" type="field" width="-1" hidden="0"/>
-   <column name="nummer" type="field" width="-1" hidden="0"/>
-   <column name="entstehung" type="field" width="-1" hidden="0"/>
-   <column name="gem_bfs" type="field" width="-1" hidden="0"/>
-   <column name="lieferdatum" type="field" width="-1" hidden="0"/>
-   <column name="los" type="field" width="-1" hidden="0"/>
-   <column type="actions" width="-1" hidden="1"/>
+   <column name="ogc_fid" hidden="0" width="-1" type="field"/>
+   <column name="ls_ogc_fid" hidden="0" width="-1" type="field"/>
+   <column name="nummer" hidden="0" width="-1" type="field"/>
+   <column name="entstehung" hidden="0" width="-1" type="field"/>
+   <column name="gem_bfs" hidden="0" width="-1" type="field"/>
+   <column name="lieferdatum" hidden="0" width="-1" type="field"/>
+   <column name="los" hidden="0" width="-1" type="field"/>
+   <column hidden="1" width="-1" type="actions"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
@@ -212,22 +186,22 @@ def my_form_open(dialog, layer, feature):
  <featformsuppress>0</featformsuppress>
  <editorlayout>generatedlayout</editorlayout>
  <editable>
-  <field editable="1" name="entstehung"/>
-  <field editable="1" name="gem_bfs"/>
-  <field editable="1" name="lieferdatum"/>
-  <field editable="1" name="los"/>
-  <field editable="1" name="ls_ogc_fid"/>
-  <field editable="1" name="nummer"/>
-  <field editable="1" name="ogc_fid"/>
+  <field name="entstehung" editable="1"/>
+  <field name="gem_bfs" editable="1"/>
+  <field name="lieferdatum" editable="1"/>
+  <field name="los" editable="1"/>
+  <field name="ls_ogc_fid" editable="1"/>
+  <field name="nummer" editable="1"/>
+  <field name="ogc_fid" editable="1"/>
  </editable>
  <labelOnTop>
-  <field name="entstehung" labelOnTop="0"/>
-  <field name="gem_bfs" labelOnTop="0"/>
-  <field name="lieferdatum" labelOnTop="0"/>
-  <field name="los" labelOnTop="0"/>
-  <field name="ls_ogc_fid" labelOnTop="0"/>
-  <field name="nummer" labelOnTop="0"/>
-  <field name="ogc_fid" labelOnTop="0"/>
+  <field labelOnTop="0" name="entstehung"/>
+  <field labelOnTop="0" name="gem_bfs"/>
+  <field labelOnTop="0" name="lieferdatum"/>
+  <field labelOnTop="0" name="los"/>
+  <field labelOnTop="0" name="ls_ogc_fid"/>
+  <field labelOnTop="0" name="nummer"/>
+  <field labelOnTop="0" name="ogc_fid"/>
  </labelOnTop>
  <widgets/>
  <previewExpression>ogc_fid</previewExpression>
