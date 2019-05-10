@@ -1,276 +1,510 @@
-<qgis hasScaleBasedVisibilityFlag="0" maxLabelScale="1e+08" maximumScale="1e+08" minLabelScale="1" minimumScale="0" scaleBasedLabelVisibilityFlag="0" simplifyDrawingHints="0" simplifyDrawingTol="1" simplifyLocal="1" simplifyMaxScale="1" version="2.5.0-Master">
-  <edittypes>
-    <edittype name="ogc_fid" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="nbident" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="nummer" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="egris_egrid" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="gueltigkeit" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="gueltigkeit_txt" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="vollstaendigkeit" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="vollstaendigkeit_txt" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="art" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="art_txt" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="gesamteflaechenmass" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="gem_bfs" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="los" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="lieferdatum" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="nummerteilgrundstueck" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-    <edittype name="lin" widgetv2type="TextEdit">
-      <widgetv2config IsMultiline="0" UseHtml="0" fieldEditable="1" labelOnTop="0" />
-    </edittype>
-  </edittypes>
-  <renderer-v2 symbollevels="0" type="singleSymbol">
-    <symbols>
-      <symbol alpha="1" name="0" type="marker">
-        <layer class="SimpleMarker" locked="0" pass="0">
-          <prop k="angle" v="0" />
-          <prop k="color" v="0,0,0,255" />
-          <prop k="horizontal_anchor_point" v="1" />
-          <prop k="name" v="cross" />
-          <prop k="offset" v="0,0" />
-          <prop k="offset_map_unit_scale" v="0,0" />
-          <prop k="offset_unit" v="MM" />
-          <prop k="outline_color" v="0,0,0,255" />
-          <prop k="outline_style" v="solid" />
-          <prop k="outline_width" v="0" />
-          <prop k="outline_width_map_unit_scale" v="0,0" />
-          <prop k="outline_width_unit" v="MM" />
-          <prop k="scale_method" v="area" />
-          <prop k="size" v="0.5" />
-          <prop k="size_map_unit_scale" v="0,0" />
-          <prop k="size_unit" v="MM" />
-          <prop k="vertical_anchor_point" v="1" />
-        </layer>
-      </symbol>
-    </symbols>
-    <rotation />
-    <sizescale scalemethod="area" />
-  </renderer-v2>
-  <customproperties>
-    <property key="labeling" value="pal" />
-    <property key="labeling/addDirectionSymbol" value="false" />
-    <property key="labeling/angleOffset" value="0" />
-    <property key="labeling/blendMode" value="0" />
-    <property key="labeling/bufferBlendMode" value="0" />
-    <property key="labeling/bufferColorA" value="255" />
-    <property key="labeling/bufferColorB" value="255" />
-    <property key="labeling/bufferColorG" value="255" />
-    <property key="labeling/bufferColorR" value="255" />
-    <property key="labeling/bufferDraw" value="true" />
-    <property key="labeling/bufferJoinStyle" value="64" />
-    <property key="labeling/bufferNoFill" value="false" />
-    <property key="labeling/bufferSize" value="1" />
-    <property key="labeling/bufferSizeInMapUnits" value="false" />
-    <property key="labeling/bufferSizeMapUnitMaxScale" value="0" />
-    <property key="labeling/bufferSizeMapUnitMinScale" value="0" />
-    <property key="labeling/bufferTransp" value="0" />
-    <property key="labeling/centroidInside" value="false" />
-    <property key="labeling/centroidWhole" value="false" />
-    <property key="labeling/decimals" value="0" />
-    <property key="labeling/displayAll" value="false" />
-    <property key="labeling/dist" value="0" />
-    <property key="labeling/distInMapUnits" value="false" />
-    <property key="labeling/distMapUnitMaxScale" value="0" />
-    <property key="labeling/distMapUnitMinScale" value="0" />
-    <property key="labeling/enabled" value="false" />
-    <property key="labeling/fieldName" value="" />
-    <property key="labeling/fontBold" value="false" />
-    <property key="labeling/fontCapitals" value="0" />
-    <property key="labeling/fontFamily" value="Cantarell" />
-    <property key="labeling/fontItalic" value="false" />
-    <property key="labeling/fontLetterSpacing" value="0" />
-    <property key="labeling/fontLimitPixelSize" value="false" />
-    <property key="labeling/fontMaxPixelSize" value="10000" />
-    <property key="labeling/fontMinPixelSize" value="3" />
-    <property key="labeling/fontSize" value="11" />
-    <property key="labeling/fontSizeInMapUnits" value="false" />
-    <property key="labeling/fontSizeMapUnitMaxScale" value="0" />
-    <property key="labeling/fontSizeMapUnitMinScale" value="0" />
-    <property key="labeling/fontStrikeout" value="false" />
-    <property key="labeling/fontUnderline" value="false" />
-    <property key="labeling/fontWeight" value="50" />
-    <property key="labeling/fontWordSpacing" value="0" />
-    <property key="labeling/formatNumbers" value="false" />
-    <property key="labeling/isExpression" value="true" />
-    <property key="labeling/labelOffsetInMapUnits" value="true" />
-    <property key="labeling/labelOffsetMapUnitMaxScale" value="0" />
-    <property key="labeling/labelOffsetMapUnitMinScale" value="0" />
-    <property key="labeling/labelPerPart" value="false" />
-    <property key="labeling/leftDirectionSymbol" value="&lt;" />
-    <property key="labeling/limitNumLabels" value="false" />
-    <property key="labeling/maxCurvedCharAngleIn" value="20" />
-    <property key="labeling/maxCurvedCharAngleOut" value="-20" />
-    <property key="labeling/maxNumLabels" value="2000" />
-    <property key="labeling/mergeLines" value="false" />
-    <property key="labeling/minFeatureSize" value="0" />
-    <property key="labeling/multilineAlign" value="0" />
-    <property key="labeling/multilineHeight" value="1" />
-    <property key="labeling/namedStyle" value="Regular" />
-    <property key="labeling/obstacle" value="true" />
-    <property key="labeling/placeDirectionSymbol" value="0" />
-    <property key="labeling/placement" value="0" />
-    <property key="labeling/placementFlags" value="0" />
-    <property key="labeling/plussign" value="false" />
-    <property key="labeling/preserveRotation" value="true" />
-    <property key="labeling/previewBkgrdColor" value="#ffffff" />
-    <property key="labeling/priority" value="5" />
-    <property key="labeling/quadOffset" value="4" />
-    <property key="labeling/repeatDistance" value="0" />
-    <property key="labeling/repeatDistanceMapUnitMaxScale" value="0" />
-    <property key="labeling/repeatDistanceMapUnitMinScale" value="0" />
-    <property key="labeling/repeatDistanceUnit" value="1" />
-    <property key="labeling/reverseDirectionSymbol" value="false" />
-    <property key="labeling/rightDirectionSymbol" value="&gt;" />
-    <property key="labeling/scaleMax" value="10000000" />
-    <property key="labeling/scaleMin" value="1" />
-    <property key="labeling/scaleVisibility" value="false" />
-    <property key="labeling/shadowBlendMode" value="6" />
-    <property key="labeling/shadowColorB" value="0" />
-    <property key="labeling/shadowColorG" value="0" />
-    <property key="labeling/shadowColorR" value="0" />
-    <property key="labeling/shadowDraw" value="false" />
-    <property key="labeling/shadowOffsetAngle" value="135" />
-    <property key="labeling/shadowOffsetDist" value="1" />
-    <property key="labeling/shadowOffsetGlobal" value="true" />
-    <property key="labeling/shadowOffsetMapUnitMaxScale" value="0" />
-    <property key="labeling/shadowOffsetMapUnitMinScale" value="0" />
-    <property key="labeling/shadowOffsetUnits" value="1" />
-    <property key="labeling/shadowRadius" value="1.5" />
-    <property key="labeling/shadowRadiusAlphaOnly" value="false" />
-    <property key="labeling/shadowRadiusMapUnitMaxScale" value="0" />
-    <property key="labeling/shadowRadiusMapUnitMinScale" value="0" />
-    <property key="labeling/shadowRadiusUnits" value="1" />
-    <property key="labeling/shadowScale" value="100" />
-    <property key="labeling/shadowTransparency" value="30" />
-    <property key="labeling/shadowUnder" value="0" />
-    <property key="labeling/shapeBlendMode" value="0" />
-    <property key="labeling/shapeBorderColorA" value="255" />
-    <property key="labeling/shapeBorderColorB" value="128" />
-    <property key="labeling/shapeBorderColorG" value="128" />
-    <property key="labeling/shapeBorderColorR" value="128" />
-    <property key="labeling/shapeBorderWidth" value="0" />
-    <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0" />
-    <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0" />
-    <property key="labeling/shapeBorderWidthUnits" value="1" />
-    <property key="labeling/shapeDraw" value="false" />
-    <property key="labeling/shapeFillColorA" value="255" />
-    <property key="labeling/shapeFillColorB" value="255" />
-    <property key="labeling/shapeFillColorG" value="255" />
-    <property key="labeling/shapeFillColorR" value="255" />
-    <property key="labeling/shapeJoinStyle" value="64" />
-    <property key="labeling/shapeOffsetMapUnitMaxScale" value="0" />
-    <property key="labeling/shapeOffsetMapUnitMinScale" value="0" />
-    <property key="labeling/shapeOffsetUnits" value="1" />
-    <property key="labeling/shapeOffsetX" value="0" />
-    <property key="labeling/shapeOffsetY" value="0" />
-    <property key="labeling/shapeRadiiMapUnitMaxScale" value="0" />
-    <property key="labeling/shapeRadiiMapUnitMinScale" value="0" />
-    <property key="labeling/shapeRadiiUnits" value="1" />
-    <property key="labeling/shapeRadiiX" value="0" />
-    <property key="labeling/shapeRadiiY" value="0" />
-    <property key="labeling/shapeRotation" value="0" />
-    <property key="labeling/shapeRotationType" value="0" />
-    <property key="labeling/shapeSVGFile" value="" />
-    <property key="labeling/shapeSizeMapUnitMaxScale" value="0" />
-    <property key="labeling/shapeSizeMapUnitMinScale" value="0" />
-    <property key="labeling/shapeSizeType" value="0" />
-    <property key="labeling/shapeSizeUnits" value="1" />
-    <property key="labeling/shapeSizeX" value="0" />
-    <property key="labeling/shapeSizeY" value="0" />
-    <property key="labeling/shapeTransparency" value="0" />
-    <property key="labeling/shapeType" value="0" />
-    <property key="labeling/textColorA" value="255" />
-    <property key="labeling/textColorB" value="0" />
-    <property key="labeling/textColorG" value="0" />
-    <property key="labeling/textColorR" value="0" />
-    <property key="labeling/textTransp" value="0" />
-    <property key="labeling/upsidedownLabels" value="0" />
-    <property key="labeling/wrapChar" value="" />
-    <property key="labeling/xOffset" value="0" />
-    <property key="labeling/yOffset" value="0" />
-  </customproperties>
-  <blendMode>0</blendMode>
-  <featureBlendMode>0</featureBlendMode>
-  <layerTransparency>0</layerTransparency>
-  <displayfield>egris_egrid</displayfield>
-  <label>1</label>
-  <labelfield>nummer</labelfield>
-  <labelattributes>
-    <label fieldname="nummer" text="Beschriftung" />
-    <family fieldname="" name="Ubuntu" />
-    <size fieldname="" units="mu" value="5" />
-    <bold fieldname="" on="0" />
-    <italic fieldname="" on="0" />
-    <underline fieldname="" on="0" />
-    <strikeout fieldname="" on="0" />
-    <color blue="0" fieldname="" green="0" red="0" />
-    <x fieldname="" />
-    <y fieldname="" />
-    <offset units="pt" x="0" xfieldname="" y="0" yfieldname="" />
-    <angle auto="0" fieldname="" value="0" />
-    <alignment fieldname="" value="aboveright" />
-    <buffercolor blue="255" fieldname="" green="255" red="255" />
-    <buffersize fieldname="" units="pt" value="1" />
-    <bufferenabled fieldname="" on="" />
-    <multilineenabled fieldname="" on="" />
-    <selectedonly on="" />
-  </labelattributes>
-  <editform />
-  <editforminit />
-  <featformsuppress>0</featformsuppress>
-  <annotationform />
-  <editorlayout>generatedlayout</editorlayout>
-  <excludeAttributesWMS />
-  <excludeAttributesWFS />
-  <attributeactions />
-<labeling type="simple">
-  <settings>
-    <text-style blendMode="0" fieldName="nummer" fontCapitals="0" fontFamily="Ubuntu" fontItalic="0" fontLetterSpacing="0" fontSize="5" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontSizeUnit="MapUnit" fontStrikeout="0" fontUnderline="0" fontWeight="50" fontWordSpacing="0" isExpression="0" multilineHeight="1" namedStyle="Book" previewBkgrdColor="#ffffff" textColor="0,0,0" textOpacity="1" useSubstitutions="0">
-      <text-buffer bufferBlendMode="0" bufferColor="255,255,255" bufferDraw="1" bufferJoinStyle="128" bufferNoFill="1" bufferOpacity="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" />
-      <background shapeBlendMode="0" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeDraw="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetX="0" shapeOffsetY="0" shapeOpacity="1" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiUnit="MM" shapeRadiiX="0" shapeRadiiY="0" shapeRotation="0" shapeRotationType="0" shapeSVGFile="" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeSizeUnit="MM" shapeSizeX="0" shapeSizeY="0" shapeType="0" />
-      <shadow shadowBlendMode="6" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetAngle="135" shadowOffsetDist="1" shadowOffsetGlobal="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowOpacity="0.7" shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowScale="100" shadowUnder="0" />
-      <substitutions />
-    </text-style>
-    <text-format addDirectionSymbol="0" autoWrapLength="0" decimals="3" formatNumbers="0" leftDirectionSymbol="&lt;" multilineAlign="3" placeDirectionSymbol="0" plussign="0" reverseDirectionSymbol="0" rightDirectionSymbol="&gt;" useMaxLineLengthForAutoWrap="1" wrapChar="" />
-    <placement centroidInside="0" centroidWhole="0" dist="0" distMapUnitScale="3x:0,0,0,0,0,0" distUnits="MM" fitInPolygonOnly="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" maxCurvedCharAngleOut="-25" offsetType="0" offsetUnits="MM" placement="1" placementFlags="10" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" priority="5" quadOffset="4" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" xOffset="0" yOffset="0" />
-    <rendering displayAll="0" drawLabels="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" fontMinPixelSize="3" labelPerPart="0" limitNumLabels="0" maxNumLabels="2000" mergeLines="0" minFeatureSize="0" obstacle="1" obstacleFactor="1" obstacleType="0" scaleMax="0" scaleMin="0" scaleVisibility="0" upsidedownLabels="0" zIndex="0" />
-    <dd_properties>
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.4.4-Madeira" simplifyDrawingTol="1" simplifyDrawingHints="0" simplifyLocal="1" labelsEnabled="1" styleCategories="AllStyleCategories" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" minScale="1e+8" simplifyMaxScale="1" readOnly="0" maxScale="0">
+ <flags>
+  <Identifiable>1</Identifiable>
+  <Removable>1</Removable>
+  <Searchable>1</Searchable>
+ </flags>
+ <renderer-v2 symbollevels="0" forceraster="0" type="singleSymbol" enableorderby="0">
+  <symbols>
+   <symbol alpha="1" clip_to_extent="1" type="marker" name="0" force_rhr="0">
+    <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
+     <prop v="0" k="angle"/>
+     <prop v="0,0,0,255" k="color"/>
+     <prop v="1" k="horizontal_anchor_point"/>
+     <prop v="bevel" k="joinstyle"/>
+     <prop v="cross" k="name"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="0,0,0,255" k="outline_color"/>
+     <prop v="solid" k="outline_style"/>
+     <prop v="0" k="outline_width"/>
+     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="area" k="scale_method"/>
+     <prop v="0.5" k="size"/>
+     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+     <prop v="MM" k="size_unit"/>
+     <prop v="1" k="vertical_anchor_point"/>
+     <data_defined_properties>
       <Option type="Map">
-        <Option name="name" type="QString" value="" />
-        <Option name="properties" />
-        <Option name="type" type="QString" value="collection" />
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
       </Option>
-    </dd_properties>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </symbols>
+  <rotation/>
+  <sizescale/>
+ </renderer-v2>
+ <labeling type="simple">
+  <settings>
+   <text-style fontItalic="0" textOpacity="1" fontStrikeout="0" fontWordSpacing="0" fontFamily="Sans Serif" fieldName="nummer" namedStyle="Normal" multilineHeight="1" blendMode="0" useSubstitutions="0" fontUnderline="0" fontSize="5" fontSizeUnit="MapUnit" fontWeight="50" textColor="0,0,0,255" previewBkgrdColor="#ffffff" isExpression="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontLetterSpacing="0" fontCapitals="0">
+    <text-buffer bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferSizeUnits="Point" bufferNoFill="1" bufferSize="1" bufferColor="255,255,255,255" bufferJoinStyle="128" bufferDraw="1"/>
+    <background shapeDraw="0" shapeRadiiX="0" shapeSVGFile="" shapeRadiiUnit="MM" shapeSizeType="0" shapeFillColor="255,255,255,255" shapeBorderWidth="0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeType="0" shapeBorderWidthUnit="MM" shapeSizeY="0" shapeRotationType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeRotation="0" shapeRadiiY="0" shapeOpacity="1" shapeOffsetUnit="MM" shapeBorderColor="128,128,128,255" shapeOffsetX="0" shapeSizeX="0" shapeBlendMode="0" shapeJoinStyle="64"/>
+    <shadow shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowBlendMode="6" shadowUnder="0" shadowScale="100" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetAngle="135" shadowOffsetDist="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowDraw="0" shadowOffsetGlobal="1" shadowOpacity="0.7" shadowRadiusUnit="MM"/>
+    <substitutions/>
+   </text-style>
+   <text-format addDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" rightDirectionSymbol=">" reverseDirectionSymbol="0" autoWrapLength="0" leftDirectionSymbol="&lt;" decimals="3" multilineAlign="3" placeDirectionSymbol="0" plussign="0" wrapChar="" formatNumbers="0"/>
+   <placement centroidWhole="0" offsetUnits="MM" distUnits="MM" placementFlags="10" xOffset="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" placement="1" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" dist="0" repeatDistanceUnits="MM" quadOffset="2" rotationAngle="0" repeatDistance="0" preserveRotation="1" fitInPolygonOnly="0" maxCurvedCharAngleOut="-25" distMapUnitScale="3x:0,0,0,0,0,0" priority="5" offsetType="0" centroidInside="0" yOffset="0" maxCurvedCharAngleIn="25"/>
+   <rendering fontMinPixelSize="3" fontMaxPixelSize="10000" obstacleType="0" obstacleFactor="1" upsidedownLabels="0" zIndex="0" scaleMin="0" scaleMax="0" mergeLines="0" labelPerPart="0" limitNumLabels="0" minFeatureSize="0" fontLimitPixelSize="0" obstacle="1" scaleVisibility="0" maxNumLabels="2000" displayAll="0" drawLabels="1"/>
+   <dd_properties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dd_properties>
   </settings>
-  </labeling>
-  </qgis>
+ </labeling>
+ <customproperties>
+  <property value="0" key="embeddedWidgets/count"/>
+  <property value="pal" key="labeling"/>
+  <property value="false" key="labeling/addDirectionSymbol"/>
+  <property value="0" key="labeling/angleOffset"/>
+  <property value="0" key="labeling/blendMode"/>
+  <property value="0" key="labeling/bufferBlendMode"/>
+  <property value="255" key="labeling/bufferColorA"/>
+  <property value="255" key="labeling/bufferColorB"/>
+  <property value="255" key="labeling/bufferColorG"/>
+  <property value="255" key="labeling/bufferColorR"/>
+  <property value="true" key="labeling/bufferDraw"/>
+  <property value="64" key="labeling/bufferJoinStyle"/>
+  <property value="false" key="labeling/bufferNoFill"/>
+  <property value="1" key="labeling/bufferSize"/>
+  <property value="false" key="labeling/bufferSizeInMapUnits"/>
+  <property value="0" key="labeling/bufferSizeMapUnitMaxScale"/>
+  <property value="0" key="labeling/bufferSizeMapUnitMinScale"/>
+  <property value="0" key="labeling/bufferTransp"/>
+  <property value="false" key="labeling/centroidInside"/>
+  <property value="false" key="labeling/centroidWhole"/>
+  <property value="0" key="labeling/decimals"/>
+  <property value="false" key="labeling/displayAll"/>
+  <property value="0" key="labeling/dist"/>
+  <property value="false" key="labeling/distInMapUnits"/>
+  <property value="0" key="labeling/distMapUnitMaxScale"/>
+  <property value="0" key="labeling/distMapUnitMinScale"/>
+  <property value="false" key="labeling/enabled"/>
+  <property value="" key="labeling/fieldName"/>
+  <property value="false" key="labeling/fontBold"/>
+  <property value="0" key="labeling/fontCapitals"/>
+  <property value="Cantarell" key="labeling/fontFamily"/>
+  <property value="false" key="labeling/fontItalic"/>
+  <property value="0" key="labeling/fontLetterSpacing"/>
+  <property value="false" key="labeling/fontLimitPixelSize"/>
+  <property value="10000" key="labeling/fontMaxPixelSize"/>
+  <property value="3" key="labeling/fontMinPixelSize"/>
+  <property value="11" key="labeling/fontSize"/>
+  <property value="false" key="labeling/fontSizeInMapUnits"/>
+  <property value="0" key="labeling/fontSizeMapUnitMaxScale"/>
+  <property value="0" key="labeling/fontSizeMapUnitMinScale"/>
+  <property value="false" key="labeling/fontStrikeout"/>
+  <property value="false" key="labeling/fontUnderline"/>
+  <property value="50" key="labeling/fontWeight"/>
+  <property value="0" key="labeling/fontWordSpacing"/>
+  <property value="false" key="labeling/formatNumbers"/>
+  <property value="true" key="labeling/isExpression"/>
+  <property value="true" key="labeling/labelOffsetInMapUnits"/>
+  <property value="0" key="labeling/labelOffsetMapUnitMaxScale"/>
+  <property value="0" key="labeling/labelOffsetMapUnitMinScale"/>
+  <property value="false" key="labeling/labelPerPart"/>
+  <property value="&lt;" key="labeling/leftDirectionSymbol"/>
+  <property value="false" key="labeling/limitNumLabels"/>
+  <property value="20" key="labeling/maxCurvedCharAngleIn"/>
+  <property value="-20" key="labeling/maxCurvedCharAngleOut"/>
+  <property value="2000" key="labeling/maxNumLabels"/>
+  <property value="false" key="labeling/mergeLines"/>
+  <property value="0" key="labeling/minFeatureSize"/>
+  <property value="0" key="labeling/multilineAlign"/>
+  <property value="1" key="labeling/multilineHeight"/>
+  <property value="Regular" key="labeling/namedStyle"/>
+  <property value="true" key="labeling/obstacle"/>
+  <property value="0" key="labeling/placeDirectionSymbol"/>
+  <property value="0" key="labeling/placement"/>
+  <property value="0" key="labeling/placementFlags"/>
+  <property value="false" key="labeling/plussign"/>
+  <property value="true" key="labeling/preserveRotation"/>
+  <property value="#ffffff" key="labeling/previewBkgrdColor"/>
+  <property value="5" key="labeling/priority"/>
+  <property value="4" key="labeling/quadOffset"/>
+  <property value="0" key="labeling/repeatDistance"/>
+  <property value="0" key="labeling/repeatDistanceMapUnitMaxScale"/>
+  <property value="0" key="labeling/repeatDistanceMapUnitMinScale"/>
+  <property value="1" key="labeling/repeatDistanceUnit"/>
+  <property value="false" key="labeling/reverseDirectionSymbol"/>
+  <property value=">" key="labeling/rightDirectionSymbol"/>
+  <property value="10000000" key="labeling/scaleMax"/>
+  <property value="1" key="labeling/scaleMin"/>
+  <property value="false" key="labeling/scaleVisibility"/>
+  <property value="6" key="labeling/shadowBlendMode"/>
+  <property value="0" key="labeling/shadowColorB"/>
+  <property value="0" key="labeling/shadowColorG"/>
+  <property value="0" key="labeling/shadowColorR"/>
+  <property value="false" key="labeling/shadowDraw"/>
+  <property value="135" key="labeling/shadowOffsetAngle"/>
+  <property value="1" key="labeling/shadowOffsetDist"/>
+  <property value="true" key="labeling/shadowOffsetGlobal"/>
+  <property value="0" key="labeling/shadowOffsetMapUnitMaxScale"/>
+  <property value="0" key="labeling/shadowOffsetMapUnitMinScale"/>
+  <property value="1" key="labeling/shadowOffsetUnits"/>
+  <property value="1.5" key="labeling/shadowRadius"/>
+  <property value="false" key="labeling/shadowRadiusAlphaOnly"/>
+  <property value="0" key="labeling/shadowRadiusMapUnitMaxScale"/>
+  <property value="0" key="labeling/shadowRadiusMapUnitMinScale"/>
+  <property value="1" key="labeling/shadowRadiusUnits"/>
+  <property value="100" key="labeling/shadowScale"/>
+  <property value="30" key="labeling/shadowTransparency"/>
+  <property value="0" key="labeling/shadowUnder"/>
+  <property value="0" key="labeling/shapeBlendMode"/>
+  <property value="255" key="labeling/shapeBorderColorA"/>
+  <property value="128" key="labeling/shapeBorderColorB"/>
+  <property value="128" key="labeling/shapeBorderColorG"/>
+  <property value="128" key="labeling/shapeBorderColorR"/>
+  <property value="0" key="labeling/shapeBorderWidth"/>
+  <property value="0" key="labeling/shapeBorderWidthMapUnitMaxScale"/>
+  <property value="0" key="labeling/shapeBorderWidthMapUnitMinScale"/>
+  <property value="1" key="labeling/shapeBorderWidthUnits"/>
+  <property value="false" key="labeling/shapeDraw"/>
+  <property value="255" key="labeling/shapeFillColorA"/>
+  <property value="255" key="labeling/shapeFillColorB"/>
+  <property value="255" key="labeling/shapeFillColorG"/>
+  <property value="255" key="labeling/shapeFillColorR"/>
+  <property value="64" key="labeling/shapeJoinStyle"/>
+  <property value="0" key="labeling/shapeOffsetMapUnitMaxScale"/>
+  <property value="0" key="labeling/shapeOffsetMapUnitMinScale"/>
+  <property value="1" key="labeling/shapeOffsetUnits"/>
+  <property value="0" key="labeling/shapeOffsetX"/>
+  <property value="0" key="labeling/shapeOffsetY"/>
+  <property value="0" key="labeling/shapeRadiiMapUnitMaxScale"/>
+  <property value="0" key="labeling/shapeRadiiMapUnitMinScale"/>
+  <property value="1" key="labeling/shapeRadiiUnits"/>
+  <property value="0" key="labeling/shapeRadiiX"/>
+  <property value="0" key="labeling/shapeRadiiY"/>
+  <property value="0" key="labeling/shapeRotation"/>
+  <property value="0" key="labeling/shapeRotationType"/>
+  <property value="" key="labeling/shapeSVGFile"/>
+  <property value="0" key="labeling/shapeSizeMapUnitMaxScale"/>
+  <property value="0" key="labeling/shapeSizeMapUnitMinScale"/>
+  <property value="0" key="labeling/shapeSizeType"/>
+  <property value="1" key="labeling/shapeSizeUnits"/>
+  <property value="0" key="labeling/shapeSizeX"/>
+  <property value="0" key="labeling/shapeSizeY"/>
+  <property value="0" key="labeling/shapeTransparency"/>
+  <property value="0" key="labeling/shapeType"/>
+  <property value="255" key="labeling/textColorA"/>
+  <property value="0" key="labeling/textColorB"/>
+  <property value="0" key="labeling/textColorG"/>
+  <property value="0" key="labeling/textColorR"/>
+  <property value="0" key="labeling/textTransp"/>
+  <property value="0" key="labeling/upsidedownLabels"/>
+  <property value="" key="labeling/wrapChar"/>
+  <property value="0" key="labeling/xOffset"/>
+  <property value="0" key="labeling/yOffset"/>
+  <property key="variableNames"/>
+  <property key="variableValues"/>
+ </customproperties>
+ <blendMode>0</blendMode>
+ <featureBlendMode>0</featureBlendMode>
+ <layerOpacity>1</layerOpacity>
+ <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+  <DiagramCategory penColor="#000000" barWidth="5" backgroundColor="#ffffff" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" penAlpha="255" scaleBasedVisibility="0" rotationOffset="270" scaleDependency="Area" minimumSize="0" labelPlacementMethod="XHeight" minScaleDenominator="0" opacity="1" penWidth="0" width="15" maxScaleDenominator="1e+8" sizeScale="3x:0,0,0,0,0,0" enabled="0" diagramOrientation="Up" height="15" sizeType="MM" backgroundAlpha="255">
+   <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+  </DiagramCategory>
+ </SingleCategoryDiagramRenderer>
+ <DiagramLayerSettings zIndex="0" priority="0" showAll="1" obstacle="0" placement="0" dist="0" linePlacementFlags="18">
+  <properties>
+   <Option type="Map">
+    <Option value="" type="QString" name="name"/>
+    <Option name="properties"/>
+    <Option value="collection" type="QString" name="type"/>
+   </Option>
+  </properties>
+ </DiagramLayerSettings>
+ <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <activeChecks/>
+  <checkConfiguration/>
+ </geometryOptions>
+ <fieldConfiguration>
+  <field name="ogc_fid">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="nbident">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="nummer">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="egris_egrid">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="gueltigkeit">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="gueltigkeit_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="vollstaendigkeit">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="vollstaendigkeit_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="art">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="art_txt">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="gesamteflaechenmass">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="gem_bfs">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="los">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="lieferdatum">
+   <editWidget type="DateTime">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="nummerteilgrundstueck">
+   <editWidget type="TextEdit">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+  <field name="lin">
+   <editWidget type="Range">
+    <config>
+     <Option/>
+    </config>
+   </editWidget>
+  </field>
+ </fieldConfiguration>
+ <aliases>
+  <alias name="" field="ogc_fid" index="0"/>
+  <alias name="" field="nbident" index="1"/>
+  <alias name="" field="nummer" index="2"/>
+  <alias name="" field="egris_egrid" index="3"/>
+  <alias name="" field="gueltigkeit" index="4"/>
+  <alias name="" field="gueltigkeit_txt" index="5"/>
+  <alias name="" field="vollstaendigkeit" index="6"/>
+  <alias name="" field="vollstaendigkeit_txt" index="7"/>
+  <alias name="" field="art" index="8"/>
+  <alias name="" field="art_txt" index="9"/>
+  <alias name="" field="gesamteflaechenmass" index="10"/>
+  <alias name="" field="gem_bfs" index="11"/>
+  <alias name="" field="los" index="12"/>
+  <alias name="" field="lieferdatum" index="13"/>
+  <alias name="" field="nummerteilgrundstueck" index="14"/>
+  <alias name="" field="lin" index="15"/>
+ </aliases>
+ <excludeAttributesWMS/>
+ <excludeAttributesWFS/>
+ <defaults>
+  <default applyOnUpdate="0" field="ogc_fid" expression=""/>
+  <default applyOnUpdate="0" field="nbident" expression=""/>
+  <default applyOnUpdate="0" field="nummer" expression=""/>
+  <default applyOnUpdate="0" field="egris_egrid" expression=""/>
+  <default applyOnUpdate="0" field="gueltigkeit" expression=""/>
+  <default applyOnUpdate="0" field="gueltigkeit_txt" expression=""/>
+  <default applyOnUpdate="0" field="vollstaendigkeit" expression=""/>
+  <default applyOnUpdate="0" field="vollstaendigkeit_txt" expression=""/>
+  <default applyOnUpdate="0" field="art" expression=""/>
+  <default applyOnUpdate="0" field="art_txt" expression=""/>
+  <default applyOnUpdate="0" field="gesamteflaechenmass" expression=""/>
+  <default applyOnUpdate="0" field="gem_bfs" expression=""/>
+  <default applyOnUpdate="0" field="los" expression=""/>
+  <default applyOnUpdate="0" field="lieferdatum" expression=""/>
+  <default applyOnUpdate="0" field="nummerteilgrundstueck" expression=""/>
+  <default applyOnUpdate="0" field="lin" expression=""/>
+ </defaults>
+ <constraints>
+  <constraint constraints="3" exp_strength="0" field="ogc_fid" notnull_strength="1" unique_strength="1"/>
+  <constraint constraints="0" exp_strength="0" field="nbident" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="nummer" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="egris_egrid" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="gueltigkeit" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="gueltigkeit_txt" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="vollstaendigkeit" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="vollstaendigkeit_txt" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="art" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="art_txt" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="gesamteflaechenmass" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="gem_bfs" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="los" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="lieferdatum" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="nummerteilgrundstueck" notnull_strength="0" unique_strength="0"/>
+  <constraint constraints="0" exp_strength="0" field="lin" notnull_strength="0" unique_strength="0"/>
+ </constraints>
+ <constraintExpressions>
+  <constraint desc="" field="ogc_fid" exp=""/>
+  <constraint desc="" field="nbident" exp=""/>
+  <constraint desc="" field="nummer" exp=""/>
+  <constraint desc="" field="egris_egrid" exp=""/>
+  <constraint desc="" field="gueltigkeit" exp=""/>
+  <constraint desc="" field="gueltigkeit_txt" exp=""/>
+  <constraint desc="" field="vollstaendigkeit" exp=""/>
+  <constraint desc="" field="vollstaendigkeit_txt" exp=""/>
+  <constraint desc="" field="art" exp=""/>
+  <constraint desc="" field="art_txt" exp=""/>
+  <constraint desc="" field="gesamteflaechenmass" exp=""/>
+  <constraint desc="" field="gem_bfs" exp=""/>
+  <constraint desc="" field="los" exp=""/>
+  <constraint desc="" field="lieferdatum" exp=""/>
+  <constraint desc="" field="nummerteilgrundstueck" exp=""/>
+  <constraint desc="" field="lin" exp=""/>
+ </constraintExpressions>
+ <expressionfields/>
+ <attributeactions>
+  <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+ </attributeactions>
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+  <columns>
+   <column hidden="0" type="field" name="ogc_fid" width="-1"/>
+   <column hidden="0" type="field" name="nbident" width="-1"/>
+   <column hidden="0" type="field" name="nummer" width="-1"/>
+   <column hidden="0" type="field" name="egris_egrid" width="-1"/>
+   <column hidden="0" type="field" name="gueltigkeit" width="-1"/>
+   <column hidden="0" type="field" name="gueltigkeit_txt" width="-1"/>
+   <column hidden="0" type="field" name="vollstaendigkeit" width="-1"/>
+   <column hidden="0" type="field" name="vollstaendigkeit_txt" width="-1"/>
+   <column hidden="0" type="field" name="art" width="-1"/>
+   <column hidden="0" type="field" name="art_txt" width="-1"/>
+   <column hidden="0" type="field" name="gesamteflaechenmass" width="-1"/>
+   <column hidden="0" type="field" name="gem_bfs" width="-1"/>
+   <column hidden="0" type="field" name="los" width="-1"/>
+   <column hidden="0" type="field" name="lieferdatum" width="-1"/>
+   <column hidden="0" type="field" name="nummerteilgrundstueck" width="-1"/>
+   <column hidden="0" type="field" name="lin" width="-1"/>
+   <column hidden="1" type="actions" width="-1"/>
+  </columns>
+ </attributetableconfig>
+ <conditionalstyles>
+  <rowstyles/>
+  <fieldstyles/>
+ </conditionalstyles>
+ <editform tolerant="1"></editform>
+ <editforminit/>
+ <editforminitcodesource>0</editforminitcodesource>
+ <editforminitfilepath></editforminitfilepath>
+ <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+ <featformsuppress>0</featformsuppress>
+ <editorlayout>generatedlayout</editorlayout>
+ <editable>
+  <field name="art" editable="1"/>
+  <field name="art_txt" editable="1"/>
+  <field name="egris_egrid" editable="1"/>
+  <field name="gem_bfs" editable="1"/>
+  <field name="gesamteflaechenmass" editable="1"/>
+  <field name="gueltigkeit" editable="1"/>
+  <field name="gueltigkeit_txt" editable="1"/>
+  <field name="lieferdatum" editable="1"/>
+  <field name="lin" editable="1"/>
+  <field name="los" editable="1"/>
+  <field name="nbident" editable="1"/>
+  <field name="nummer" editable="1"/>
+  <field name="nummerteilgrundstueck" editable="1"/>
+  <field name="ogc_fid" editable="1"/>
+  <field name="vollstaendigkeit" editable="1"/>
+  <field name="vollstaendigkeit_txt" editable="1"/>
+ </editable>
+ <labelOnTop>
+  <field labelOnTop="0" name="art"/>
+  <field labelOnTop="0" name="art_txt"/>
+  <field labelOnTop="0" name="egris_egrid"/>
+  <field labelOnTop="0" name="gem_bfs"/>
+  <field labelOnTop="0" name="gesamteflaechenmass"/>
+  <field labelOnTop="0" name="gueltigkeit"/>
+  <field labelOnTop="0" name="gueltigkeit_txt"/>
+  <field labelOnTop="0" name="lieferdatum"/>
+  <field labelOnTop="0" name="lin"/>
+  <field labelOnTop="0" name="los"/>
+  <field labelOnTop="0" name="nbident"/>
+  <field labelOnTop="0" name="nummer"/>
+  <field labelOnTop="0" name="nummerteilgrundstueck"/>
+  <field labelOnTop="0" name="ogc_fid"/>
+  <field labelOnTop="0" name="vollstaendigkeit"/>
+  <field labelOnTop="0" name="vollstaendigkeit_txt"/>
+ </labelOnTop>
+ <widgets/>
+ <previewExpression>egris_egrid</previewExpression>
+ <mapTip></mapTip>
+ <layerGeometryType>0</layerGeometryType>
+</qgis>

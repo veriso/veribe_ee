@@ -1,30 +1,30 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis maxScale="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" minScale="1e+8" simplifyDrawingHints="1" styleCategories="AllStyleCategories" labelsEnabled="1" simplifyMaxScale="1" simplifyDrawingTol="1" version="3.4.4-Madeira" simplifyLocal="1" readOnly="0">
+<qgis simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingTol="1" version="3.4.4-Madeira" minScale="1e+8" simplifyDrawingHints="1" maxScale="0" hasScaleBasedVisibilityFlag="0" labelsEnabled="1" simplifyLocal="1" simplifyMaxScale="1" readOnly="0">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="singleSymbol">
+ <renderer-v2 type="singleSymbol" symbollevels="0" enableorderby="0" forceraster="0">
   <symbols>
-   <symbol alpha="1" name="0" clip_to_extent="1" type="fill" force_rhr="0">
-    <layer enabled="1" pass="0" locked="0" class="SimpleFill">
-     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-     <prop v="139,84,36,255" k="color"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,150,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0.8" k="outline_width"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="no" k="style"/>
+   <symbol type="fill" clip_to_extent="1" force_rhr="0" name="0" alpha="1">
+    <layer enabled="1" locked="0" pass="0" class="SimpleFill">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="139,84,36,255"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="0,150,0,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0.8"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="no"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option name="name" type="QString" value=""/>
+       <Option type="QString" name="name" value=""/>
        <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
+       <Option type="QString" name="type" value="collection"/>
       </Option>
      </data_defined_properties>
     </layer>
@@ -35,20 +35,20 @@
  </renderer-v2>
  <labeling type="simple">
   <settings>
-   <text-style fontUnderline="0" textColor="0,0,150,255" multilineHeight="1" isExpression="0" fontSizeUnit="Point" fontWeight="50" fieldName="plz" fontCapitals="0" fontWordSpacing="0" namedStyle="Normal" fontItalic="0" fontFamily="Sans Serif" fontSize="16" fontStrikeout="0" previewBkgrdColor="#ffffff" blendMode="0" useSubstitutions="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontLetterSpacing="0" textOpacity="1">
-    <text-buffer bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferOpacity="1" bufferSizeUnits="Point" bufferNoFill="1" bufferJoinStyle="128" bufferColor="255,255,255,255" bufferDraw="0"/>
-    <background shapeBorderColor="128,128,128,255" shapeOffsetUnit="MM" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeSizeUnit="MM" shapeRadiiUnit="MM" shapeSizeY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeSVGFile="" shapeRotation="0" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeOffsetX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeRadiiY="0" shapeBorderWidth="0" shapeSizeX="0" shapeType="0" shapeSizeType="0" shapeOpacity="1" shapeDraw="0"/>
-    <shadow shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowDraw="0" shadowRadius="1.5" shadowOffsetUnit="MM" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7" shadowOffsetAngle="135" shadowOffsetDist="1" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowScale="100" shadowUnder="0" shadowRadiusUnit="MM"/>
+   <text-style fontStrikeout="0" previewBkgrdColor="#ffffff" textColor="0,150,0,255" fontSizeUnit="Point" fontCapitals="0" fontWeight="50" namedStyle="Normal" fontUnderline="0" textOpacity="1" fontItalic="0" fontWordSpacing="0" useSubstitutions="0" fontLetterSpacing="0" fontFamily="Sans Serif" multilineHeight="1" fontSize="16" isExpression="0" blendMode="0" fieldName="plz" fontSizeMapUnitScale="3x:0,0,0,0,0,0">
+    <text-buffer bufferNoFill="1" bufferDraw="0" bufferJoinStyle="128" bufferOpacity="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferSizeUnits="MM" bufferColor="255,255,255,255" bufferBlendMode="0"/>
+    <background shapeOpacity="1" shapeBorderWidthUnit="MM" shapeSizeType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeSizeX="0" shapeRadiiX="0" shapeRotationType="0" shapeDraw="0" shapeBorderColor="128,128,128,255" shapeOffsetY="0" shapeRadiiUnit="MM" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeRadiiY="0" shapeBorderWidth="0" shapeOffsetX="0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeSizeUnit="MM" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBlendMode="0" shapeType="0" shapeRotation="0"/>
+    <shadow shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowScale="100" shadowOpacity="0.7" shadowOffsetUnit="MM" shadowRadius="1.5" shadowOffsetDist="1" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowUnder="0" shadowDraw="0" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowBlendMode="6" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
     <substitutions/>
    </text-style>
-   <text-format wrapChar="" autoWrapLength="0" multilineAlign="4294967295" placeDirectionSymbol="0" plussign="0" addDirectionSymbol="0" reverseDirectionSymbol="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;" rightDirectionSymbol=">" formatNumbers="0" decimals="3"/>
-   <placement repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" offsetType="0" placementFlags="10" placement="1" maxCurvedCharAngleOut="-25" yOffset="0" xOffset="0" centroidInside="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" quadOffset="7" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" repeatDistanceUnits="MM" fitInPolygonOnly="0" centroidWhole="1" maxCurvedCharAngleIn="25" rotationAngle="0" dist="0" offsetUnits="MM" preserveRotation="1" priority="5" distUnits="MM"/>
-   <rendering scaleMax="0" scaleVisibility="0" scaleMin="0" upsidedownLabels="0" displayAll="0" drawLabels="1" obstacleType="0" minFeatureSize="0" limitNumLabels="0" obstacle="1" fontLimitPixelSize="0" fontMaxPixelSize="10000" mergeLines="0" labelPerPart="0" obstacleFactor="1" maxNumLabels="2000" zIndex="0" fontMinPixelSize="3"/>
+   <text-format autoWrapLength="0" rightDirectionSymbol=">" wrapChar="" formatNumbers="0" placeDirectionSymbol="0" multilineAlign="4294967295" addDirectionSymbol="0" leftDirectionSymbol="&lt;" decimals="3" useMaxLineLengthForAutoWrap="1" reverseDirectionSymbol="0" plussign="0"/>
+   <placement yOffset="0" fitInPolygonOnly="0" placementFlags="10" centroidInside="1" maxCurvedCharAngleIn="25" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleOut="-25" centroidWhole="1" repeatDistanceUnits="MM" offsetType="0" placement="0" rotationAngle="0" quadOffset="7" preserveRotation="1" priority="5" distUnits="Point" xOffset="0" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" offsetUnits="MM" dist="1"/>
+   <rendering obstacle="1" fontMaxPixelSize="10000" fontMinPixelSize="3" limitNumLabels="0" obstacleType="0" maxNumLabels="2000" labelPerPart="0" upsidedownLabels="0" scaleMin="0" obstacleFactor="1" scaleVisibility="0" zIndex="0" displayAll="0" drawLabels="1" mergeLines="0" fontLimitPixelSize="0" minFeatureSize="0" scaleMax="0"/>
    <dd_properties>
     <Option type="Map">
-     <Option name="name" type="QString" value=""/>
+     <Option type="QString" name="name" value=""/>
      <Option name="properties"/>
-     <Option name="type" type="QString" value="collection"/>
+     <Option type="QString" name="type" value="collection"/>
     </Option>
    </dd_properties>
   </settings>
@@ -62,20 +62,20 @@
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory minimumSize="0" height="15" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" sizeType="MM" maxScaleDenominator="1e+8" opacity="1" width="15" lineSizeType="MM" scaleBasedVisibility="0" labelPlacementMethod="XHeight" penAlpha="255" barWidth="5" rotationOffset="270" penWidth="0" enabled="0" penColor="#000000" minScaleDenominator="0" backgroundAlpha="255">
-   <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+  <DiagramCategory scaleBasedVisibility="0" penWidth="0" sizeType="MM" diagramOrientation="Up" minScaleDenominator="0" penColor="#000000" penAlpha="255" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" height="15" maxScaleDenominator="1e+8" barWidth="5" backgroundColor="#ffffff" backgroundAlpha="255" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" width="15" opacity="1" enabled="0" minimumSize="0">
+   <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings dist="0" obstacle="0" showAll="1" priority="0" zIndex="0" placement="1" linePlacementFlags="18">
+ <DiagramLayerSettings zIndex="0" priority="0" placement="1" linePlacementFlags="18" obstacle="0" showAll="1" dist="0">
   <properties>
    <Option type="Map">
-    <Option name="name" type="QString" value=""/>
+    <Option type="QString" name="name" value=""/>
     <Option name="properties"/>
-    <Option name="type" type="QString" value="collection"/>
+    <Option type="QString" name="type" value="collection"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
- <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+ <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
   <activeChecks/>
   <checkConfiguration/>
  </geometryOptions>
@@ -152,42 +152,42 @@
   </field>
  </fieldConfiguration>
  <aliases>
-  <alias name="" index="0" field="ogc_fid"/>
-  <alias name="" index="1" field="t_ili_tid"/>
-  <alias name="" index="2" field="status"/>
-  <alias name="" index="3" field="status_txt"/>
-  <alias name="" index="4" field="inaenderung"/>
-  <alias name="" index="5" field="inaenderung_txt"/>
-  <alias name="" index="6" field="plz"/>
-  <alias name="" index="7" field="zusatzziffern"/>
-  <alias name="" index="8" field="entstehung"/>
-  <alias name="" index="9" field="plz6_von"/>
+  <alias field="ogc_fid" index="0" name=""/>
+  <alias field="t_ili_tid" index="1" name=""/>
+  <alias field="status" index="2" name=""/>
+  <alias field="status_txt" index="3" name=""/>
+  <alias field="inaenderung" index="4" name=""/>
+  <alias field="inaenderung_txt" index="5" name=""/>
+  <alias field="plz" index="6" name=""/>
+  <alias field="zusatzziffern" index="7" name=""/>
+  <alias field="entstehung" index="8" name=""/>
+  <alias field="plz6_von" index="9" name=""/>
  </aliases>
  <excludeAttributesWMS/>
  <excludeAttributesWFS/>
  <defaults>
-  <default expression="" applyOnUpdate="0" field="ogc_fid"/>
-  <default expression="" applyOnUpdate="0" field="t_ili_tid"/>
-  <default expression="" applyOnUpdate="0" field="status"/>
-  <default expression="" applyOnUpdate="0" field="status_txt"/>
-  <default expression="" applyOnUpdate="0" field="inaenderung"/>
-  <default expression="" applyOnUpdate="0" field="inaenderung_txt"/>
-  <default expression="" applyOnUpdate="0" field="plz"/>
-  <default expression="" applyOnUpdate="0" field="zusatzziffern"/>
-  <default expression="" applyOnUpdate="0" field="entstehung"/>
-  <default expression="" applyOnUpdate="0" field="plz6_von"/>
+  <default field="ogc_fid" applyOnUpdate="0" expression=""/>
+  <default field="t_ili_tid" applyOnUpdate="0" expression=""/>
+  <default field="status" applyOnUpdate="0" expression=""/>
+  <default field="status_txt" applyOnUpdate="0" expression=""/>
+  <default field="inaenderung" applyOnUpdate="0" expression=""/>
+  <default field="inaenderung_txt" applyOnUpdate="0" expression=""/>
+  <default field="plz" applyOnUpdate="0" expression=""/>
+  <default field="zusatzziffern" applyOnUpdate="0" expression=""/>
+  <default field="entstehung" applyOnUpdate="0" expression=""/>
+  <default field="plz6_von" applyOnUpdate="0" expression=""/>
  </defaults>
  <constraints>
-  <constraint constraints="3" unique_strength="1" exp_strength="0" field="ogc_fid" notnull_strength="1"/>
-  <constraint constraints="0" unique_strength="0" exp_strength="0" field="t_ili_tid" notnull_strength="0"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="status" notnull_strength="1"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="status_txt" notnull_strength="1"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="inaenderung" notnull_strength="1"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="inaenderung_txt" notnull_strength="1"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="plz" notnull_strength="1"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="zusatzziffern" notnull_strength="1"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="entstehung" notnull_strength="1"/>
-  <constraint constraints="1" unique_strength="0" exp_strength="0" field="plz6_von" notnull_strength="1"/>
+  <constraint notnull_strength="1" field="ogc_fid" unique_strength="1" exp_strength="0" constraints="3"/>
+  <constraint notnull_strength="0" field="t_ili_tid" unique_strength="0" exp_strength="0" constraints="0"/>
+  <constraint notnull_strength="1" field="status" unique_strength="0" exp_strength="0" constraints="1"/>
+  <constraint notnull_strength="1" field="status_txt" unique_strength="0" exp_strength="0" constraints="1"/>
+  <constraint notnull_strength="1" field="inaenderung" unique_strength="0" exp_strength="0" constraints="1"/>
+  <constraint notnull_strength="1" field="inaenderung_txt" unique_strength="0" exp_strength="0" constraints="1"/>
+  <constraint notnull_strength="1" field="plz" unique_strength="0" exp_strength="0" constraints="1"/>
+  <constraint notnull_strength="1" field="zusatzziffern" unique_strength="0" exp_strength="0" constraints="1"/>
+  <constraint notnull_strength="1" field="entstehung" unique_strength="0" exp_strength="0" constraints="1"/>
+  <constraint notnull_strength="1" field="plz6_von" unique_strength="0" exp_strength="0" constraints="1"/>
  </constraints>
  <constraintExpressions>
   <constraint field="ogc_fid" desc="" exp=""/>
@@ -205,19 +205,19 @@
  <attributeactions>
   <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
  </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+ <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
   <columns>
-   <column name="ogc_fid" type="field" width="-1" hidden="0"/>
-   <column name="t_ili_tid" type="field" width="-1" hidden="0"/>
-   <column name="status" type="field" width="-1" hidden="0"/>
-   <column name="status_txt" type="field" width="-1" hidden="0"/>
-   <column name="inaenderung" type="field" width="-1" hidden="0"/>
-   <column name="inaenderung_txt" type="field" width="-1" hidden="0"/>
-   <column name="plz" type="field" width="-1" hidden="0"/>
-   <column name="zusatzziffern" type="field" width="-1" hidden="0"/>
-   <column name="entstehung" type="field" width="-1" hidden="0"/>
-   <column name="plz6_von" type="field" width="-1" hidden="0"/>
-   <column type="actions" width="-1" hidden="1"/>
+   <column hidden="0" type="field" name="ogc_fid" width="-1"/>
+   <column hidden="0" type="field" name="t_ili_tid" width="-1"/>
+   <column hidden="0" type="field" name="status" width="-1"/>
+   <column hidden="0" type="field" name="status_txt" width="-1"/>
+   <column hidden="0" type="field" name="inaenderung" width="-1"/>
+   <column hidden="0" type="field" name="inaenderung_txt" width="-1"/>
+   <column hidden="0" type="field" name="plz" width="-1"/>
+   <column hidden="0" type="field" name="zusatzziffern" width="-1"/>
+   <column hidden="0" type="field" name="entstehung" width="-1"/>
+   <column hidden="0" type="field" name="plz6_von" width="-1"/>
+   <column hidden="1" type="actions" width="-1"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
@@ -260,16 +260,16 @@ def my_form_open(dialog, layer, feature):
   <field name="zusatzziffern" editable="1"/>
  </editable>
  <labelOnTop>
-  <field name="entstehung" labelOnTop="0"/>
-  <field name="inaenderung" labelOnTop="0"/>
-  <field name="inaenderung_txt" labelOnTop="0"/>
-  <field name="ogc_fid" labelOnTop="0"/>
-  <field name="plz" labelOnTop="0"/>
-  <field name="plz6_von" labelOnTop="0"/>
-  <field name="status" labelOnTop="0"/>
-  <field name="status_txt" labelOnTop="0"/>
-  <field name="t_ili_tid" labelOnTop="0"/>
-  <field name="zusatzziffern" labelOnTop="0"/>
+  <field labelOnTop="0" name="entstehung"/>
+  <field labelOnTop="0" name="inaenderung"/>
+  <field labelOnTop="0" name="inaenderung_txt"/>
+  <field labelOnTop="0" name="ogc_fid"/>
+  <field labelOnTop="0" name="plz"/>
+  <field labelOnTop="0" name="plz6_von"/>
+  <field labelOnTop="0" name="status"/>
+  <field labelOnTop="0" name="status_txt"/>
+  <field labelOnTop="0" name="t_ili_tid"/>
+  <field labelOnTop="0" name="zusatzziffern"/>
  </labelOnTop>
  <widgets/>
  <previewExpression>ogc_fid</previewExpression>
