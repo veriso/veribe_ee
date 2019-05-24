@@ -1,37 +1,37 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.4.4-Madeira" readOnly="0" styleCategories="AllStyleCategories" simplifyDrawingHints="0" maxScale="-4.65661e-10" simplifyMaxScale="1" minScale="1e+8" simplifyDrawingTol="1" labelsEnabled="1" simplifyAlgorithm="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="0">
+<qgis styleCategories="AllStyleCategories" simplifyDrawingHints="0" version="3.6.3-Noosa" maxScale="-4.65661e-10" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" labelsEnabled="1" simplifyDrawingTol="1" minScale="1e+8" readOnly="0" simplifyAlgorithm="0">
  <flags>
   <Identifiable>1</Identifiable>
   <Removable>1</Removable>
   <Searchable>1</Searchable>
  </flags>
- <renderer-v2 enableorderby="0" type="singleSymbol" symbollevels="0" forceraster="0">
+ <renderer-v2 enableorderby="0" symbollevels="0" forceraster="0" type="singleSymbol">
   <symbols>
-   <symbol alpha="1" force_rhr="0" name="0" type="marker" clip_to_extent="1">
-    <layer locked="0" pass="0" enabled="1" class="SimpleMarker">
-     <prop v="0" k="angle"/>
-     <prop v="208,11,87,255" k="color"/>
-     <prop v="1" k="horizontal_anchor_point"/>
-     <prop v="bevel" k="joinstyle"/>
-     <prop v="circle" k="name"/>
-     <prop v="0,0" k="offset"/>
-     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-     <prop v="MM" k="offset_unit"/>
-     <prop v="0,0,0,255" k="outline_color"/>
-     <prop v="solid" k="outline_style"/>
-     <prop v="0" k="outline_width"/>
-     <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-     <prop v="MM" k="outline_width_unit"/>
-     <prop v="area" k="scale_method"/>
-     <prop v="0" k="size"/>
-     <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-     <prop v="MM" k="size_unit"/>
-     <prop v="1" k="vertical_anchor_point"/>
+   <symbol force_rhr="0" alpha="1" name="0" clip_to_extent="1" type="marker">
+    <layer pass="0" class="SimpleMarker" enabled="1" locked="0">
+     <prop k="angle" v="0"/>
+     <prop k="color" v="208,11,87,255"/>
+     <prop k="horizontal_anchor_point" v="1"/>
+     <prop k="joinstyle" v="bevel"/>
+     <prop k="name" v="circle"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="0,0,0,255"/>
+     <prop k="outline_style" v="solid"/>
+     <prop k="outline_width" v="0"/>
+     <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="scale_method" v="area"/>
+     <prop k="size" v="0"/>
+     <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="size_unit" v="MM"/>
+     <prop k="vertical_anchor_point" v="1"/>
      <data_defined_properties>
       <Option type="Map">
-       <Option name="name" value="" type="QString"/>
+       <Option value="" name="name" type="QString"/>
        <Option name="properties"/>
-       <Option name="type" value="collection" type="QString"/>
+       <Option value="collection" name="type" type="QString"/>
       </Option>
      </data_defined_properties>
     </layer>
@@ -42,20 +42,20 @@
  </renderer-v2>
  <labeling type="simple">
   <settings>
-   <text-style useSubstitutions="0" textColor="0,0,0,255" fontStrikeout="0" multilineHeight="1" fontWordSpacing="0" fontLetterSpacing="0" fontWeight="50" fontSizeMapUnitScale="3x:0,0,0,0,0,0" isExpression="1" fieldName="" fontSize="16" fontFamily="Sans Serif" blendMode="0" fontCapitals="0" fontSizeUnit="MapUnit" fontUnderline="0" namedStyle="Normal" fontItalic="0" previewBkgrdColor="#ffffff" textOpacity="1">
-    <text-buffer bufferDraw="0" bufferNoFill="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferSizeUnits="Point" bufferColor="255,255,255,255" bufferOpacity="1" bufferJoinStyle="128" bufferSize="1"/>
-    <background shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="0" shapeOffsetY="0" shapeRadiiX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeUnit="MM" shapeSizeType="0" shapeOpacity="1" shapeRadiiY="0" shapeRotation="0" shapeBorderColor="128,128,128,255" shapeRadiiUnit="MM" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRotationType="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeFillColor="255,255,255,255" shapeJoinStyle="64" shapeOffsetUnit="MM" shapeBorderWidth="0" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeSVGFile="" shapeType="0" shapeSizeX="0" shapeOffsetX="0" shapeSizeY="0"/>
-    <shadow shadowOffsetAngle="135" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetDist="1" shadowRadius="1.5" shadowColor="0,0,0,255" shadowUnder="0" shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowOpacity="0.7" shadowRadiusAlphaOnly="0" shadowOffsetGlobal="1" shadowRadiusUnit="MM" shadowBlendMode="6" shadowOffsetUnit="MM"/>
+   <text-style fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontStrikeout="0" fontLetterSpacing="0" fieldName="aname" fontFamily="Sans Serif" fontSizeUnit="MapUnit" namedStyle="Normal" blendMode="0" textColor="0,0,0,255" fontWeight="50" useSubstitutions="0" fontItalic="0" isExpression="0" textOpacity="1" fontSize="16" fontCapitals="0" fontUnderline="0" multilineHeight="1" fontWordSpacing="0" previewBkgrdColor="#ffffff">
+    <text-buffer bufferJoinStyle="128" bufferColor="255,255,255,255" bufferBlendMode="0" bufferDraw="0" bufferNoFill="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSizeUnits="Point" bufferOpacity="1"/>
+    <background shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeDraw="0" shapeJoinStyle="64" shapeOffsetX="0" shapeSizeX="0" shapeOpacity="1" shapeRotationType="0" shapeSVGFile="" shapeOffsetUnit="MM" shapeSizeType="0" shapeRadiiY="0" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRadiiX="0" shapeFillColor="255,255,255,255" shapeRotation="0" shapeType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeOffsetY="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0"/>
+    <shadow shadowRadius="1.5" shadowRadiusAlphaOnly="0" shadowUnder="0" shadowOffsetAngle="135" shadowRadiusUnit="MM" shadowOpacity="0.7" shadowOffsetDist="1" shadowDraw="0" shadowOffsetUnit="MM" shadowScale="100" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
     <substitutions/>
    </text-style>
-   <text-format rightDirectionSymbol=">" decimals="3" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" multilineAlign="0" wrapChar="" plussign="0" formatNumbers="0" placeDirectionSymbol="0" addDirectionSymbol="0" autoWrapLength="0" useMaxLineLengthForAutoWrap="1"/>
-   <placement labelOffsetMapUnitScale="3x:0,0,0,0,0,0" placement="0" centroidInside="0" repeatDistance="0" maxCurvedCharAngleOut="-25" distUnits="MM" repeatDistanceUnits="MM" offsetType="0" distMapUnitScale="3x:0,0,0,0,0,0" dist="0" centroidWhole="0" preserveRotation="1" xOffset="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" placementFlags="10" priority="5" yOffset="0" quadOffset="4" maxCurvedCharAngleIn="25" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" fitInPolygonOnly="0" offsetUnits="MM" rotationAngle="0"/>
-   <rendering obstacleFactor="1" maxNumLabels="2000" fontMaxPixelSize="10000" upsidedownLabels="0" zIndex="0" labelPerPart="0" minFeatureSize="0" scaleMin="0" displayAll="0" scaleMax="0" obstacle="1" obstacleType="0" drawLabels="1" mergeLines="0" fontLimitPixelSize="0" scaleVisibility="0" fontMinPixelSize="3" limitNumLabels="0"/>
+   <text-format placeDirectionSymbol="0" wrapChar="" decimals="3" rightDirectionSymbol=">" multilineAlign="0" autoWrapLength="0" formatNumbers="0" addDirectionSymbol="0" plussign="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;" reverseDirectionSymbol="0"/>
+   <placement distUnits="MM" centroidWhole="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" yOffset="0" placement="0" maxCurvedCharAngleOut="-25" xOffset="0" rotationAngle="0" fitInPolygonOnly="0" offsetType="0" placementFlags="10" repeatDistanceUnits="MM" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleIn="25" quadOffset="4" preserveRotation="1" repeatDistance="0" offsetUnits="MM" centroidInside="0" distMapUnitScale="3x:0,0,0,0,0,0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" dist="0" priority="5"/>
+   <rendering drawLabels="1" fontMinPixelSize="3" scaleVisibility="0" scaleMin="0" obstacle="1" minFeatureSize="0" zIndex="0" obstacleType="0" maxNumLabels="2000" mergeLines="0" limitNumLabels="0" scaleMax="0" obstacleFactor="1" displayAll="0" fontMaxPixelSize="10000" fontLimitPixelSize="0" labelPerPart="0" upsidedownLabels="0"/>
    <dd_properties>
     <Option type="Map">
-     <Option name="name" value="" type="QString"/>
+     <Option value="" name="name" type="QString"/>
      <Option name="properties"/>
-     <Option name="type" value="collection" type="QString"/>
+     <Option value="collection" name="type" type="QString"/>
     </Option>
    </dd_properties>
   </settings>
@@ -210,16 +210,17 @@
  <featureBlendMode>0</featureBlendMode>
  <layerOpacity>1</layerOpacity>
  <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory maxScaleDenominator="1e+8" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" enabled="0" width="15" scaleBasedVisibility="0" lineSizeType="MM" rotationOffset="270" backgroundAlpha="255" penColor="#000000" barWidth="5" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" sizeType="MM" backgroundColor="#ffffff" minimumSize="0" labelPlacementMethod="XHeight" penAlpha="255" height="15" minScaleDenominator="-4.65661e-10" penWidth="0" opacity="1">
+  <DiagramCategory height="15" rotationOffset="270" penColor="#000000" labelPlacementMethod="XHeight" opacity="1" sizeScale="3x:0,0,0,0,0,0" backgroundColor="#ffffff" scaleBasedVisibility="0" scaleDependency="Area" width="15" lineSizeScale="3x:0,0,0,0,0,0" lineSizeType="MM" diagramOrientation="Up" backgroundAlpha="255" minimumSize="0" minScaleDenominator="-4.65661e-10" penAlpha="255" enabled="0" penWidth="0" barWidth="5" maxScaleDenominator="1e+8" sizeType="MM">
    <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+   <attribute field="" color="#000000" label=""/>
   </DiagramCategory>
  </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings linePlacementFlags="18" zIndex="0" placement="0" showAll="1" priority="0" dist="0" obstacle="0">
+ <DiagramLayerSettings placement="0" obstacle="0" linePlacementFlags="18" dist="0" showAll="1" priority="0" zIndex="0">
   <properties>
    <Option type="Map">
-    <Option name="name" value="" type="QString"/>
+    <Option value="" name="name" type="QString"/>
     <Option name="properties"/>
-    <Option name="type" value="collection" type="QString"/>
+    <Option value="collection" name="type" type="QString"/>
    </Option>
   </properties>
  </DiagramLayerSettings>
@@ -380,22 +381,22 @@
   <default field="aname" applyOnUpdate="0" expression=""/>
  </defaults>
  <constraints>
-  <constraint field="ogc_fid" exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3"/>
-  <constraint field="t_ili_tid" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="gelaendenamepos_von" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="ori" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="hali" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="hali_txt" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="vali" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="vali_txt" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="groesse" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="groesse_txt" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="stil" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="stil_txt" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="y" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="x" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="rot" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="aname" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+  <constraint exp_strength="0" field="ogc_fid" constraints="3" notnull_strength="1" unique_strength="1"/>
+  <constraint exp_strength="0" field="t_ili_tid" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="gelaendenamepos_von" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="ori" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="hali" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="hali_txt" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="vali" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="vali_txt" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="groesse" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="groesse_txt" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="stil" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="stil_txt" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="y" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="x" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="rot" constraints="0" notnull_strength="0" unique_strength="0"/>
+  <constraint exp_strength="0" field="aname" constraints="0" notnull_strength="0" unique_strength="0"/>
  </constraints>
  <constraintExpressions>
   <constraint field="ogc_fid" exp="" desc=""/>
@@ -419,25 +420,25 @@
  <attributeactions>
   <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
  </attributeactions>
- <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+ <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
   <columns>
-   <column width="-1" name="ogc_fid" type="field" hidden="0"/>
-   <column width="-1" name="t_ili_tid" type="field" hidden="0"/>
-   <column width="-1" name="gelaendenamepos_von" type="field" hidden="0"/>
-   <column width="-1" name="ori" type="field" hidden="0"/>
-   <column width="-1" name="hali" type="field" hidden="0"/>
-   <column width="-1" name="hali_txt" type="field" hidden="0"/>
-   <column width="-1" name="vali" type="field" hidden="0"/>
-   <column width="-1" name="vali_txt" type="field" hidden="0"/>
-   <column width="-1" name="groesse" type="field" hidden="0"/>
-   <column width="-1" name="groesse_txt" type="field" hidden="0"/>
-   <column width="-1" name="stil" type="field" hidden="0"/>
-   <column width="-1" name="stil_txt" type="field" hidden="0"/>
-   <column width="-1" name="y" type="field" hidden="0"/>
-   <column width="-1" name="x" type="field" hidden="0"/>
-   <column width="-1" name="rot" type="field" hidden="0"/>
-   <column width="-1" name="aname" type="field" hidden="0"/>
-   <column width="-1" type="actions" hidden="1"/>
+   <column width="-1" name="ogc_fid" hidden="0" type="field"/>
+   <column width="-1" name="t_ili_tid" hidden="0" type="field"/>
+   <column width="-1" name="gelaendenamepos_von" hidden="0" type="field"/>
+   <column width="-1" name="ori" hidden="0" type="field"/>
+   <column width="-1" name="hali" hidden="0" type="field"/>
+   <column width="-1" name="hali_txt" hidden="0" type="field"/>
+   <column width="-1" name="vali" hidden="0" type="field"/>
+   <column width="-1" name="vali_txt" hidden="0" type="field"/>
+   <column width="-1" name="groesse" hidden="0" type="field"/>
+   <column width="-1" name="groesse_txt" hidden="0" type="field"/>
+   <column width="-1" name="stil" hidden="0" type="field"/>
+   <column width="-1" name="stil_txt" hidden="0" type="field"/>
+   <column width="-1" name="y" hidden="0" type="field"/>
+   <column width="-1" name="x" hidden="0" type="field"/>
+   <column width="-1" name="rot" hidden="0" type="field"/>
+   <column width="-1" name="aname" hidden="0" type="field"/>
+   <column width="-1" hidden="1" type="actions"/>
   </columns>
  </attributetableconfig>
  <conditionalstyles>
