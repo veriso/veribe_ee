@@ -18,17 +18,17 @@ class ComplexCheck(ComplexCheckBase):
 
     def run(self):
         try:
+            _temp = __import__("gebaeudeadressen_lokalisation", globals(),
+                               locals(), ['ComplexCheck'], level=1)
+            c = _temp.ComplexCheck(self.iface)
+            c.run()
+
             _temp = __import__("gebaeudeadressen_checklayer", globals(),
                                locals(), ['ComplexCheck'], level=1)
             c = _temp.ComplexCheck(self.iface)
             c.run()
 
             _temp = __import__("gebaeudeadressen_basislayer", globals(),
-                               locals(), ['ComplexCheck'], level=1)
-            c = _temp.ComplexCheck(self.iface)
-            c.run()
-
-            _temp = __import__("gebaeudeadressen_lokalisation", globals(),
                                locals(), ['ComplexCheck'], level=1)
             c = _temp.ComplexCheck(self.iface)
             c.run()
