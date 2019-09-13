@@ -3,42 +3,42 @@ baselayer:
 - type: wms
   title:
     de: Fixpunkte vom FPDS
-    fr: Point fix (FPDS)
+    fr: Points fixes (FPDS)
   url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.fixpunkte-lfp1,ch.swisstopo.fixpunkte-lfp2,ch.swisstopo.fixpunkte-hfp1,ch.swisstopo.fixpunkte-hfp2
   format: image/png
 - type: wms
   title:
     de: Uebersichtsplan
-    fr: Plan d'ensemble numérique
+    fr: Plan d'ensemble
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer?
   layers: GEODB.UP5_SITU5_MOSAIC
   format: image/png
 - type: wms
   title:
     de: Bauzonen UZP
-    fr: 'Zones à bâtir UZP '
+    fr: Zones à bâtir UZP
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
   layers: GEODB.UZP_BAU
   format: image/png
 - type: wms
   title:
     de: Gewässer des Kantons Bern
-    fr: Eaux du canton de Berne
+    fr: Hydrographie du canton de Berne
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?
   layers: GEODB.GNBE_GNBELA,GEODB.GNBE_GNBEAB,GEODB.GNBE_GNBEAB_B
   format: image/png
 - type: wms
   title:
     de: Wanderwege
-    fr: 'itinéraires de randonnée pédestre '
+    fr: Itinéraires de randonnée pédestre
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?
   layers: GEODB.WANDERNS_WEGE
   format: image/png
 - type: wms
   title:
     de: GWR
-    fr: GWR
+    fr: RegBL
   url: https://wms.geo.admin.ch/?
   layers: ch.bfs.gebaeude_wohnungs_register
   format: image/png
@@ -60,7 +60,7 @@ baselayer:
 - type: wms
   title:
     de: PK25
-    fr: PK25
+    fr: LK25
   url: https://wms.swisstopo.admin.ch/?
   layers: ch.swisstopo.pixelkarte-farbe
   format: image/jpeg
@@ -84,49 +84,49 @@ baselayer:
 - type: wms
   title:
     de: Kantonsgrenzsteine
-    fr: Kantonsgrenzsteine
+    fr: Bornes cantonales
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.STEINV_KTGRST
   format: image/png
 - type: wms
   title:
     de: Historische Grenzsteine
-    fr: Historische Grenzsteine
+    fr: Bornes historiques
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.STEINV_HISTGRST
   format: image/png
 - type: wms
   title:
     de: Stundensteine
-    fr: Stundensteine
+    fr: Bornes de lieues
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.STEINV_STDST
   format: image/png
 - type: wms
   title:
     de: Planeinteilung Nomenklatur
-    fr: Planeinteilung Nomenklatur
+    fr: Répartition des plans de nomenclature
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.NOMKL_NOMKLPL
   format: image/png
 - type: wms
   title:
     de: AMO anerkannter Stand
-    fr: AMO anerkannter Stand
+    fr: AMO état approuvé
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.AMO_ACTSTAT
   format: image/png
 - type: wms
   title:
     de: AMO In Arbeit
-    fr: AMO In Arbeit
+    fr: AMO en cours de réalisation
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.AMO_LOT
   format: image/png
 - type: wms
   title:
     de: Gas
-    fr: Gas
+    fr: Gaz
   url: http://wms.qgiscloud.com/Niklas/Gas
   layers: Gas
   format: image/png
@@ -140,21 +140,21 @@ baselayer:
 - type: wms
   title:
     de: AV EO Flaechen.
-    fr: MO objets divers surfacique
+    fr: MO objets divers surfaciques
   url: https://geodienste.ch/db/av/deu?
   layers: SOSF
   format: image/png
 - type: wms
   title:
     de: AV EO Linien.
-    fr: MO objets divers lineaire
+    fr: MO objets divers lineaires
   url: https://geodienste.ch/db/av/deu?
   layers: SOLI
   format: image/png
 - type: wms
   title:
     de: AV Liegenschaften
-    fr: MO Inmeuble
+    fr: MO immeubles
   url: https://geodienste.ch/db/av/deu?
   layers: Liegenschaften
   format: image/png
@@ -168,28 +168,28 @@ baselayer:
 - type: wms
   title:
     de: AV Geb.-Adr.
-    fr: MO Adresse postale
+    fr: MO adresses postales
   url: https://geodienste.ch/db/av/deu?
   layers: Gebaeudeadressen
   format: image/png
 - type: wms
   title:
     de: PLZ Ortschaft
-    fr: MO Adresse postale
+    fr: NPA et localités
   url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo-vd.ortschaftenverzeichnis_plz
   format: image/jpeg
 - type: wms
   title:
     de: Orthophoto Region Bern
-    fr: Orthophoto Région Berne
+    fr: Orthophoto région Berne
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.OBERN_OBERN_MOSAIC
   format: image/png
 - type: wms
   title:
     de: Waldgrenzen OEREBK
-    fr: Waldgrenzen OEREBK
+    fr: Limites de forêt CRDPPF
   url: https://www.geoservice.apps.be.ch/geoservice1/services/a42pub1/a42pub_oereb_wms_d_fk/MapServer/WmsServer?
   layers: GEODB.NPLWALD_WAFW
   format: image/png
