@@ -14,8 +14,8 @@ INSERT INTO `postprocessing` VALUES (1,'CREATE TYPE $$DBSCHEMA.maengel_topic AS 
  ''Einzelobjekte''
  );',1,'German enum type for t_maengel_topic.','de',1),
  (2,'CREATE TYPE $$DBSCHEMA.maengel_topic AS ENUM
-(''Couverture_du_sol'',
- ''Objets_divers''
+(''Couverture du sol'',
+ ''Objets divers''
  );',1,'French enum type for t_maengel_topic','fr',1),
  (3,'CREATE TABLE $$DBSCHEMA.t_maengel_topics
 (
@@ -1418,8 +1418,8 @@ CREATE TYPE $$DBSCHEMA.maengel_verifikation AS ENUM
 (
 ''Ja'',
 ''Nein''
-);',5,'allow defects list',NULL,1),
- (99,'CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
+);
+CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
 (
 ''0-PNF 1: In PNF 1 beurteilt und entschieden nicht zu bearbeiten'',
 ''1-Waldgrenzen: Kontrolle und Beurteilung'',
@@ -1447,7 +1447,23 @@ CREATE TYPE $$DBSCHEMA.maengel_verifikation AS ENUM
 ''23-Bodenbedeckung loeschen'',
 ''24-Diverses''
 );',5,'allow defects list','de',1),
- (100,'CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
+ (99,'CREATE TYPE $$DBSCHEMA.maengel_bereinigen AS ENUM
+(
+ ''à corriger'',
+ ''ne pas corriger''
+);
+CREATE TYPE $$DBSCHEMA.maengel_abrechnung AS ENUM
+(
+''MPD'',
+''MPP'',
+''erreur MO''
+);
+CREATE TYPE $$DBSCHEMA.maengel_verifikation AS ENUM
+(
+''Oui'',
+''Non''
+);
+CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
 (
 ''0-MPD1: analysé dans la MPD1 et décision de ne rien modifier'',
 ''1-limites de forêt: contrôle et évaluation'',
@@ -1455,7 +1471,7 @@ CREATE TYPE $$DBSCHEMA.maengel_verifikation AS ENUM
 ''3-pâturages boisés: définition par la division forestière'',
 ''4-transférer cordon boisé de CS à OD'',
 ''5-supprimer cordon boisé'',
-''6-sentier pédestre: saisir l''axe en tant que OD si manquant'',
+''6-sentier pédestre: saisir l''''axe en tant que OD si manquant'',
 ''7-chemins en zone agricole conformément au manuel'',
 ''8-rivières ou lacs: adapter la couverture du sol'',
 ''9-représenter ou supprimer digue de protection'',
@@ -1463,20 +1479,19 @@ CREATE TYPE $$DBSCHEMA.maengel_verifikation AS ENUM
 ''11-exploitation agricole: définir chemin en continu'',
 ''12-saisie et/ou complément de voies accès aux bâtiments'',
 ''13-saisie/complement places de parc couvrant une grande surface'',
-''14-saisie et/ou complément d''autres surfaces à revêtement dur'',
+''14-saisie et/ou complément d''''autres surfaces à revêtem. dur'',
 ''15-gare / arrêt: saisir le quai'',
 ''16-rectifications en limite de commune ou de lot (diff. CS)'',
 ''17-OD: rect. selon manuel (OD ponctuels/linéaires/surfaciques)'',
 ''18-suppression de limites de couverture du sol superflues'',
-''19-délimiter nouvelle CS, modifier genre CS, modifier limite CS'',
-''20-silo / bassin d''eau / bâtiment etc. manquant'',
-''21-pont / mat / sentier / eau canalisée sout. / tunnel manquant'',
+''19-délimiter nouvelle CS, modifier genre CS, modif. limite CS'',
+''20-silo / bassin d''''eau / bâtiment etc. manquant'',
+''21-pont / mat / sentier / eau canalisée sout./tunnel manquant'',
 ''22-bâtiment présent / souterrain ?'',
 ''23-supprimer couverture du sol'',
 ''24-divers''
 );',5,'allow defects list','fr',1),
-
- (101,'-- The following table create assume these roles are available
+ (100,'-- The following table create assume these roles are available
 --CREATE ROLE agi WITH LOGIN;
 --CREATE ROLE geometer WITH LOGIN;
 --CREATE ROLE forst WITH LOGIN;
@@ -1584,7 +1599,7 @@ GRANT USAGE ON $$DBSCHEMA.t_maengel_polygon_ogc_fid_seq TO avor;
 
 ',5,'allow defects list
 ',NULL,1),
- (102,'CREATE TABLE $$DBSCHEMA.t_topics_tables AS
+ (101,'CREATE TABLE $$DBSCHEMA.t_topics_tables AS
 
 SELECT bar.basket_ogc_fid, bar.ogc_fid, bar.topic, bar.class_name, bar.sql_name, bar.ili_name, bar.f_geometry_column, pkey.attname as primary_key
 FROM
