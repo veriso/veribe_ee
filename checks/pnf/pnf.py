@@ -68,36 +68,30 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'Arbeitsraster 500',
                                     None),
                 # specific file path defined by customer
-                'url': '/share/Share/Baselayers/Arbeitsraster_500_Intersect.shp',
+                'url': '/share/Share/Baselayers/working_grid_500.shp',
                 'style': 'pnf/arbeitsraster.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
 
             # Laufende Operate
             layer = {
-                'type': 'ogr',
+                'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Laufende operate', None),
-                # specific file path defined by customer, symlink is resolved
-                # so QGIS can find the other
-                # supporting files (.shx, .dbf, ...)
-                'url': os.path.realpath(
-                    '/share/Share/Baselayers/laufende_operate_last.shp'),
-                'style': 'pnf/laufende_operate.qml'
+                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
+                'layers': 'GEODB.AMO_LOT',
+                'format': 'image/png'
                 }
             vlayer = self.layer_loader.load(layer, True, True)
 
-            # PNF2016 TS1 TS2
+            # Planungsperimeter PNF
             layer = {
-                'type': 'ogr',
-                'title': _translate('VeriSO_EE_PNF', 'PNF_TS1_TS2', None),
-                # specific file path defined by customer, symlink is resolved
-                # so QGIS can find the other
-                # supporting files (.shx, .dbf, ...)
-                'url': os.path.realpath(
-                    '/share/Share/Baselayers/PNF_TS1_TS2_last.shp'),
-                'style': 'pnf/pnf.qml'
+                'type': 'wms',
+                'title': _translate('VeriSO_EE_PNF', 'Planungsperimeter PNF', None),
+                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
+                'layers': 'PNFAK_EDIT.PNFAK_GEMEINDE_PLANUNG',
+                'format': 'image/png'
                 }
-            vlayer = self.layer_loader.load(layer, False, True)
+            vlayer = self.layer_loader.load(layer, True, True)
 
             # Wanderwege
             layer = {
@@ -481,6 +475,16 @@ class ComplexCheck(ComplexCheckBase):
                 'style': 'pnf/pnfbe21.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
+
+            # Toleranzstufen
+            layer = {
+                'type': 'wms',
+                'title': _translate('VeriSO_EE_PNF', 'Toleranzstufen', None),
+                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
+                'layers': 'AV01.TS_Toleranzstufe',
+                'format': 'image/png'
+                }
+            vlayer = self.layer_loader.load(layer, True, True)
 
             # Waldgrenzen
             layer = {

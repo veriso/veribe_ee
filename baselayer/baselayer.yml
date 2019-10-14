@@ -111,6 +111,13 @@ baselayer:
   format: image/png
 - type: wms
   title:
+    de: Toleranzstufen
+    fr: Niveaux de tolérance
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+  layers: AV01.TS_Toleranzstufe
+  format: image/png
+- type: wms
+  title:
     de: AMO anerkannter Stand
     fr: AMO état approuvé
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
