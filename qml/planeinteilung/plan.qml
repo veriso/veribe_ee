@@ -43,7 +43,7 @@
    </text-style>
    <text-format autoWrapLength="0" rightDirectionSymbol=">" wrapChar="" addDirectionSymbol="0" reverseDirectionSymbol="0" multilineAlign="4294967295" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" useMaxLineLengthForAutoWrap="1" decimals="3" formatNumbers="0" plussign="0"/>
    <placement placementFlags="10" quadOffset="4" offsetType="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidInside="1" preserveRotation="1" fitInPolygonOnly="0" offsetUnits="MapUnit" yOffset="0" repeatDistanceUnits="MM" distMapUnitScale="3x:0,0,0,0,0,0" dist="0" xOffset="0" rotationAngle="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" maxCurvedCharAngleOut="-25" maxCurvedCharAngleIn="25" priority="5" placement="1" distUnits="MM" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistance="0" centroidWhole="0"/>
-   <rendering fontMaxPixelSize="10000" scaleMax="0" obstacleType="0" minFeatureSize="0" zIndex="0" drawLabels="1" limitNumLabels="0" upsidedownLabels="0" mergeLines="0" labelPerPart="0" obstacleFactor="1" fontMinPixelSize="3" obstacle="1" scaleMin="0" displayAll="0" fontLimitPixelSize="0" maxNumLabels="2000" scaleVisibility="0"/>
+   <rendering fontMaxPixelSize="10000" scaleMax="0" obstacleType="0" minFeatureSize="0" zIndex="0" drawLabels="1" limitNumLabels="0" upsidedownLabels="0" mergeLines="0" labelPerPart="0" obstacleFactor="1" fontMinPixelSize="3" obstacle="1" scaleMin="0" displayAll="1" fontLimitPixelSize="0" maxNumLabels="2000" scaleVisibility="0"/>
    <dd_properties>
     <Option type="Map">
      <Option name="name" value="" type="QString"/>
