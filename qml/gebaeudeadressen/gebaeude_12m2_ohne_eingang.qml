@@ -85,7 +85,7 @@
     <property key="labeling/centroidWhole" value="false" />
     <property key="labeling/dataDefined/Hali" value="1~~0~~~~art_txt" />
     <property key="labeling/decimals" value="0" />
-    <property key="labeling/displayAll" value="false" />
+    <property key="labeling/displayAll" value="true" />
     <property key="labeling/dist" value="0" />
     <property key="labeling/distInMapUnits" value="false" />
     <property key="labeling/distMapUnitMaxScale" value="0" />
