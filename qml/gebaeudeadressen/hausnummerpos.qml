@@ -102,7 +102,7 @@
   <property key="labeling/dataDefined/Rotation" value="1~~0~~~~rot"/>
   <property key="labeling/dataDefined/Vali" value="1~~0~~~~vali_txt"/>
   <property key="labeling/decimals" value="0"/>
-  <property key="labeling/displayAll" value="false"/>
+  <property key="labeling/displayAll" value="true"/>
   <property key="labeling/dist" value="0"/>
   <property key="labeling/distInMapUnits" value="false"/>
   <property key="labeling/distMapUnitMaxScale" value="0"/>

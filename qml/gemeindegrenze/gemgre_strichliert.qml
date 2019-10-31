@@ -79,7 +79,7 @@
     <property key="labeling/centroidInside" value="false" />
     <property key="labeling/centroidWhole" value="false" />
     <property key="labeling/decimals" value="0" />
-    <property key="labeling/displayAll" value="false" />
+    <property key="labeling/displayAll" value="true" />
     <property key="labeling/dist" value="0" />
     <property key="labeling/distInMapUnits" value="false" />
     <property key="labeling/distMapUnitMaxScale" value="0" />
