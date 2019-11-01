@@ -129,7 +129,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'Wanderwege', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?',
                 'layers': 'GEODB.WANDERNS_WEGE',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_wanderwege.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -140,7 +140,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'Gewässer des Kantons Bern', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?',
                 'layers': 'GEODB.GNBE_GNBELA,GEODB.GNBE_GNBEAB,GEODB.GNBE_GNBEAB_B',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_gewaesser.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -523,7 +523,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'Bauzonen UZP', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
                 'layers': 'GEODB.UZP_BAU',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_bauzonen.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -534,7 +534,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'Toleranzstufen', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
                 'layers': 'AV01.TS_Toleranzstufe',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_toleranzstufen.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -545,7 +545,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'Planungsperimeter PNF', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
                 'layers': 'PNFAK_EDIT.PNFAK_GEMEINDE_PLANUNG',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_planungsperimeter.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -556,7 +556,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'Waldgrenzen', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice1/services/a42pub1/a42pub_oereb_wms_d_fk/MapServer/WmsServer?',
                 'layers': 'GEODB.NPLWALD_WAFW',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_waldgrenzen.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -577,7 +577,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'AV EO Flaechen', None),
                 'url': 'https://geodienste.ch/db/av/deu?',
                 'layers': 'SOSF',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_av_eo_flaechen.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -589,7 +589,7 @@ class ComplexCheck(ComplexCheckBase):
                     'VeriSO_EE_PNF', 'AV Bodenbedeckung', None),
                 'url': 'https://geodienste.ch/db/av/deu?',
                 'layers': 'Bodenbedeckung',
-                'format': 'image/jpeg'
+                'format': 'image/jpeg',
                 'style': 'pnf/pnfbe_av_bodenbedeckung.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -600,7 +600,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'DTM-Relief', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?',
                 'layers': 'GEODB.LDTM50CM_LTRELIEF,GEODB.LDTM50CM_LTHOEHE',
-                'format': 'image/png'
+                'format': 'image/png',
                 'style': 'pnf/pnfbe_dtm-relief.qml'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
