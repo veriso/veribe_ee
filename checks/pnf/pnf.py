@@ -62,6 +62,19 @@ class ComplexCheck(ComplexCheckBase):
                         if action.objectName() == "VeriSOModule.LoadDefectsAction":
                             action.activate(QAction.Trigger)
 
+            # Stand AVOR
+            layer = {
+                "type": "postgres",
+                "title": _translate("VeriSO_EE_basis", "Stand AVOR", None),
+                "readonly": True,
+                "featuretype": "t_status_avor",
+                "geom": "the_geom",
+                "key": "ogc_fid",
+                "sql": "",
+                "style": "pnf/pnfbe_stand_avor.qml"
+                }
+            vlayer = self.layer_loader.load(layer, True, True)
+
             # Arbeitsraster 500
             layer = {
                 'type': 'ogr',

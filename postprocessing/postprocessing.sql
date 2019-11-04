@@ -1599,8 +1599,28 @@ GRANT USAGE ON $$DBSCHEMA.t_maengel_polygon_ogc_fid_seq TO avor;
 
 ',5,'allow defects list
 ',NULL,1),
- (101,'CREATE TABLE $$DBSCHEMA.t_topics_tables AS
+ (101,'CREATE TABLE $$DBSCHEMA.t_status_avor
+(
+ ogc_fid serial NOT NULL,
+ the_geom geometry(POLYGON,$$EPSG),
+ CONSTRAINT t_status_avor_pkey PRIMARY KEY (ogc_fid)
+)
+WITH (OIDS=FALSE);
 
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_status_avor FROM agi;
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_status_avor FROM geometer;
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_status_avor FROM forst;
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_status_avor FROM avor;
+
+GRANT SELECT, UPDATE, INSERT, DELETE ON $$DBSCHEMA.t_status_avor TO agi;
+GRANT SELECT ON $$DBSCHEMA.t_status_avor TO geometer;
+GRANT SELECT ON $$DBSCHEMA.t_status_avor TO forst;
+GRANT SELECT, UPDATE, INSERT, DELETE ON $$DBSCHEMA.t_status_avor TO avor;
+
+GRANT USAGE ON $$DBSCHEMA.t_status_avor_ogc_fid_seq TO agi;
+GRANT USAGE ON $$DBSCHEMA.t_status_avor_ogc_fid_seq TO avor;
+
+CREATE TABLE $$DBSCHEMA.t_topics_tables AS
 SELECT bar.basket_ogc_fid, bar.ogc_fid, bar.topic, bar.class_name, bar.sql_name, bar.ili_name, bar.f_geometry_column, pkey.attname as primary_key
 FROM
 (
