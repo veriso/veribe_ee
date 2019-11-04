@@ -65,7 +65,7 @@ class ComplexCheck(ComplexCheckBase):
             # Stand AVOR
             layer = {
                 "type": "postgres",
-                "title": _translate("VeriSO_EE_basis", "Stand AVOR", None),
+                "title": _translate("VeriSO_EE_PNF", "Stand AVOR", None),
                 "readonly": True,
                 "featuretype": "t_status_avor",
                 "geom": "the_geom",
