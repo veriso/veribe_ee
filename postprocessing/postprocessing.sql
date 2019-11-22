@@ -1547,7 +1547,7 @@ CREATE TABLE $$DBSCHEMA.t_maengel_linie
  verifikati $$DBSCHEMA.maengel_verifikation, --verifikation
  bem_verifi text, --bemerkung_verifikation
  erledigt bool,
- the_geom geometry(LINESTRING,$$EPSG),
+ the_geom geometry(MULTILINESTRING,$$EPSG),
  CONSTRAINT t_maengel_linie_pkey PRIMARY KEY (ogc_fid)
 )
 WITH (OIDS=FALSE);
@@ -1581,7 +1581,7 @@ CREATE TABLE $$DBSCHEMA.t_maengel_polygon
  verifikati $$DBSCHEMA.maengel_verifikation, --verifikation
  bem_verifi text, --bemerkung_verifikation
  erledigt bool,
- the_geom geometry(POLYGON,$$EPSG),
+ the_geom geometry(MULTIPOLYGON,$$EPSG),
  CONSTRAINT t_maengel_polygon_pkey PRIMARY KEY (ogc_fid)
 )
 WITH (OIDS=FALSE);
