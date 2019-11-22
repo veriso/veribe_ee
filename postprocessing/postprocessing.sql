@@ -1467,7 +1467,7 @@ CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
 (
 ''0-MPD1: analysé dans la MPD1 et décision de ne rien modifier'',
 ''1-limites de forêt: contrôle et évaluation'',
-''2-rect. autre_revetement_dur contre ruisseau/rails/autoroute'',
+''2-rect. autres surf. boisées contre ruisseau/rails/autoroute'',
 ''3-pâturages boisés: définition par la division forestière'',
 ''4-transférer cordon boisé de CS à OD'',
 ''5-supprimer cordon boisé'',
