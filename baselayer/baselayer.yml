@@ -47,7 +47,7 @@ baselayer:
     de: swissimage (50%)
     fr: swissimage (50%)
   url: https://wms.swisstopo.admin.ch/?
-  layers: ch.swisstopo.swissimage
+  layers: ch.swisstopo.images-swissimage
   format: image/jpeg
   style: baselayer/swissimage_50.qml
 - type: wms
@@ -55,7 +55,7 @@ baselayer:
     de: swissimage (100%)
     fr: swissimage (100%)
   url: https://wms.swisstopo.admin.ch/?
-  layers: ch.swisstopo.swissimage
+  layers: ch.swisstopo.images-swissimage
   format: image/jpeg
 - type: wms
   title:
