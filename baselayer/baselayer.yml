@@ -130,6 +130,18 @@ baselayer:
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.AMO_LOT
   format: image/png
+- type: ogr
+  title:
+    de: Qualitaet BB
+    fr: Qualité CS
+  url: /share/Share/Baselayers/Stand_BB_5.shp
+  style: pnf/Qualitaet_BB.qml
+- type: ogr
+  title:
+    de: Von Vector25 Gebieten
+    fr: Secteurs issus de Vector25
+  url: /share/Share/Baselayers/PNF_2_3_Vector25_Gebiete.shp
+  style: pnf/Von_Vector25_Gebieten.qml
 - type: wms
   title:
     de: Gas
