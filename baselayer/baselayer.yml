@@ -26,7 +26,7 @@ baselayer:
     de: Gewässer des Kantons Bern
     fr: Hydrographie du canton de Berne
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?
-  layers: GEODB.GNBE_GNBELA,GEODB.GNBE_GNBEAB,GEODB.GNBE_GNBEAB_B
+  layers: GEODB.GNBE_GNBELA_STANDARD,GEODB.GNBE_GNBEAB_STANDARD
   format: image/png
 - type: wms
   title:
