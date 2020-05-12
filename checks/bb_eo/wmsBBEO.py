@@ -84,7 +84,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "GNBE", None)
             layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?"
-            layer["layers"] = "GEODB.GNBE_GNBELA,GEODB.GNBE_GNBEAB,GEODB.GNBE_GNBEAB_B"
+            layer["layers"] = "GEODB.GNBE_GNBELA_STANDARD,GEODB.GNBE_GNBEAB_STANDARD"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
             layer["sql"] = ""

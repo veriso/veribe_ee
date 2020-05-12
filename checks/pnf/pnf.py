@@ -152,7 +152,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Gewässer des Kantons Bern', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.GNBE_GNBELA,GEODB.GNBE_GNBEAB,GEODB.GNBE_GNBEAB_B',
+                'layers': 'GEODB.GNBE_GNBELA_STANDARD,GEODB.GNBE_GNBEAB_STANDARD',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_gewaesser.qml'
                 }
