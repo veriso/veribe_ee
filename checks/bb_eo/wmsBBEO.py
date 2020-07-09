@@ -48,7 +48,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["title"] = _translate("VeriSO_EE_wmsBBEO",
                                         "gesch. geol. Objekte", None)
             layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
-            layer["layers"] = "GEODB.GGO_GGOP"
+            layer["layers"] = "GEODB.GGO_GGOP_KMGDM"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
             layer["sql"] = ""
@@ -73,7 +73,7 @@ class ComplexCheck(ComplexCheckBase):
                                         "GBO (geschuetzte botanische...)",
                                         None)
             layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
-            layer["layers"] = "GEODB.GBO_GBOP,GEODB.GBO_GBOF"
+            layer["layers"] = "GEODB.GBO_GBOP_KMGDM,GEODB.GBO_GBOF_KMGDM"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
             layer["sql"] = ""
@@ -96,7 +96,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "Wanderwege",
                                         None)
             layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?"
-            layer["layers"] = "GEODB.WANDERNS_WEGE"
+            layer["layers"] = "GEODB.WANDERNS_WEGE_STANDARD"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
             layer["sql"] = ""

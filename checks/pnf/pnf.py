@@ -141,7 +141,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Wanderwege', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.WANDERNS_WEGE',
+                'layers': 'GEODB.WANDERNS_WEGE_STANDARD',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_wanderwege.qml'
                 }
@@ -535,7 +535,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Bauzonen UZP', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.UZP_BAU',
+                'layers': 'GEODB.UZP_BAU_STANDARD',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_bauzonen.qml'
                 }
