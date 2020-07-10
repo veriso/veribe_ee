@@ -612,7 +612,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'DTM-Relief', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.LDTM50CM_LTRELIEF,GEODB.LDTM50CM_LTHOEHE',
+                'layers': 'GEODB.LDTM50CM_LTRELIEF_STANDARD,GEODB.LDTM50CM_LTHOEHE_STANDARD',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_dtm-relief.qml'
                 }
