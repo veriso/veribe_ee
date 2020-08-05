@@ -48,7 +48,7 @@ baselayer:
     fr: swissimage (50%)
   url: https://wms.swisstopo.admin.ch/?
   layers: ch.swisstopo.images-swissimage
-  format: image/jpeg
+  format: image/png
   style: baselayer/swissimage_50.qml
 - type: wms
   title:
@@ -56,14 +56,14 @@ baselayer:
     fr: swissimage (100%)
   url: https://wms.swisstopo.admin.ch/?
   layers: ch.swisstopo.images-swissimage
-  format: image/jpeg
+  format: image/png
 - type: wms
   title:
     de: PK25
     fr: LK25
   url: https://wms.swisstopo.admin.ch/?
   layers: ch.swisstopo.pixelkarte-farbe
-  format: image/jpeg
+  format: image/png
   style: baselayer/swissimage_50.qml
 - type: wms
   title:
@@ -71,7 +71,7 @@ baselayer:
     fr: Relief (swisstopo)
   url: https://wms.swisstopo.admin.ch/?
   layers: ch.swisstopo.swissalti3d-reliefschattierung
-  format: image/jpeg
+  format: image/png
   style: baselayer/swissimage_50.qml
 - type: wms
   title:
@@ -79,7 +79,7 @@ baselayer:
     fr: TLM
   url: https://wms.swisstopo.admin.ch/?
   layers: ch.swisstopo.swisstlm3d-karte-farbe
-  format: image/jpeg
+  format: image/png
   style: baselayer/swissimage_50.qml
 - type: wms
   title:
@@ -197,7 +197,7 @@ baselayer:
     fr: NPA et localités
   url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo-vd.ortschaftenverzeichnis_plz
-  format: image/jpeg
+  format: image/png
 - type: wms
   title:
     de: Orthophoto Region Bern

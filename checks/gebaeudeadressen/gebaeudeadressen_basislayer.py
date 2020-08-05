@@ -53,7 +53,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["layers"] = "ch.swisstopo-vd.ortschaftenverzeichnis_plz"
 #            layer["layers"] ="PLZ und Ortschaften"
 
-            layer["format"] = "image/jpeg"
+            layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
             layer["sql"] = ""
             vlayer = self.layer_loader.load(layer, False, True)
