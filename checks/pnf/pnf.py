@@ -624,7 +624,7 @@ class ComplexCheck(ComplexCheckBase):
                 'title': _translate('VeriSO_EE_PNF', 'SWISSIMAGE Hintergrund', None),
                 'url': 'https://wms.swisstopo.admin.ch/?',
                 'layers': 'ch.swisstopo.images-swissimage',
-                'format': 'image/jpeg',
+                'format': 'image/png',
                 }
             vlayer = self.layer_loader.load(layer, True, True)
 
