@@ -567,8 +567,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Waldgrenzen', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice1/services/a42pub1/a42pub_oereb_wms_d_fk/MapServer/WmsServer?',
-                'layers': 'GEODB.NPLWALD_WAFW',
+                'url': 'https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de',
+                'layers': 'geodb.nuplwald_wfwagrz',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_waldgrenzen.qml'
                 }

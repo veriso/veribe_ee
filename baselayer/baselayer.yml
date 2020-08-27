@@ -209,8 +209,8 @@ baselayer:
   title:
     de: Waldgrenzen OEREBK
     fr: Limites de forêt CRDPPF
-  url: https://www.geoservice.apps.be.ch/geoservice1/services/a42pub1/a42pub_oereb_wms_d_fk/MapServer/WmsServer?
-  layers: GEODB.NPLWALD_WAFW
+  url: https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de
+  layers: geodb.nuplwald_wfwagrz
   format: image/png
 - type: wms
   title:
