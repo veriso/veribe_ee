@@ -144,10 +144,10 @@ baselayer:
   style: pnf/Von_Vector25_Gebieten.qml
 - type: wms
   title:
-    de: Gas
-    fr: Gaz
-  url: http://wms.qgiscloud.com/Niklas/Gas
-  layers: Gas
+    de: Gasleitungen
+    fr: Conduites de gaz
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?
+  layers: GEODB.ERDGAS_GASLEIT_STANDARD
   format: image/png
 - type: wms
   title:
