@@ -26,7 +26,7 @@ baselayer:
     de: Gewässer des Kantons Bern
     fr: Hydrographie du canton de Berne
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?
-  layers: GEODB.GNBE_GNBELA_STANDARD,GEODB.GNBE_GNBEAB_STANDARD
+  layers: GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM1
   format: image/png
 - type: wms
   title:
@@ -86,28 +86,28 @@ baselayer:
     de: Kantonsgrenzsteine
     fr: Bornes cantonales
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: GEODB.STEINV_KTGRST
+  layers: GEODB.STEINV_KTGRST_KMGDM1
   format: image/png
 - type: wms
   title:
     de: Historische Grenzsteine
     fr: Bornes historiques
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: GEODB.STEINV_HISTGRST
+  layers: GEODB.STEINV_HISTGRST_KMGDM1
   format: image/png
 - type: wms
   title:
     de: Stundensteine
     fr: Bornes de lieues
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: GEODB.STEINV_STDST
+  layers: GEODB.STEINV_STDST_KMGDM1
   format: image/png
 - type: wms
   title:
     de: Planeinteilung Nomenklatur
     fr: Répartition des plans de nomenclature
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: GEODB.NOMKL_NOMKLPL
+  layers: GEODB.NOMKL_NOMKLPL_STANDARD
   format: image/png
 - type: wms
   title:
@@ -121,14 +121,14 @@ baselayer:
     de: AMO anerkannter Stand
     fr: AMO état approuvé
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: GEODB.AMO_ACTSTAT
+  layers: GEODB.AMO_ACTSTAT_KMGDM1
   format: image/png
 - type: wms
   title:
     de: AMO In Arbeit
     fr: AMO en cours de réalisation
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-  layers: GEODB.AMO_LOT
+  layers: GEODB.AMO_LOT_KMGDM1
   format: image/png
 - type: ogr
   title:
@@ -217,5 +217,5 @@ baselayer:
     de: DTM50 BE
     fr: DTM50 BE
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?
-  layers: GEODB.LDTM50CM_LTRELIEF_STANDARD
+  layers: GEODB.LDTM50CM_LTRELIEF_KMGDM1
   format: image/png

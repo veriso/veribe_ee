@@ -152,7 +152,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Gewässer des Kantons Bern', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.GNBE_GNBELA_STANDARD,GEODB.GNBE_GNBEAB_STANDARD',
+                'layers': 'GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM1',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_gewaesser.qml'
                 }
@@ -525,7 +525,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Laufende operate', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.AMO_LOT',
+                'layers': 'GEODB.AMO_LOT_KMGDM1',
                 'format': 'image/png'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -612,7 +612,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'DTM-Relief', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.LDTM50CM_LTRELIEF_STANDARD,GEODB.LDTM50CM_LTHOEHE_STANDARD',
+                'layers': 'GEODB.LDTM50CM_LTRELIEF_KMGDM1,GEODB.LDTM50CM_LTHOEHE_KMGDM1',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_dtm-relief.qml'
                 }
