@@ -122,7 +122,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["type"] = "wms"
             layer["title"] = _translate("VeriSO_EE_FP3",
                                         "LFP1 + LFP2 Schweiz", None)
-            layer["url"] = "http://wms.geo.admin.ch/"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo.fixpunkte-lfp1,ch.swisstopo.fixpunkte-lfp2"
             layer["format"] = "image/png"
             layer["crs"] = "EPSG:" + str(epsg)

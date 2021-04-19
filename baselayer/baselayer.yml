@@ -46,7 +46,7 @@ baselayer:
   title:
     de: swissimage (50%)
     fr: swissimage (50%)
-  url: https://wms.swisstopo.admin.ch/?
+  url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.images-swissimage
   format: image/png
   style: baselayer/swissimage_50.qml
@@ -54,14 +54,14 @@ baselayer:
   title:
     de: swissimage (100%)
     fr: swissimage (100%)
-  url: https://wms.swisstopo.admin.ch/?
+  url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.images-swissimage
   format: image/png
 - type: wms
   title:
     de: PK25
     fr: LK25
-  url: https://wms.swisstopo.admin.ch/?
+  url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.pixelkarte-farbe
   format: image/png
   style: baselayer/swissimage_50.qml
@@ -69,7 +69,7 @@ baselayer:
   title:
     de: Relief (swisstopo)
     fr: Relief (swisstopo)
-  url: https://wms.swisstopo.admin.ch/?
+  url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.swissalti3d-reliefschattierung
   format: image/png
   style: baselayer/swissimage_50.qml
@@ -77,7 +77,7 @@ baselayer:
   title:
     de: TLM
     fr: TLM
-  url: https://wms.swisstopo.admin.ch/?
+  url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.swisstlm3d-karte-farbe
   format: image/png
   style: baselayer/swissimage_50.qml

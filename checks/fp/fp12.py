@@ -117,7 +117,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "wms"
-            layer["url"] = "http://wms.geo.admin.ch/?"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo.fixpunkte-hfp1"
 #            layer["crs"] = "EPSG:21781"
             layer["format"] = "image/png"
@@ -128,7 +128,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "wms"
-            layer["url"] = "http://wms.geo.admin.ch/?"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo.fixpunkte-hfp2"
 #            layer["crs"] = "EPSG:21781"
             layer["format"] = "image/png"
@@ -139,7 +139,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "wms"
-            layer["url"] = "http://wms.geo.admin.ch/?"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo.fixpunkte-lfp1"
 #            layer["crs"] = "EPSG:21781"
             layer["format"] = "image/png"
@@ -150,7 +150,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "wms"
-            layer["url"] = "http://wms.geo.admin.ch/?"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo.fixpunkte-lfp2"
 #            layer["crs"] = "EPSG:21781"
             layer["format"] = "image/png"

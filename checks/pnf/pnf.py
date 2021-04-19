@@ -622,7 +622,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'SWISSIMAGE Hintergrund', None),
-                'url': 'https://wms.swisstopo.admin.ch/?',
+                'url': 'https://wms.geo.admin.ch/?',
                 'layers': 'ch.swisstopo.images-swissimage',
                 'format': 'image/png',
                 }

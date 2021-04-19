@@ -45,7 +45,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "wms"
-            layer["url"] = "http://wms.geo.admin.ch/?"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo.swissboundaries3d-kanton-flaeche.fill"
 #            layer["crs"] = "EPSG:21781"
             layer["format"] = "image/png"
@@ -58,7 +58,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["type"] = "wms"
             layer["title"] = _translate("VeriSO_EE_GemGrenz",
                                         "Gemeindegrenzen-swisstopo", None)
-            layer["url"] = "http://wms.geo.admin.ch/?"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo.swissboundaries3d-gemeinde-flaeche.fill"
             layer["format"] = "image/png"
             layer["group"] = group

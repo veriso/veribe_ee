@@ -49,7 +49,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_Geb_Basis", "PLZ Ortschaft",
                                         None)
-            layer["url"] = "http://wms.geo.admin.ch/?"
+            layer["url"] = "https://wms.geo.admin.ch/?"
             layer["layers"] = "ch.swisstopo-vd.ortschaftenverzeichnis_plz"
 #            layer["layers"] ="PLZ und Ortschaften"
 
