@@ -19,7 +19,7 @@ baselayer:
     de: Bauzonen UZP
     fr: Zones à bâtir UZP
   url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
-  layers: GEODB.UZP_BAU_STANDARD
+  layers: GEODB.UZP_BAU_KMGDM1
   format: image/png
 - type: wms
   title:

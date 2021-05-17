@@ -535,7 +535,7 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Bauzonen UZP', None),
                 'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.UZP_BAU_STANDARD',
+                'layers': 'GEODB.UZP_BAU_KMGDM1',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_bauzonen.qml'
                 }
