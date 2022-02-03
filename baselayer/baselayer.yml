@@ -32,8 +32,8 @@ baselayer:
   title:
     de: Wanderwege
     fr: Itinéraires de randonnée pédestre
-  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?
-  layers: GEODB.WANDERNS_WEGE_STANDARD
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
+  layers: GEODB.WANDERNS_WEGE_KMGDM1
   format: image/png
 - type: wms
   title:

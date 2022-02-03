@@ -95,8 +95,8 @@ class ComplexCheck(ComplexCheckBase):
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "Wanderwege",
                                         None)
-            layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?"
-            layer["layers"] = "GEODB.WANDERNS_WEGE_STANDARD"
+            layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?"
+            layer["layers"] = "GEODB.WANDERNS_WEGE_KMGDM1"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
             layer["sql"] = ""

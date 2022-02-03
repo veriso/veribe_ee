@@ -140,8 +140,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Wanderwege', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_transportwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.WANDERNS_WEGE_STANDARD',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
+                'layers': 'GEODB.WANDERNS_WEGE_KMGDM1',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_wanderwege.qml'
                 }
