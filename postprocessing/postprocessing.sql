@@ -1123,22 +1123,22 @@ SELECT DISTINCT b.ogc_fid,b.geometrie
   WHERE st_touches(b.geometrie, liegenschaften_projselbstrecht.geometrie) IS TRUE
 );',3,'Was in table inserts',NULL,1),
  (81,'INSERT INTO $$DBSCHEMA.z_v_bb_ls (bb_ogc_fid,bb_qualitaet,bb_qualitaet_txt,art,art_txt,ls_ogc_fid,liegenschaft_von,nummerteilgrundstueck,flaechenmass,geometrie,flaeche,ls_flaeche)
-WITH 
-    bbed AS 
+WITH
+    bbed AS
     (
     SELECT ST_MakeValid(bodenbedeckung_boflaeche.geometrie) AS val_geom, *
     FROM $$DBSCHEMA.bodenbedeckung_boflaeche
     ),
 
-    lieg AS 
+    lieg AS
     (
     SELECT ST_MakeValid(liegenschaften_liegenschaft.geometrie) AS val_geom, *
     FROM $$DBSCHEMA.liegenschaften_liegenschaft
     ),
 
-    foo AS 
+    foo AS
     (
-    SELECT 
+    SELECT
       bodenbedeckung_boflaeche.ogc_fid AS bb_ogc_fid,
       bodenbedeckung_boflaeche.qualitaet AS bb_qualitaet,
       bodenbedeckung_boflaeche.qualitaet_txt AS bb_qualitaet_txt,
@@ -1446,6 +1446,15 @@ CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
 ''22-Gebaeude vorhanden / unterirdisch?'',
 ''23-Bodenbedeckung loeschen'',
 ''24-Diverses''
+);
+CREATE TYPE $$DBSCHEMA.digitaler_foesterplan_bezeichnung AS ENUM
+(
+''1-kleine Waldfläche ab BB in EO übernehmen (Hecke)'',
+''2-schmale bestockte Flaeche (Hecke) aufnehmen (Wald beachten)'',
+''3-schmale bestockte Flaeche (Hecke) löschen (Wald beachten)'',
+''4-Weg in BB aufnehmen'',
+''5-Weg aus BB löschen'',
+''6-Weg ab BB in EO übernehmen''
 );',5,'allow defects list','de',1),
  (99,'CREATE TYPE $$DBSCHEMA.maengel_bereinigen AS ENUM
 (
@@ -1490,6 +1499,15 @@ CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
 ''22-bâtiment présent / souterrain ?'',
 ''23-supprimer couverture du sol'',
 ''24-divers''
+);
+CREATE TYPE $$DBSCHEMA.digitaler_foesterplan_bezeichnung AS ENUM
+(
+''1-transférer petite surface boisée de CS à OD (haie)'',
+''2-saisir cordon boisé (haie, tenir compte de la forêt)'',
+''3-suppr. cordon boisé (haie, tenir compte de la forêt)'',
+''4-saisir chemin dans la couverture du sol'',
+''5-supprimer chemin de la couverture du sol'',
+''6-transférer chemin de CS à OD''
 );',5,'allow defects list','fr',1),
  (100,'-- The following table create assume these roles are available
 --CREATE ROLE agi WITH LOGIN;
@@ -1497,6 +1515,7 @@ CREATE TYPE $$DBSCHEMA.avor_bezeichnung AS ENUM
 --CREATE ROLE forst WITH LOGIN;
 --CREATE ROLE avor WITH LOGIN;
 
+-- POINTS
 
 CREATE TABLE $$DBSCHEMA.t_maengel_punkt
 (
@@ -1532,7 +1551,36 @@ GRANT SELECT, UPDATE(topic, bezeichnun, abrechnung, bem_avor, datum, bem_nfg, fo
 GRANT USAGE ON $$DBSCHEMA.t_maengel_punkt_ogc_fid_seq TO agi;
 GRANT USAGE ON $$DBSCHEMA.t_maengel_punkt_ogc_fid_seq TO avor;
 
+-- POINTS FOREST
+
+CREATE TABLE $$DBSCHEMA.t_forest_maengel_punkt
+(
+ ogc_fid serial NOT NULL,
+ bezeichnung $$DBSCHEMA.digitaler_foesterplan_bezeichnung, --bezeichnung
+ bem varchar,
+ datum timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ bem_forst text, --bemerkung_forst
+ the_geom geometry(POINT,$$EPSG),
+ CONSTRAINT t_forest_maengel_punkt_pkey PRIMARY KEY (ogc_fid)
+)
+WITH (OIDS=FALSE);
+--GRANT ALL ON TABLE $$DBSCHEMA.t_forest_maengel_punkt TO $$USER;
+
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_forest_maengel_punkt FROM agi;
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_forest_maengel_punkt FROM geometer;
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_forest_maengel_punkt FROM forst;
+REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_forest_maengel_punkt FROM avor;
+
+GRANT SELECT, UPDATE, INSERT, DELETE ON $$DBSCHEMA.t_forest_maengel_punkt TO agi;
+GRANT SELECT, UPDATE(bem_forst) ON $$DBSCHEMA.t_forest_maengel_punkt TO forst;
+GRANT SELECT, UPDATE(bezeichnung, bem, datum, bem_forst),
+      INSERT, DELETE ON $$DBSCHEMA.t_forest_maengel_punkt TO avor;
+
+GRANT USAGE ON $$DBSCHEMA.t_forest_maengel_punkt_ogc_fid_seq TO agi;
+GRANT USAGE ON $$DBSCHEMA.t_forest_maengel_punkt_ogc_fid_seq TO avor;
+
 -- LINES
+
 CREATE TABLE $$DBSCHEMA.t_maengel_linie
 (
  ogc_fid serial NOT NULL,
@@ -1566,6 +1614,8 @@ GRANT SELECT, UPDATE(topic, bezeichnun, abrechnung, bem_avor, datum, bem_nfg, fo
 
 GRANT USAGE ON $$DBSCHEMA.t_maengel_linie_ogc_fid_seq TO agi;
 GRANT USAGE ON $$DBSCHEMA.t_maengel_linie_ogc_fid_seq TO avor;
+
+-- POLYGON
 
 CREATE TABLE $$DBSCHEMA.t_maengel_polygon
 (
