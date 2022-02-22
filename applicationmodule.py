@@ -61,6 +61,9 @@ class ApplicationModule(ApplicationModuleBase):
         defects_module = dynamic_import(defects_module)
         tr_tag = self.module_name
         d = defects_module.LoadDefectsBase(self.iface, tr_tag, defects_type)
+        if defects_type == "forest":
+            d.group = self.tr("Wald Mängel")
+            d.group += " (" + str(d.project_id) + ")"
 
         fields = {
             'ogc_fid': {'widget': 'TextEdit',
