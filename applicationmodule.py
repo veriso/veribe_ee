@@ -33,11 +33,18 @@ class ApplicationModule(ApplicationModuleBase):
         QCoreApplication.installTranslator(self.translator)
 
     def do_init_forest_defects_menu(self):
+        forest_defects_menu_name = "VeriSO.Main.LoadForestDefectsMenu"
         menubar = self.toolbar.findChild(
             QMenuBar, 'VeriSO.Main.LoadDefectsMenuBar')
+
+        for action in menubar.actions():
+            if action.menu().objectName() == forest_defects_menu_name:
+                menubar.removeAction(action)
+                break
+
         # Specialized defects menu only for forest points
         menu = QMenu(menubar)
-        menu.setObjectName("VeriSO.Main.LoadForestDefectsMenu")
+        menu.setObjectName(forest_defects_menu_name)
         menu.setTitle(self.tr("Forest Defects"))
         # Add defects dock action from default defects menu
         default_menu = menubar.findChild(QMenu, 'VeriSO.Main.LoadDefectsMenu')
