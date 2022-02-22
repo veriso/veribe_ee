@@ -17,6 +17,9 @@ class ApplicationModule(ApplicationModuleBase):
     def __init__(self, veriso):
         super(ApplicationModule, self).__init__(veriso)
         self.module_dir = os.path.dirname(__file__)
+
+    def init_gui(self):
+        super(ApplicationModule, self).init_gui()
         # self.load_module_translations()
         self.do_init_forest_defects_menu()
 
