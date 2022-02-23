@@ -1557,7 +1557,7 @@ CREATE TABLE $$DBSCHEMA.t_forest_maengel_punkt
 (
  ogc_fid serial NOT NULL,
  bezeichnung $$DBSCHEMA.digitaler_foesterplan_bezeichnung, --bezeichnung
- bem varchar,
+ bem_av varchar,
  datum timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
  bem_forst text, --bemerkung_forst
  the_geom geometry(POINT,$$EPSG),
@@ -1573,7 +1573,7 @@ REVOKE ALL PRIVILEGES ON $$DBSCHEMA.t_forest_maengel_punkt FROM avor;
 
 GRANT SELECT, UPDATE, INSERT, DELETE ON $$DBSCHEMA.t_forest_maengel_punkt TO agi;
 GRANT SELECT, UPDATE(bem_forst) ON $$DBSCHEMA.t_forest_maengel_punkt TO forst;
-GRANT SELECT, UPDATE(bezeichnung, bem, datum, bem_forst),
+GRANT SELECT, UPDATE(bezeichnung, bem_av, datum, bem_forst),
       INSERT, DELETE ON $$DBSCHEMA.t_forest_maengel_punkt TO avor;
 
 GRANT USAGE ON $$DBSCHEMA.t_forest_maengel_punkt_ogc_fid_seq TO agi;
