@@ -131,9 +131,9 @@ class ApplicationModule(ApplicationModuleBase):
                 'widget': 'Enumeration',
                 'alias': self.tr('Bezeichnung:'),
                 'writable_only_by': ['agi', 'avor']},
-            'bem': {
+            'bem_av': {
                 'widget': 'TextEdit',
-                'alias': self.tr('Bemerkung:'),
+                'alias': self.tr('Bemerkung AV:'),
                 'config': {"IsMultiline": True},
                 'writable_only_by': ['agi', 'avor']},
             'datum': {'widget': 'Hidden'},
