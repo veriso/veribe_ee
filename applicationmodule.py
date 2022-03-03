@@ -229,7 +229,7 @@ class ApplicationModule(ApplicationModuleBase):
                     "readonly": True,
                     "sql": "",
                     "group": d.group,
-                    "style": "maengel/maengelliste_punkte.qml",
+                    "style": "maengel/maengelliste_wald_punkte.qml",
                     "fields": forest_fields
                 },
                 'pointdesc': {
@@ -241,7 +241,7 @@ class ApplicationModule(ApplicationModuleBase):
                     "readonly": True,
                     "sql": "",
                     "group": d.group,
-                    "style": "maengel/maengelliste_punkte_beschreibung.qml",
+                    "style": "maengel/maengelliste_wald_punkte_beschreibung.qml",
                     "fields": forest_fields
                 }
             }
