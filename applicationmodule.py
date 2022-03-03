@@ -2,9 +2,8 @@
 
 from veriso.base.utils.utils import dynamic_import
 from veriso.modules.applicationmodule_base import ApplicationModuleBase
+from veriso.base.utils.utils import tr
 from qgis.PyQt.QtWidgets import QMenu, QMenuBar
-from qgis.PyQt.QtCore import QCoreApplication, QTranslator, QSettings
-
 
 import os
 
@@ -20,22 +19,10 @@ class ApplicationModule(ApplicationModuleBase):
 
     def init_gui(self):
         super(ApplicationModule, self).init_gui()
-        # self.load_module_translations()
         self.do_init_forest_defects_menu()
 
-    def load_module_translations(self):
-        """Load the modules translations
-        """
-        locale = QSettings().value('locale/userLocale')[0:2]
-        self.translator = QTranslator()
-        self.translator.load(
-            os.path.join(
-                self.module_dir,
-                'i18n',
-                'veribe_ee_{}.qm'.format(locale)))
-        QCoreApplication.installTranslator(self.translator)
-
     def do_init_forest_defects_menu(self):
+        tr_tag = self.module_name
         forest_defects_menu_name = "VeriSO.Main.LoadForestDefectsMenu"
         menubar = self.toolbar.findChild(
             QMenuBar, 'VeriSO.Main.LoadDefectsMenuBar')
@@ -48,7 +35,7 @@ class ApplicationModule(ApplicationModuleBase):
         # Specialized defects menu only for forest points
         menu = QMenu(menubar)
         menu.setObjectName(forest_defects_menu_name)
-        menu.setTitle(self.tr("Forest Defects"))
+        menu.setTitle(tr("Forest Defects", tr_tag))
         # Add defects dock action from default defects menu
         default_menu = menubar.findChild(QMenu, 'VeriSO.Main.LoadDefectsMenu')
         for action in default_menu.actions():
@@ -65,7 +52,7 @@ class ApplicationModule(ApplicationModuleBase):
         tr_tag = self.module_name
         d = defects_module.LoadDefectsBase(self.iface, tr_tag, defects_type)
         if defects_type == "forest":
-            d.group = self.tr("Wald Mängel")
+            d.group = tr("Mängel Wald", tr_tag)
             d.group += " (" + str(d.project_id) + ")"
 
         fields = {
@@ -129,17 +116,17 @@ class ApplicationModule(ApplicationModuleBase):
                         'config': {"Editable": False}},
             'bezeichnung': {
                 'widget': 'Enumeration',
-                'alias': self.tr('Bezeichnung:'),
+                'alias': tr('Bezeichnung:', tr_tag),
                 'writable_only_by': ['agi', 'avor']},
             'bem_av': {
                 'widget': 'TextEdit',
-                'alias': self.tr('Bemerkung AV:'),
+                'alias': tr('Bemerkung AV:', tr_tag),
                 'config': {"IsMultiline": True},
                 'writable_only_by': ['agi', 'avor']},
             'datum': {'widget': 'Hidden'},
             'bem_forst': {
                 'widget': 'TextEdit',
-                'alias': self.tr('Bemerkung Forst:'),
+                'alias': tr('Bemerkung Forst:', tr_tag),
                 'config': {"IsMultiline": True},
                 'writable_only_by': ['agi', 'forst']},
         }
@@ -148,7 +135,7 @@ class ApplicationModule(ApplicationModuleBase):
             'default': {
                 'point': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Punkte)"),
+                    "title": tr("Mängelliste (Punkte)", tr_tag),
                     "featuretype": "t_maengel_punkt",
                     "geom": "the_geom",
                     "key": "ogc_fid",
@@ -160,7 +147,7 @@ class ApplicationModule(ApplicationModuleBase):
                 },
                 'pointdesc': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Punkte) Beschreibung"),
+                    "title": tr("Mängelliste (Punkte) Beschreibung", tr_tag),
                     "featuretype": "t_maengel_punkt",
                     "geom": "the_geom",
                     "key": "ogc_fid",
@@ -172,7 +159,7 @@ class ApplicationModule(ApplicationModuleBase):
                 },
                 'line': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Linien)"),
+                    "title": tr("Mängelliste (Linien)", tr_tag),
                     "featuretype": "t_maengel_linie",
                     "geom": "the_geom",
                     "key": "ogc_fid",
@@ -184,7 +171,7 @@ class ApplicationModule(ApplicationModuleBase):
                 },
                 'linedesc': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Linien) Beschreibung"),
+                    "title": tr("Mängelliste (Linien) Beschreibung", tr_tag),
                     "featuretype": "t_maengel_linie",
                     "geom": "the_geom",
                     "key": "ogc_fid",
@@ -196,7 +183,7 @@ class ApplicationModule(ApplicationModuleBase):
                 },
                 'polygon': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Polygone)"),
+                    "title": tr("Mängelliste (Polygone)", tr_tag),
                     "featuretype": "t_maengel_polygon",
                     "geom": "the_geom",
                     "key": "ogc_fid",
@@ -208,7 +195,7 @@ class ApplicationModule(ApplicationModuleBase):
                 },
                 'polygondesc': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Polygone) Beschreibung"),
+                    "title": tr("Mängelliste (Polygone) Beschreibung", tr_tag),
                     "featuretype": "t_maengel_polygon",
                     "geom": "the_geom",
                     "key": "ogc_fid",
@@ -222,7 +209,7 @@ class ApplicationModule(ApplicationModuleBase):
             'forest': {
                 'point': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Punkte)"),
+                    "title": tr("Mängelliste (Punkte)", tr_tag),
                     "featuretype": "t_forest_maengel_punkt",
                     "geom": "the_geom",
                     "key": "ogc_fid",
@@ -234,7 +221,7 @@ class ApplicationModule(ApplicationModuleBase):
                 },
                 'pointdesc': {
                     "type": "postgres",
-                    "title": self.tr("Mängelliste (Punkte) Beschreibung"),
+                    "title": tr("Mängelliste (Punkte) Beschreibung", tr_tag),
                     "featuretype": "t_forest_maengel_punkt",
                     "geom": "the_geom",
                     "key": "ogc_fid",
