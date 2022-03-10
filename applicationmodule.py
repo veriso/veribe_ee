@@ -2,7 +2,7 @@
 
 from veriso.base.utils.utils import dynamic_import
 from veriso.modules.applicationmodule_base import ApplicationModuleBase
-from veriso.base.utils.utils import tr
+from veriso.base.utils.utils import tr, get_default_db
 from qgis.PyQt.QtWidgets import QMenu, QMenuBar
 
 import os
@@ -31,6 +31,22 @@ class ApplicationModule(ApplicationModuleBase):
             if action.menu().objectName() == forest_defects_menu_name:
                 menubar.removeAction(action)
                 break
+
+        # Check whether the forest tables exists
+        try:
+            db = get_default_db()
+
+            for table_name in self.get_defects_table_names()["forest"].values():
+                query = db.exec_(
+                    """
+                        SELECT ogc_fid FROM %s.%s;
+                    """ % (self.settings.value("project/displayname"), table_name)
+                )
+
+                if query.record().indexOf("ogc_fid") == -1:
+                    return
+        except:
+            return
 
         # Specialized defects menu only for forest points
         menu = QMenu(menubar)
