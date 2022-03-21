@@ -93,7 +93,10 @@ class ApplicationModule(ApplicationModuleBase):
                 'alias': 'Bemerkung AVOR:',
                 'config': {"IsMultiline": True},
                 'writable_only_by': ['agi', 'avor']},
-            'datum': {'widget': 'Hidden'},
+            'datum': {
+                'widget': 'Hidden',
+                'alias': tr('datum', tr_tag)
+            },
             'bem_nfg': {
                 'widget': 'TextEdit',
                 'alias': 'Bemerkung NFG:',
@@ -139,7 +142,10 @@ class ApplicationModule(ApplicationModuleBase):
                 'alias': tr('Bemerkung AV:', tr_tag),
                 'config': {"IsMultiline": True},
                 'writable_only_by': ['agi', 'avor']},
-            'datum': {'widget': 'Hidden'},
+            'datum': {
+                'widget': 'Hidden',
+                'alias': tr('datum', tr_tag)
+            },
             'bem_forst': {
                 'widget': 'TextEdit',
                 'alias': tr('Bemerkung Forst:', tr_tag),
