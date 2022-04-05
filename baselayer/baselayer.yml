@@ -85,28 +85,28 @@ baselayer:
   title:
     de: Kantonsgrenzsteine
     fr: Bornes cantonales
-  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer?
   layers: GEODB.STEINV_KTGRST_KMGDM1
   format: image/png
 - type: wms
   title:
     de: Historische Grenzsteine
     fr: Bornes historiques
-  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer?
   layers: GEODB.STEINV_HISTGRST_KMGDM1
   format: image/png
 - type: wms
   title:
     de: Stundensteine
     fr: Bornes de lieues
-  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer?
   layers: GEODB.STEINV_STDST_KMGDM1
   format: image/png
 - type: wms
   title:
     de: Planeinteilung Nomenklatur
     fr: Répartition des plans de nomenclature
-  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_ortwms_d_fk/MapServer/WMSServer?
   layers: GEODB.NOMKL_NOMKLPL_STANDARD
   format: image/png
 - type: wms
@@ -120,14 +120,14 @@ baselayer:
   title:
     de: AMO anerkannter Stand
     fr: AMO état approuvé
-  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
   layers: GEODB.AMO_ACTSTAT_KMGDM1
   format: image/png
 - type: wms
   title:
     de: AMO In Arbeit
     fr: AMO en cours de réalisation
-  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+  url: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
   layers: GEODB.AMO_LOT_KMGDM1
   format: image/png
 - type: ogr

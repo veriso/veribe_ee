@@ -524,7 +524,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Laufende operate', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
                 'layers': 'GEODB.AMO_LOT_KMGDM1',
                 'format': 'image/png'
                 }
