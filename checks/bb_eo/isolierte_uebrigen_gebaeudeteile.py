@@ -56,19 +56,19 @@ class ComplexCheck(ComplexCheckBase):
 
         if not project_id:
             self.message_bar.pushCritical(
-                "Error", _translate("Isolierte Uebrigen Gebaeudeteile",
+                "Error", _translate("VeriBE (EE/EN)",
                                     "project_id not set", None))
             return
 
         QApplication.setOverrideCursor(Qt.WaitCursor)
         try:
-            group = _translate("Veribe", "Isolierte_Uebrigen_Gebaeudeteile",
+            group = _translate("VeriBE (EE/EN)", "Isolierte_Uebrigen_Gebaeudeteile",
                                None)
             group += " (" + str(project_id) + ")"
 
             layer = {
                 "type": "postgres",
-                "title": _translate("Veribe",
+                "title": _translate("VeriBE (EE/EN)",
                                     "Isolierte Uebrigen Gebaeudeteile Flachen",
                                     None),
                 "featuretype": "v_uebriger_gebaeudeteil_isolierte_flaeche",
@@ -80,7 +80,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {
                 "type": "postgres",
-                "title": _translate("Veribe",
+                "title": _translate("VeriBE (EE/EN)",
                                     "Isolierte Uebrigen Gebaeudeteile Linien",
                                     None),
                 "featuretype": "v_uebriger_gebaeudeteil_isolierte_linien",
@@ -92,7 +92,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {
                 "type": "postgres",
-                "title": _translate("Veribe",
+                "title": _translate("VeriBE (EE/EN)",
                                     "Isolierte Uebrigen Gebaeudeteile Punkte",
                                     None),
                 "featuretype": "v_uebriger_gebaeudeteil_isolierte_punkte",
