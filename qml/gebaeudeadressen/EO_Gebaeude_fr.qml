@@ -9,7 +9,7 @@
   <categories>
    <category symbol="0" render="true" value="Bruecke_Passerelle" label="pont_passerelle"/>
    <category symbol="1" render="true" value="Reservoir" label="reservoir"/>
-   <category symbol="2" render="true" value="Aussichtsturm" label="Tour panoramique"/>
+   <category symbol="2" render="true" value="tour_panoramique" label="Tour panoramique"/>
    <category symbol="3" render="true" value="Ruine_archeologisches_Objekt" label="Ruine"/>
    <category symbol="4" render="true" value="uebriger_Gebaeudeteil" label="autre_corps_de_batiment"/>
    <category symbol="5" render="true" value="unterirdisches_Gebaeude" label="batiment_souterrain"/>

@@ -24,7 +24,7 @@
       <category label="revetement_dur.bassin" render="true" symbol="0" value="befestigt.Wasserbecken" />
       <category label="eau.cours_eau" render="true" symbol="1" value="Gewaesser.fliessendes" />
       <category label="eau.eau_stagnante" render="true" symbol="2" value="Gewaesser.stehendes" />
-      <category label="ung&#252;ltiger Wert" render="true" symbol="3" value="" />
+      <category label="valeur non autorisée" render="true" symbol="3" value="" />
       <category label="eau.roseliere" render="true" symbol="4" value="Gewaesser.Schilfguertel" />
       <category label="verte.culture_intensive.vigne" render="true" symbol="5" value="humusiert.Intensivkultur.Reben" />
     </categories>

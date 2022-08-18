@@ -37,7 +37,7 @@
       <category label="silo_tour_gazometre" render="true" symbol="13" value="Silo_Turm_Gasometer" />
       <category label="Cheminee" render="true" symbol="14" value="Hochkamin" />
       <category label="mat_antenne" render="true" symbol="15" value="Mast_Antenne" />
-      <category label="Tour panoramique" render="true" symbol="16" value="Aussichtsturm" />
+      <category label="Tour panoramique" render="true" symbol="16" value="tour_panoramique" />
       <category label="Ouvrage de protection des rives" render="true" symbol="17" value="Uferverbauung" />
       <category label="Seuil" render="true" symbol="18" value="Schwelle" />
       <category label="Paravalanche" render="true" symbol="19" value="Lawinenverbauung" />

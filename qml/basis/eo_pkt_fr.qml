@@ -21,12 +21,12 @@
   </edittypes>
   <renderer-v2 attr="art_txt" symbollevels="0" type="categorizedSymbol">
     <categories>
-      <category label="Restliche EO-Arten" render="true" symbol="0" value="" />
+      <category label="autres genres OD" render="true" symbol="0" value="" />
       <category label="Monument" render="true" symbol="1" value="Denkmal" />
       <category label="Source" render="true" symbol="2" value="Quelle" />
       <category label="Bloc erratique" render="true" symbol="3" value="einzelner_Fels" />
       <category label="Mat antenne" render="true" symbol="4" value="Mast_Antenne" />
-      <category label="Tour panoramique" render="true" symbol="5" value="Aussichtsturm" />
+      <category label="Tour panoramique" render="true" symbol="5" value="tour_panoramique" />
       <category label="Arbre isole important" render="true" symbol="6" value="wichtiger_Einzelbaum" />
       <category label="Point de reference" render="true" symbol="7" value="Bezugspunkt" />
       <category label="Autre" render="true" symbol="8" value="weitere" />

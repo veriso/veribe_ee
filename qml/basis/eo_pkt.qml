@@ -21,7 +21,7 @@
   </edittypes>
   <renderer-v2 attr="art_txt" symbollevels="0" type="categorizedSymbol">
     <categories>
-      <category label="Restliche EO-Arten" render="true" symbol="0" value="" />
+      <category label="restliche EO-Arten" render="true" symbol="0" value="" />
       <category label="Denkmal" render="true" symbol="1" value="Denkmal" />
       <category label="Quelle" render="true" symbol="2" value="Quelle" />
       <category label="Einzelner Fels" render="true" symbol="3" value="einzelner_Fels" />

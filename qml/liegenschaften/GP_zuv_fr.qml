@@ -7,8 +7,8 @@
  </flags>
  <renderer-v2 forceraster="0" enableorderby="0" type="categorizedSymbol" attr="lagezuv" symbollevels="0">
   <categories>
-   <category value="0" label="zuverlässig" render="true" symbol="0"/>
-   <category value="1" label="unzuverlässig" render="true" symbol="1"/>
+   <category value="0" label="fiable" render="true" symbol="0"/>
+   <category value="1" label="non fiable" render="true" symbol="1"/>
   </categories>
   <symbols>
    <symbol alpha="1" name="0" type="marker" clip_to_extent="1" force_rhr="0">

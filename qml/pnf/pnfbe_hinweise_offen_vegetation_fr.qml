@@ -31,7 +31,7 @@
             <prop k="rampType" v="gradient"/>
             <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,221,164,255"/>
           </colorramp>
-          <item alpha="255" color="#83de99" value="8" label="offen Vegetation"/>
+          <item alpha="255" color="#83de99" value="8" label="ouvert vegetation"/>
         </colorrampshader>
       </rastershader>
     </rasterrenderer>

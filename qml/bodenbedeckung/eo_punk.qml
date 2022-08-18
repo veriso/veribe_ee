@@ -27,7 +27,7 @@
    <category label="nicht_zulaesslig" render="true" symbol="0" value="" />
    <category label="Denkmal" render="true" symbol="1" value="14" />
    <category label="Mast_Antenne" render="true" symbol="2" value="15" />
-   <category label="Aussichtsturm (nur PEP)" render="true" symbol="3" value="16" />
+   <category label="Aussichtsturm" render="true" symbol="3" value="16" />
    <category label="einzelner_Fels" render="true" symbol="4" value="23" />
    <category label="Faehre" render="true" symbol="5" value="34" />
    <category label="Grotte_Hoehleneingang" render="true" symbol="6" value="35" />

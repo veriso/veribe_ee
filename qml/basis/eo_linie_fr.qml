@@ -38,7 +38,7 @@
       <category label="Bac" render="true" symbol="14" value="Faehre" />
       <category label="Axe" render="true" symbol="15" value="Achse" />
       <category label="Ligne aerienne a haute tension" render="true" symbol="16" value="Hochspannungsfreileitung" />
-      <category label="Tour panoramique" render="true" symbol="17" value="Aussichtsturm" />
+      <category label="Tour panoramique" render="true" symbol="17" value="tour_panoramique" />
       <category label="Quai" render="true" symbol="18" value="Bahnsteig" />
       <category label="Point de reference" render="true" symbol="19" value="Bezugspunkt" />
       <category label="pont_passerelle" render="true" symbol="20" value="Bruecke_Passerelle" />

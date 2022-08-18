@@ -31,7 +31,7 @@
             <prop k="rampType" v="gradient"/>
             <prop k="stops" v="0.25;253,174,97,255:0.5;255,255,191,255:0.75;171,221,164,255"/>
           </colorramp>
-          <item alpha="255" color="#b5c0f1" value="14" label="Gewaesser"/>
+          <item alpha="255" color="#b5c0f1" value="14" label="eau"/>
         </colorrampshader>
       </rastershader>
     </rasterrenderer>

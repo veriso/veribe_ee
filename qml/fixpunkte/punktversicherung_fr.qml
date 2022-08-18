@@ -52,10 +52,10 @@
   <renderer-v2 attr="punktzeichen_txt" enableorderby="0" forceraster="0" symbollevels="0" type="categorizedSymbol">
     <categories>
       <category label="" render="true" symbol="0" value="" />
-      <category label="Bolzen" render="true" symbol="1" value="Bolzen" />
-      <category label="Kreuz" render="true" symbol="2" value="Kreuz" />
-      <category label="Rohr" render="true" symbol="3" value="Rohr" />
-      <category label="Stein" render="true" symbol="4" value="Stein" />
+      <category label="Cheville" render="true" symbol="1" value="Bolzen" />
+      <category label="Croix" render="true" symbol="2" value="Kreuz" />
+      <category label="Tuyau" render="true" symbol="3" value="Rohr" />
+      <category label="Borne" render="true" symbol="4" value="Stein" />
     </categories>
     <symbols>
       <symbol alpha="1" clip_to_extent="1" name="0" type="marker">

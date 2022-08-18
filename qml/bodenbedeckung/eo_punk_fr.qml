@@ -27,7 +27,7 @@
    <category label="nicht_zulaesslig" render="true" symbol="0" value="" />
    <category label="Monument" render="true" symbol="1" value="14" />
    <category label="mat_antenne" render="true" symbol="2" value="15" />
-   <category label="Aussichtsturm (nur PEP)" render="true" symbol="3" value="16" />
+   <category label="tour_panoramique" render="true" symbol="3" value="16" />
    <category label="bloc_erratique" render="true" symbol="4" value="23" />
    <category label="Bac" render="true" symbol="5" value="34" />
    <category label="grotte_entree_de_caverne" render="true" symbol="6" value="35" />

@@ -45,7 +45,7 @@
       <category label="Sans vegetation eboulis sable" render="true" symbol="18" value="vegetationslos.Geroell_Sand" />
       <category label="Sans vegetation glacier neve" render="true" symbol="19" value="vegetationslos.Gletscher_Firn" />
       <category label="Sans vegetation autre sans vegetation" render="true" symbol="20" value="vegetationslos.uebrige_vegetationslose" />
-      <category label="FALSCHE ART" render="true" symbol="21" value="" />
+      <category label="GENRE NON VALIDE" render="true" symbol="21" value="" />
       <category label="Boisee paturage boise dense" render="true" symbol="22" value="bestockt.Wytweide.Wytweide_dicht" />
       <category label="Boisee paturage boise ouvert" render="true" symbol="23" value="bestockt.Wytweide.Wytweide_offen" />
       <category label="Verte tourbiere" render="true" symbol="24" value="humusiert.Hoch_Flachmoor" />
