@@ -1,236 +1,189 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis labelsEnabled="0" simplifyDrawingHints="1" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" simplifyMaxScale="1" styleCategories="AllStyleCategories" simplifyDrawingTol="1" simplifyLocal="1" version="3.4.4-Madeira" maxScale="0" minScale="1e+8" readOnly="0">
- <flags>
-  <Identifiable>1</Identifiable>
-  <Removable>1</Removable>
-  <Searchable>1</Searchable>
- </flags>
- <renderer-v2 forceraster="0" enableorderby="0" type="singleSymbol" symbollevels="0">
-  <symbols>
-   <symbol alpha="1" name="0" type="fill" clip_to_extent="1" force_rhr="0">
-    <layer class="SimpleFill" pass="0" enabled="1" locked="0">
-     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="color" v="255,255,255,255"/>
-     <prop k="joinstyle" v="bevel"/>
-     <prop k="offset" v="0,0"/>
-     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-     <prop k="offset_unit" v="MM"/>
-     <prop k="outline_color" v="224,0,0,255"/>
-     <prop k="outline_style" v="solid"/>
-     <prop k="outline_width" v="0.5"/>
-     <prop k="outline_width_unit" v="MM"/>
-     <prop k="style" v="no"/>
-     <data_defined_properties>
-      <Option type="Map">
-       <Option name="name" type="QString" value=""/>
-       <Option name="properties"/>
-       <Option name="type" type="QString" value="collection"/>
-      </Option>
-     </data_defined_properties>
-    </layer>
-   </symbol>
-  </symbols>
-  <rotation/>
-  <sizescale/>
- </renderer-v2>
- <labeling type="simple">
-  <settings>
-   <text-style namedStyle="Book" blendMode="0" fontSizeUnit="Point" previewBkgrdColor="#ffffff" fontLetterSpacing="0" textColor="0,0,0,255" fontStrikeout="0" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontItalic="0" textOpacity="1" useSubstitutions="0" fontUnderline="0" fontCapitals="0" fontWeight="50" isExpression="0" fieldName="" fontSize="12" fontFamily="Sans Serif" fontWordSpacing="0">
-    <text-buffer bufferDraw="1" bufferSizeUnits="Point" bufferNoFill="1" bufferSize="1" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="255,255,255,255" bufferOpacity="1" bufferJoinStyle="128"/>
-    <background shapeOffsetUnit="MM" shapeSizeUnit="MM" shapeOffsetX="0" shapeDraw="0" shapeSizeX="0" shapeRadiiY="0" shapeRotationType="0" shapeJoinStyle="64" shapeBlendMode="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeBorderWidthUnit="MM" shapeRadiiX="0" shapeBorderWidth="0" shapeRadiiUnit="MM" shapeSizeY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeFillColor="255,255,255,255" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeSVGFile="" shapeSizeType="0" shapeRotation="0" shapeType="0" shapeOpacity="1"/>
-    <shadow shadowOffsetUnit="MM" shadowScale="100" shadowOffsetAngle="135" shadowOffsetDist="1" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadiusUnit="MM" shadowUnder="0" shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowColor="0,0,0,255" shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7"/>
-    <substitutions/>
-   </text-style>
-   <text-format decimals="3" multilineAlign="3" reverseDirectionSymbol="0" autoWrapLength="0" formatNumbers="0" rightDirectionSymbol=">" placeDirectionSymbol="0" addDirectionSymbol="0" wrapChar="" plussign="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;"/>
-   <placement quadOffset="4" maxCurvedCharAngleOut="-25" distMapUnitScale="3x:0,0,0,0,0,0" yOffset="0" offsetUnits="MM" offsetType="0" placementFlags="10" xOffset="0" fitInPolygonOnly="0" distUnits="MM" centroidInside="0" repeatDistance="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" centroidWhole="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" repeatDistanceUnits="MM" rotationAngle="0" placement="1" maxCurvedCharAngleIn="25" dist="0" priority="5"/>
-   <rendering scaleVisibility="0" obstacle="1" obstacleType="0" fontLimitPixelSize="0" fontMinPixelSize="3" minFeatureSize="0" zIndex="0" upsidedownLabels="0" mergeLines="0" limitNumLabels="0" displayAll="1" scaleMin="0" drawLabels="1" fontMaxPixelSize="10000" scaleMax="0" maxNumLabels="2000" labelPerPart="0" obstacleFactor="1"/>
-   <dd_properties>
-    <Option type="Map">
-     <Option name="name" type="QString" value=""/>
-     <Option name="properties"/>
-     <Option name="type" type="QString" value="collection"/>
-    </Option>
-   </dd_properties>
-  </settings>
- </labeling>
- <customproperties>
-  <property key="embeddedWidgets/count" value="0"/>
-  <property key="variableNames"/>
-  <property key="variableValues"/>
- </customproperties>
- <blendMode>0</blendMode>
- <featureBlendMode>0</featureBlendMode>
- <layerOpacity>1</layerOpacity>
- <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-  <DiagramCategory penColor="#000000" width="15" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" barWidth="5" labelPlacementMethod="XHeight" sizeType="MM" penWidth="0" diagramOrientation="Up" maxScaleDenominator="1e+8" lineSizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" lineSizeType="MM" rotationOffset="270" backgroundAlpha="255" backgroundColor="#ffffff" minimumSize="0" height="15" enabled="0" opacity="1" penAlpha="255" scaleDependency="Area">
-   <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-  </DiagramCategory>
- </SingleCategoryDiagramRenderer>
- <DiagramLayerSettings dist="0" linePlacementFlags="18" placement="1" obstacle="0" zIndex="0" priority="0" showAll="1">
-  <properties>
-   <Option type="Map">
-    <Option name="name" type="QString" value=""/>
-    <Option name="properties"/>
-    <Option name="type" type="QString" value="collection"/>
-   </Option>
-  </properties>
- </DiagramLayerSettings>
- <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
-  <activeChecks/>
-  <checkConfiguration/>
- </geometryOptions>
- <fieldConfiguration>
-  <field name="ogc_fid">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="t_ili_tid">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="nummerteilgrundstueck">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="flaechenmass">
-   <editWidget type="Range">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="qualitaet">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="qualitaet_txt">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
-  <field name="projliegenschaft_von">
-   <editWidget type="TextEdit">
-    <config>
-     <Option/>
-    </config>
-   </editWidget>
-  </field>
- </fieldConfiguration>
- <aliases>
-  <alias field="ogc_fid" name="" index="0"/>
-  <alias field="t_ili_tid" name="" index="1"/>
-  <alias field="nummerteilgrundstueck" name="" index="2"/>
-  <alias field="flaechenmass" name="" index="3"/>
-  <alias field="qualitaet" name="" index="4"/>
-  <alias field="qualitaet_txt" name="" index="5"/>
-  <alias field="projliegenschaft_von" name="" index="6"/>
- </aliases>
- <excludeAttributesWMS/>
- <excludeAttributesWFS/>
- <defaults>
-  <default field="ogc_fid" expression="" applyOnUpdate="0"/>
-  <default field="t_ili_tid" expression="" applyOnUpdate="0"/>
-  <default field="nummerteilgrundstueck" expression="" applyOnUpdate="0"/>
-  <default field="flaechenmass" expression="" applyOnUpdate="0"/>
-  <default field="qualitaet" expression="" applyOnUpdate="0"/>
-  <default field="qualitaet_txt" expression="" applyOnUpdate="0"/>
-  <default field="projliegenschaft_von" expression="" applyOnUpdate="0"/>
- </defaults>
- <constraints>
-  <constraint field="ogc_fid" unique_strength="1" exp_strength="0" notnull_strength="1" constraints="3"/>
-  <constraint field="t_ili_tid" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="nummerteilgrundstueck" unique_strength="0" exp_strength="0" notnull_strength="0" constraints="0"/>
-  <constraint field="flaechenmass" unique_strength="0" exp_strength="0" notnull_strength="1" constraints="1"/>
-  <constraint field="qualitaet" unique_strength="0" exp_strength="0" notnull_strength="1" constraints="1"/>
-  <constraint field="qualitaet_txt" unique_strength="0" exp_strength="0" notnull_strength="1" constraints="1"/>
-  <constraint field="projliegenschaft_von" unique_strength="0" exp_strength="0" notnull_strength="1" constraints="1"/>
- </constraints>
- <constraintExpressions>
-  <constraint field="ogc_fid" exp="" desc=""/>
-  <constraint field="t_ili_tid" exp="" desc=""/>
-  <constraint field="nummerteilgrundstueck" exp="" desc=""/>
-  <constraint field="flaechenmass" exp="" desc=""/>
-  <constraint field="qualitaet" exp="" desc=""/>
-  <constraint field="qualitaet_txt" exp="" desc=""/>
-  <constraint field="projliegenschaft_von" exp="" desc=""/>
- </constraintExpressions>
- <expressionfields/>
- <attributeactions>
-  <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
- </attributeactions>
- <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
-  <columns>
-   <column name="ogc_fid" type="field" width="-1" hidden="0"/>
-   <column name="t_ili_tid" type="field" width="-1" hidden="0"/>
-   <column name="nummerteilgrundstueck" type="field" width="-1" hidden="0"/>
-   <column name="flaechenmass" type="field" width="-1" hidden="0"/>
-   <column name="qualitaet" type="field" width="-1" hidden="0"/>
-   <column name="qualitaet_txt" type="field" width="-1" hidden="0"/>
-   <column name="projliegenschaft_von" type="field" width="-1" hidden="0"/>
-   <column type="actions" width="-1" hidden="1"/>
-  </columns>
- </attributetableconfig>
- <conditionalstyles>
-  <rowstyles/>
-  <fieldstyles/>
- </conditionalstyles>
- <editform tolerant="1"></editform>
- <editforminit/>
- <editforminitcodesource>0</editforminitcodesource>
- <editforminitfilepath></editforminitfilepath>
- <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
-"""
-QGIS forms can have a Python function that is called when the form is
-opened.
-
-Use this function to add extra logic to your forms.
-
-Enter the name of the function in the "Python Init function"
-field.
-An example follows:
-"""
-from qgis.PyQt.QtWidgets import QWidget
-
-def my_form_open(dialog, layer, feature):
-	geom = feature.geometry()
-	control = dialog.findChild(QWidget, "MyLineEdit")
-]]></editforminitcode>
- <featformsuppress>0</featformsuppress>
- <editorlayout>generatedlayout</editorlayout>
- <editable>
-  <field editable="1" name="flaechenmass"/>
-  <field editable="1" name="nummerteilgrundstueck"/>
-  <field editable="1" name="ogc_fid"/>
-  <field editable="1" name="projliegenschaft_von"/>
-  <field editable="1" name="qualitaet"/>
-  <field editable="1" name="qualitaet_txt"/>
-  <field editable="1" name="t_ili_tid"/>
- </editable>
- <labelOnTop>
-  <field name="flaechenmass" labelOnTop="0"/>
-  <field name="nummerteilgrundstueck" labelOnTop="0"/>
-  <field name="ogc_fid" labelOnTop="0"/>
-  <field name="projliegenschaft_von" labelOnTop="0"/>
-  <field name="qualitaet" labelOnTop="0"/>
-  <field name="qualitaet_txt" labelOnTop="0"/>
-  <field name="t_ili_tid" labelOnTop="0"/>
- </labelOnTop>
- <widgets/>
- <previewExpression>ogc_fid</previewExpression>
- <mapTip></mapTip>
- <layerGeometryType>2</layerGeometryType>
+<qgis simplifyDrawingHints="1" simplifyDrawingTol="1" symbologyReferenceScale="-1" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" labelsEnabled="0" version="3.22.10-Białowieża" styleCategories="AllStyleCategories" maxScale="0" minScale="100000000" simplifyAlgorithm="0" simplifyMaxScale="1">
+  <flags>
+    <Identifiable>1</Identifiable>
+    <Removable>1</Removable>
+    <Searchable>1</Searchable>
+    <Private>0</Private>
+  </flags>
+  <temporal startField="" fixedDuration="0" startExpression="" mode="0" limitMode="0" durationField="" accumulate="0" endExpression="" endField="" enabled="0" durationUnit="min">
+    <fixedRange>
+      <start></start>
+      <end></end>
+    </fixedRange>
+  </temporal>
+  <renderer-v2 symbollevels="0" type="singleSymbol" referencescale="-1" enableorderby="0" forceraster="0">
+    <symbols>
+      <symbol name="0" alpha="1" clip_to_extent="1" force_rhr="0" type="fill">
+        <data_defined_properties>
+          <Option type="Map">
+            <Option name="name" value="" type="QString"/>
+            <Option name="properties"/>
+            <Option name="type" value="collection" type="QString"/>
+          </Option>
+        </data_defined_properties>
+        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+          <Option type="Map">
+            <Option name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="color" value="145,82,45,255" type="QString"/>
+            <Option name="joinstyle" value="bevel" type="QString"/>
+            <Option name="offset" value="0,0" type="QString"/>
+            <Option name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" type="QString"/>
+            <Option name="offset_unit" value="MM" type="QString"/>
+            <Option name="outline_color" value="35,35,35,255" type="QString"/>
+            <Option name="outline_style" value="solid" type="QString"/>
+            <Option name="outline_width" value="0.26" type="QString"/>
+            <Option name="outline_width_unit" value="MM" type="QString"/>
+            <Option name="style" value="solid" type="QString"/>
+          </Option>
+          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="color" v="145,82,45,255"/>
+          <prop k="joinstyle" v="bevel"/>
+          <prop k="offset" v="0,0"/>
+          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+          <prop k="offset_unit" v="MM"/>
+          <prop k="outline_color" v="35,35,35,255"/>
+          <prop k="outline_style" v="solid"/>
+          <prop k="outline_width" v="0.26"/>
+          <prop k="outline_width_unit" v="MM"/>
+          <prop k="style" v="solid"/>
+          <data_defined_properties>
+            <Option type="Map">
+              <Option name="name" value="" type="QString"/>
+              <Option name="properties"/>
+              <Option name="type" value="collection" type="QString"/>
+            </Option>
+          </data_defined_properties>
+        </layer>
+      </symbol>
+    </symbols>
+    <rotation/>
+    <sizescale/>
+  </renderer-v2>
+  <customproperties>
+    <Option/>
+  </customproperties>
+  <blendMode>0</blendMode>
+  <featureBlendMode>0</featureBlendMode>
+  <layerOpacity>1</layerOpacity>
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+    <activeChecks type="StringList">
+      <Option value="" type="QString"/>
+    </activeChecks>
+    <checkConfiguration/>
+  </geometryOptions>
+  <legend showLabelLegend="0" type="default-vector"/>
+  <referencedLayers/>
+  <fieldConfiguration>
+    <field name="ogc_fid" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="t_ili_tid" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="nummerteilgrundstueck" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="flaechenmass" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="qualitaet" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="qualitaet_txt" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="projliegenschaft_von" configurationFlags="None">
+      <editWidget type="">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+  </fieldConfiguration>
+  <aliases>
+    <alias index="0" name="" field="ogc_fid"/>
+    <alias index="1" name="" field="t_ili_tid"/>
+    <alias index="2" name="" field="nummerteilgrundstueck"/>
+    <alias index="3" name="" field="flaechenmass"/>
+    <alias index="4" name="" field="qualitaet"/>
+    <alias index="5" name="" field="qualitaet_txt"/>
+    <alias index="6" name="" field="projliegenschaft_von"/>
+  </aliases>
+  <defaults>
+    <default expression="" applyOnUpdate="0" field="ogc_fid"/>
+    <default expression="" applyOnUpdate="0" field="t_ili_tid"/>
+    <default expression="" applyOnUpdate="0" field="nummerteilgrundstueck"/>
+    <default expression="" applyOnUpdate="0" field="flaechenmass"/>
+    <default expression="" applyOnUpdate="0" field="qualitaet"/>
+    <default expression="" applyOnUpdate="0" field="qualitaet_txt"/>
+    <default expression="" applyOnUpdate="0" field="projliegenschaft_von"/>
+  </defaults>
+  <constraints>
+    <constraint constraints="3" exp_strength="0" field="ogc_fid" notnull_strength="1" unique_strength="1"/>
+    <constraint constraints="0" exp_strength="0" field="t_ili_tid" notnull_strength="0" unique_strength="0"/>
+    <constraint constraints="0" exp_strength="0" field="nummerteilgrundstueck" notnull_strength="0" unique_strength="0"/>
+    <constraint constraints="1" exp_strength="0" field="flaechenmass" notnull_strength="1" unique_strength="0"/>
+    <constraint constraints="1" exp_strength="0" field="qualitaet" notnull_strength="1" unique_strength="0"/>
+    <constraint constraints="1" exp_strength="0" field="qualitaet_txt" notnull_strength="1" unique_strength="0"/>
+    <constraint constraints="1" exp_strength="0" field="projliegenschaft_von" notnull_strength="1" unique_strength="0"/>
+  </constraints>
+  <constraintExpressions>
+    <constraint exp="" desc="" field="ogc_fid"/>
+    <constraint exp="" desc="" field="t_ili_tid"/>
+    <constraint exp="" desc="" field="nummerteilgrundstueck"/>
+    <constraint exp="" desc="" field="flaechenmass"/>
+    <constraint exp="" desc="" field="qualitaet"/>
+    <constraint exp="" desc="" field="qualitaet_txt"/>
+    <constraint exp="" desc="" field="projliegenschaft_von"/>
+  </constraintExpressions>
+  <expressionfields/>
+  <attributeactions/>
+  <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+    <columns/>
+  </attributetableconfig>
+  <conditionalstyles>
+    <rowstyles/>
+    <fieldstyles/>
+  </conditionalstyles>
+  <storedexpressions/>
+  <editform tolerant="1"></editform>
+  <editforminit/>
+  <editforminitcodesource>0</editforminitcodesource>
+  <editforminitfilepath></editforminitfilepath>
+  <editforminitcode><![CDATA[]]></editforminitcode>
+  <featformsuppress>0</featformsuppress>
+  <editorlayout>generatedlayout</editorlayout>
+  <editable/>
+  <labelOnTop/>
+  <reuseLastValue/>
+  <dataDefinedFieldProperties/>
+  <widgets/>
+  <previewExpression></previewExpression>
+  <mapTip></mapTip>
+  <layerGeometryType>2</layerGeometryType>
 </qgis>

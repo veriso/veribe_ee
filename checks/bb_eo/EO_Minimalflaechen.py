@@ -46,7 +46,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {}
             layer["type"] = "postgres"
             layer["title"] = _translate("VeriSO_EE_EO_Minimalflaechen",
-                                        "schmale bestockte Fläche > 800 qm",
+                                        "schmale bestockte Flaeche > 800 qm",
                                         None)
             layer["readonly"] = True
             layer["featuretype"] = "einzelobjekte_flaechenelement_v"

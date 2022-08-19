@@ -99,9 +99,7 @@ class ComplexCheck(ComplexCheckBase):
 
             layer = {}
             layer["type"] = "postgres"
-#            layer["title"] =  _translate("VeriSO_EE_Geb_Basis", "LokalisationsName", None)
-            layer["title"] = "LokalisationsName"
-
+            layer["title"] =  _translate("VeriSO_EE_Geb_Check", "LokalisationsName", None)
             layer["featuretype"] = "gebaeudeadressen_lokalisationsname"
             layer["key"] = "ogc_fid"
             layer["sql"] = ""
