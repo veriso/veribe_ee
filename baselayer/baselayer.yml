@@ -60,7 +60,7 @@ baselayer:
 - type: wms
   title:
     de: PK25
-    fr: LK25
+    fr: CP25
   url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.pixelkarte-farbe
   format: image/png
@@ -76,7 +76,7 @@ baselayer:
 - type: wms
   title:
     de: TLM
-    fr: TLM
+    fr: MTP (TLM)
   url: https://wms.geo.admin.ch/?
   layers: ch.swisstopo.swisstlm3d-karte-farbe
   format: image/png
@@ -159,14 +159,14 @@ baselayer:
 - type: wms
   title:
     de: AV EO Flaechen.
-    fr: MO objets divers surfaciques
+    fr: MO OD surfaciques
   url: https://geodienste.ch/db/av/deu?
   layers: SOSF
   format: image/png
 - type: wms
   title:
     de: AV EO Linien.
-    fr: MO objets divers lineaires
+    fr: MO OD lineaires
   url: https://geodienste.ch/db/av/deu?
   layers: SOLI
   format: image/png
@@ -187,7 +187,7 @@ baselayer:
 - type: wms
   title:
     de: AV Geb.-Adr.
-    fr: MO adresses postales
+    fr: MO adr. bâtiments
   url: https://geodienste.ch/db/av/deu?
   layers: Gebaeudeadressen
   format: image/png
