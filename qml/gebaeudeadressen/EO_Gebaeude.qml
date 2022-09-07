@@ -16,10 +16,9 @@
       <category symbol="0" label="Bruecke_Passerelle" render="true" value="Bruecke_Passerelle" />
       <category symbol="1" label="Reservoir" render="true" value="Reservoir" />
       <category symbol="2" label="Aussichtsturm" render="true" value="Aussichtsturm" />
-      <category symbol="3" label="Ruine" render="true" value="Ruine_archeologisches_Objekt" />
-      <category symbol="4" label="uebriger_Gebaeudeteil" render="true" value="uebriger_Gebaeudeteil" />
-      <category symbol="5" label="unterirdisches_Gebaeude" render="true" value="unterirdisches_Gebaeude" />
-      <category symbol="6" label="Unterstand" render="true" value="Unterstand" />
+      <category symbol="3" label="Ruine" render="true" value="Ruine_archaeologisches_Objekt" />
+      <category symbol="4" label="unterirdisches_Gebaeude" render="true" value="unterirdisches_Gebaeude" />
+      <category symbol="5" label="Unterstand" render="true" value="Unterstand" />
     </categories>
     <symbols>
       <symbol alpha="0.552941" type="fill" name="0" clip_to_extent="1" force_rhr="0">
@@ -300,48 +299,6 @@
         <layer enabled="1" pass="0" locked="0" class="SimpleFill">
           <Option type="Map">
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" />
-            <Option type="QString" name="color" value="255,0,0,255" />
-            <Option type="QString" name="joinstyle" value="bevel" />
-            <Option type="QString" name="offset" value="0,0" />
-            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" />
-            <Option type="QString" name="offset_unit" value="MM" />
-            <Option type="QString" name="outline_color" value="255,0,0,255" />
-            <Option type="QString" name="outline_style" value="dot" />
-            <Option type="QString" name="outline_width" value="0.26" />
-            <Option type="QString" name="outline_width_unit" value="MM" />
-            <Option type="QString" name="style" value="b_diagonal" />
-          </Option>
-          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale" />
-          <prop v="255,0,0,255" k="color" />
-          <prop v="bevel" k="joinstyle" />
-          <prop v="0,0" k="offset" />
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale" />
-          <prop v="MM" k="offset_unit" />
-          <prop v="255,0,0,255" k="outline_color" />
-          <prop v="dot" k="outline_style" />
-          <prop v="0.26" k="outline_width" />
-          <prop v="MM" k="outline_width_unit" />
-          <prop v="b_diagonal" k="style" />
-          <data_defined_properties>
-            <Option type="Map">
-              <Option type="QString" name="name" value="" />
-              <Option name="properties" />
-              <Option type="QString" name="type" value="collection" />
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol alpha="1" type="fill" name="5" clip_to_extent="1" force_rhr="0">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option type="QString" name="name" value="" />
-            <Option name="properties" />
-            <Option type="QString" name="type" value="collection" />
-          </Option>
-        </data_defined_properties>
-        <layer enabled="1" pass="0" locked="0" class="SimpleFill">
-          <Option type="Map">
-            <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" />
             <Option type="QString" name="color" value="0,0,255,255" />
             <Option type="QString" name="joinstyle" value="bevel" />
             <Option type="QString" name="offset" value="0,0" />
@@ -373,7 +330,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol alpha="1" type="fill" name="6" clip_to_extent="1" force_rhr="0">
+      <symbol alpha="1" type="fill" name="5" clip_to_extent="1" force_rhr="0">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value="" />

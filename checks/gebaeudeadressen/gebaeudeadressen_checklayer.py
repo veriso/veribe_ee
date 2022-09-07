@@ -87,13 +87,13 @@ class ComplexCheck(ComplexCheckBase):
             layer = {}
             layer["type"] = "postgres"
             layer["title"] = _translate("VeriSO_EE_Geb_Check",
-                                        u"Gebäude > 12m2 ohne Eingang", None)
-            layer["featuretype"] = "t_gebaeude_groesser_12m2_ohne_eingang"
+                                        u"Gebäude > 10m2 ohne Eingang", None)
+            layer["featuretype"] = "t_gebaeude_groesser_10m2_ohne_eingang"
             layer["geom"] = "geometrie"
             layer["key"] = "ogc_fid"
             layer["sql"] = ""
             layer["group"] = group
-            layer["style"] = "gebaeudeadressen/gebaeude_12m2_ohne_eingang.qml"
+            layer["style"] = "gebaeudeadressen/gebaeude_10m2_ohne_eingang.qml"
 
             vlayer = self.layer_loader.load(layer)
 

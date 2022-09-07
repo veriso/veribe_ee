@@ -16,10 +16,9 @@
       <category label="pont_passerelle" render="true" symbol="0" value="Bruecke_Passerelle" />
       <category label="reservoir" render="true" symbol="1" value="Reservoir" />
       <category label="Tour panoramique" render="true" symbol="2" value="tour_panoramique" />
-      <category label="Ruine" render="true" symbol="3" value="Ruine_archeologisches_Objekt" />
-      <category label="autre_corps_de_batiment" render="true" symbol="4" value="uebriger_Gebaeudeteil" />
-      <category label="batiment_souterrain" render="true" symbol="5" value="unterirdisches_Gebaeude" />
-      <category label="Couvert independant" render="true" symbol="6" value="Unterstand" />
+      <category label="Ruine" render="true" symbol="3" value="Ruine_archaeologisches_Objekt" />
+      <category label="batiment_souterrain" render="true" symbol="4" value="unterirdisches_Gebaeude" />
+      <category label="Couvert independant" render="true" symbol="5" value="Unterstand" />
     </categories>
     <symbols>
       <symbol clip_to_extent="1" alpha="0.552941" type="fill" force_rhr="0" name="0">
@@ -300,48 +299,6 @@
         <layer enabled="1" locked="0" class="SimpleFill" pass="0">
           <Option type="Map">
             <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" />
-            <Option type="QString" name="color" value="255,0,0,255" />
-            <Option type="QString" name="joinstyle" value="bevel" />
-            <Option type="QString" name="offset" value="0,0" />
-            <Option type="QString" name="offset_map_unit_scale" value="3x:0,0,0,0,0,0" />
-            <Option type="QString" name="offset_unit" value="MM" />
-            <Option type="QString" name="outline_color" value="255,0,0,255" />
-            <Option type="QString" name="outline_style" value="dot" />
-            <Option type="QString" name="outline_width" value="0.26" />
-            <Option type="QString" name="outline_width_unit" value="MM" />
-            <Option type="QString" name="style" value="b_diagonal" />
-          </Option>
-          <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0" />
-          <prop k="color" v="255,0,0,255" />
-          <prop k="joinstyle" v="bevel" />
-          <prop k="offset" v="0,0" />
-          <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0" />
-          <prop k="offset_unit" v="MM" />
-          <prop k="outline_color" v="255,0,0,255" />
-          <prop k="outline_style" v="dot" />
-          <prop k="outline_width" v="0.26" />
-          <prop k="outline_width_unit" v="MM" />
-          <prop k="style" v="b_diagonal" />
-          <data_defined_properties>
-            <Option type="Map">
-              <Option type="QString" name="name" value="" />
-              <Option name="properties" />
-              <Option type="QString" name="type" value="collection" />
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol clip_to_extent="1" alpha="1" type="fill" force_rhr="0" name="5">
-        <data_defined_properties>
-          <Option type="Map">
-            <Option type="QString" name="name" value="" />
-            <Option name="properties" />
-            <Option type="QString" name="type" value="collection" />
-          </Option>
-        </data_defined_properties>
-        <layer enabled="1" locked="0" class="SimpleFill" pass="0">
-          <Option type="Map">
-            <Option type="QString" name="border_width_map_unit_scale" value="3x:0,0,0,0,0,0" />
             <Option type="QString" name="color" value="0,0,255,255" />
             <Option type="QString" name="joinstyle" value="bevel" />
             <Option type="QString" name="offset" value="0,0" />
@@ -373,7 +330,7 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" type="fill" force_rhr="0" name="6">
+      <symbol clip_to_extent="1" alpha="1" type="fill" force_rhr="0" name="5">
         <data_defined_properties>
           <Option type="Map">
             <Option type="QString" name="name" value="" />
