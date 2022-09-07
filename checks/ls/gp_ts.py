@@ -83,18 +83,6 @@ class ComplexCheck(ComplexCheckBase):
             layer["style"] = "liegenschaften/GP_zuv.qml"
             vlayer = self.layer_loader.load(layer)
 
-            layer["type"] = "postgres"
-            layer["title"] = _translate("VeriSO_EE_gp_ts", "GP zuv", None)
-            layer["readonly"] = True
-            layer["featuretype"] = "liegenschaften_grenzpunkt"
-            layer["geom"] = "geometrie"
-            layer["key"] = "ogc_fid"
-            layer["sql"] = "lagezuv=1"
-            layer["group"] = group
-            # layer["style"] = ""
-            vlayerunzuv = self.layer_loader.load(layer, False, False)
-            unzuv = vlayerunzuv.featureCount()
-
             layer = {}
             layer["type"] = "postgres"
             layer["title"] = _translate("VeriSO_EE_gp_ts", "GP Genauigkeit",
@@ -184,7 +172,6 @@ class ComplexCheck(ComplexCheckBase):
                 + "<table>"
                 + "<tr> <td>Anzahl GP's / Nombre PL: </td> <td>" + str(genGP) + "</td> </tr>"
                 + "<tr> <td>Genauigkeit / precision < AV93 / MO93: </td> <td>" + str(GP) + "</td> </tr>"
-                + "<tr> <td>unzuverlaessige GP's / PL fiabilite insuffisante: </td> <td>" + str(unzuv) + "</td> </tr>"
                 + "<tr> <td>unversicherte GP's / PL non materialises: </td> <td>" + str(unvGP) + "</td> </tr>"
                 + "<tr> <td>GP nicht exakt definiert / PL pas defini exactement : </td> <td>" + str(unex) + "</td> </tr>"
                 + "</table>")
