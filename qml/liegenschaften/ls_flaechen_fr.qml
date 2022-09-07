@@ -13,8 +13,8 @@
   </temporal>
   <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="RuleRenderer" referencescale="-1">
     <rules key="{2cdbefb9-b625-48d7-bf4b-3e45fd704aeb}">
-      <rule filter="qualitaet_txt = 'AV93' and (( round(area(  $geometry )) -0.55&gt;&quot;flaechenmass&quot; ) or ( round(area(  $geometry )) +0.55&lt; &quot;flaechenmass&quot; ) )" label="AV93 / MO93" symbol="0" key="{0029f964-6608-478a-8284-7c0964a0e7c6}" />
-      <rule filter="qualitaet_txt &lt;&gt; 'AV93' and (( round(area(  $geometry )) -0.55&gt; &quot;flaechenmass&quot; ) or ( round(area(  $geometry )) +0.55&lt; &quot;flaechenmass&quot; ) )" label="andere Qualit&#228;t / autres de qualit&#233;" symbol="1" key="{12bb080d-e08d-44b2-a172-424a8f28755b}" />
+      <rule filter="qualitaet_txt = 'AV93' and (( round(area(  $geometry )) -0.55&gt;&quot;flaechenmass&quot; ) or ( round(area(  $geometry )) +0.55&lt; &quot;flaechenmass&quot; ) )" label="MO93" symbol="0" key="{0029f964-6608-478a-8284-7c0964a0e7c6}" />
+      <rule filter="qualitaet_txt &lt;&gt; 'AV93' and (( round(area(  $geometry )) -0.55&gt; &quot;flaechenmass&quot; ) or ( round(area(  $geometry )) +0.55&lt; &quot;flaechenmass&quot; ) )" label="autres de qualit&#233;" symbol="1" key="{12bb080d-e08d-44b2-a172-424a8f28755b}" />
     </rules>
     <symbols>
       <symbol clip_to_extent="1" alpha="1" type="fill" force_rhr="0" name="0">
