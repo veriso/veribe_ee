@@ -21,7 +21,7 @@
       <category symbol="5" label="Faehre" render="true" value="34" />
       <category symbol="6" label="Grotte_Hoehleneingang" render="true" value="35" />
       <category symbol="7" label="wichtiger_Einzelbaum" render="true" value="37" />
-      <category symbol="8" label="Kruzifix" render="true" value="38" />
+      <category symbol="8" label="Bildstock_Kruzifix" render="true" value="38" />
       <category symbol="9" label="Quelle" render="true" value="39" />
       <category symbol="10" label="Bezugspunkt" render="true" value="40" />
     </categories>
