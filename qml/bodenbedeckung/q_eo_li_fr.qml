@@ -15,8 +15,8 @@
     <categories>
       <category label="MO93" render="true" symbol="0" value="AV93" />
       <category label="PV74" render="true" symbol="1" value="PV74" />
-      <category label="PN.PN_def_anerkannt" render="true" symbol="2" value="PN.PN_def_anerkannt" />
-      <category label="PN.PN_prov_anerkannt" render="true" symbol="3" value="PN.PN_prov_anerkannt" />
+      <category label="NP_reconnue_def" render="true" symbol="2" value="PN.PN_def_anerkannt" />
+      <category label="NP_reconnue_prov" render="true" symbol="3" value="PN.PN_prov_anerkannt" />
       <category label="PRP" render="true" symbol="4" value="PEP" />
       <category label="autre" render="true" symbol="5" value="" />
     </categories>

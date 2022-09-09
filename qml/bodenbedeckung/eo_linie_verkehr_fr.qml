@@ -13,7 +13,7 @@
   </temporal>
   <renderer-v2 type="categorizedSymbol" forceraster="0" referencescale="-1" symbollevels="0" enableorderby="0" attr="art_txt">
     <categories>
-      <category label="Ru" value="Rinnsal" render="true" symbol="0" />
+      <category label="ru" value="Rinnsal" render="true" symbol="0" />
       <category label="sentier" value="schmaler_Weg" render="true" symbol="1" />
       <category label="escalier_important" value="wichtige_Treppe" render="true" symbol="2" />
       <category label="eau_canalisee_souterraine" value="eingedoltes_oeffentliches_Gewaesser" render="true" symbol="3" />

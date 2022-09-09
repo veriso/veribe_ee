@@ -93,7 +93,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {}
             layer["type"] = "postgres"
             layer["title"] = _translate("VeriSO_EE_EO_allgemein",
-                                        "BEGID (EO)", None)
+                                        "BEGID (OD)", None)
             layer["readonly"] = True
             layer["featuretype"] = "z_objektnummer_pos"
             layer["key"] = "ogc_fid"

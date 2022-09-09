@@ -13,11 +13,11 @@
   </temporal>
   <renderer-v2 attr="art_txt" enableorderby="0" forceraster="0" symbollevels="0" type="categorizedSymbol" referencescale="-1">
     <categories>
-      <category label="TS1" render="true" symbol="0" value="TS1" />
-      <category label="TS2" render="true" symbol="1" value="TS2" />
-      <category label="TS3" render="true" symbol="2" value="TS3" />
-      <category label="TS4" render="true" symbol="3" value="TS4" />
-      <category label="TS5" render="true" symbol="4" value="TS5" />
+      <category label="NT1" render="true" symbol="0" value="TS1" />
+      <category label="NT2" render="true" symbol="1" value="TS2" />
+      <category label="NT3" render="true" symbol="2" value="TS3" />
+      <category label="NT4" render="true" symbol="3" value="TS4" />
+      <category label="NT5" render="true" symbol="4" value="TS5" />
     </categories>
     <symbols>
       <symbol clip_to_extent="1" alpha="1" type="fill" force_rhr="0" name="0">

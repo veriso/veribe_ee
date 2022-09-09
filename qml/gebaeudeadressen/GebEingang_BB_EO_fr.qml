@@ -13,8 +13,8 @@
   </temporal>
   <renderer-v2 attr="im_gebaeude_txt" enableorderby="0" forceraster="0" symbollevels="0" type="categorizedSymbol" referencescale="-1">
     <categories>
-      <category label="BB" render="true" symbol="0" value="BB" />
-      <category label="EO" render="true" symbol="1" value="EO" />
+      <category label="CS" render="true" symbol="0" value="BB" />
+      <category label="OD" render="true" symbol="1" value="EO" />
     </categories>
     <symbols>
       <symbol clip_to_extent="1" alpha="1" type="marker" force_rhr="0" name="0">

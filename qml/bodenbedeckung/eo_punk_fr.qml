@@ -13,17 +13,17 @@
   </temporal>
   <renderer-v2 type="categorizedSymbol" forceraster="0" referencescale="-1" symbollevels="0" enableorderby="0" attr="art">
     <categories>
-      <category label="nicht_zulaesslig" value="" render="true" symbol="0" />
-      <category label="Monument" value="14" render="true" symbol="1" />
+      <category label="non_autorisé" value="" render="true" symbol="0" />
+      <category label="monument" value="14" render="true" symbol="1" />
       <category label="mat_antenne" value="15" render="true" symbol="2" />
       <category label="tour_panoramique" value="16" render="true" symbol="3" />
       <category label="bloc_erratique" value="23" render="true" symbol="4" />
-      <category label="Bac" value="34" render="true" symbol="5" />
+      <category label="bac" value="34" render="true" symbol="5" />
       <category label="grotte_entree_de_caverne" value="35" render="true" symbol="6" />
       <category label="arbre_isole_important" value="37" render="true" symbol="7" />
-      <category label="Kruzifix" value="38" render="true" symbol="8" />
-      <category label="Source" value="39" render="true" symbol="9" />
-      <category label="Point de reference" value="40" render="true" symbol="10" />
+      <category label="statue_crucifix" value="38" render="true" symbol="8" />
+      <category label="source" value="39" render="true" symbol="9" />
+      <category label="point_de_reference" value="40" render="true" symbol="10" />
     </categories>
     <symbols>
       <symbol type="marker" alpha="1" clip_to_extent="1" name="0" force_rhr="0">
