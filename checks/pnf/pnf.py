@@ -333,13 +333,13 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 "type": "postgres",
                 "title": _translate("VeriSO_EE_basis",
-                                    "Hoheitsgrenzpunkt - Bolzen,Rohr", None),
+                                    "Hoheitsgrenzpunkt - Bolzen,Rohr,Pfahl", None),
                 "readonly": True,
                 "featuretype": "gemeindegrenzen_hoheitsgrenzpunkt",
                 "geom": "geometrie",
                 "group": group_av_allgemein,
                 "key": "ogc_fid",
-                "sql": "punktzeichen in (2,3)",
+                "sql": "punktzeichen in (2,3,4)",
                 "style": "bodenbedeckung/hgp_bolzen.qml"
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -361,13 +361,13 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 "type": "postgres",
                 "title": _translate("VeriSO_EE_basis",
-                                    "Hoheitsgrenzpunkt - Stein", None),
+                                    "Hoheitsgrenzpunkt - Stein,Kunststoffzeichen", None),
                 "readonly": True,
                 "featuretype": "gemeindegrenzen_hoheitsgrenzpunkt",
                 "geom": "geometrie",
                 "group": group_av_allgemein,
                 "key": "ogc_fid",
-                "sql": "punktzeichen in (0)",
+                "sql": "punktzeichen in (0,1)",
                 "style": "bodenbedeckung/hgp_stein.qml"
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -389,13 +389,13 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 "type": "postgres",
                 "title": _translate("VeriSO_EE_basis",
-                                    "Grenzpunkt - Bolzen,Rohr", None),
+                                    "Grenzpunkt - Bolzen,Rohr,Pfahl", None),
                 "readonly": True,
                 "featuretype": "liegenschaften_grenzpunkt",
                 "geom": "geometrie",
                 "group": group_av_allgemein,
                 "key": "ogc_fid",
-                "sql": "punktzeichen in (2,3)",
+                "sql": "punktzeichen in (2,3,4)",
                 "style": "bodenbedeckung/gp_bolzen.qml"
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -417,13 +417,13 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 "type": "postgres",
                 "title": _translate("VeriSO_EE_basis",
-                                    "Grenzpunkt - Stein", None),
+                                    "Grenzpunkt - Stein,Kunststoffzeichen", None),
                 "readonly": True,
                 "featuretype": "liegenschaften_grenzpunkt",
                 "geom": "geometrie",
                 "group": group_av_allgemein,
                 "key": "ogc_fid",
-                "sql": "punktzeichen in (0)",
+                "sql": "punktzeichen in (0,1)",
                 "style": "bodenbedeckung/gp_stein.qml"
                 }
             vlayer = self.layer_loader.load(layer, False, True)
