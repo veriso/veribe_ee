@@ -34,7 +34,7 @@
       <category symbol="18" label="sans_vegetation.eboulis_sable" render="true" value="vegetationslos.Geroell_Sand" />
       <category symbol="19" label="sans_vegetation.glacier_neve" render="true" value="vegetationslos.Gletscher_Firn" />
       <category symbol="20" label="sans_vegetation.autre_sans_vegetation" render="true" value="vegetationslos.uebrige_vegetationslose" />
-      <category symbol="21" label="FALSCHE ART" render="true" value="" />
+      <category symbol="21" label="GENRE NON VALIDE" render="true" value="" />
       <category symbol="22" label="boisee.paturage_boise.paturage_boise_dense" render="true" value="bestockt.Wytweide.Wytweide_dicht" />
       <category symbol="23" label="boisee.paturage_boise.paturage_boise_ouvert" render="true" value="bestockt.Wytweide.Wytweide_offen" />
       <category symbol="24" label="verte.tourbiere" render="true" value="humusiert.Hoch_Flachmoor" />
