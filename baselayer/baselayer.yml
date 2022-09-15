@@ -145,7 +145,7 @@ baselayer:
     fr: Niveaux de tolérance
   url:
     de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_f_fk/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: AV01.TS_Toleranzstufe
   format: image/png
 - type: wms
@@ -198,7 +198,7 @@ baselayer:
   url:
     de: https://geodienste.ch/db/av/deu?
     fr: https://geodienste.ch/db/av/fra?
-  layers: Bodenbedeckung
+  layers: LCSFC
   format: image/jpeg
 - type: wms
   title:
@@ -225,7 +225,7 @@ baselayer:
   url:
     de: https://geodienste.ch/db/av/deu?
     fr: https://geodienste.ch/db/av/fra?
-  layers: Liegenschaften
+  layers: RESF
   format: image/png
 - type: wms
   title:
@@ -234,7 +234,7 @@ baselayer:
   url:
     de: https://geodienste.ch/db/av/deu?
     fr: https://geodienste.ch/db/av/fra?
-  layers: DPRSFPROJ
+  layers: DPRSF
   format: image/png
 - type: wms
   title:
@@ -243,7 +243,7 @@ baselayer:
   url:
     de: https://geodienste.ch/db/av/deu?
     fr: https://geodienste.ch/db/av/fra?
-  layers: Gebaeudeadressen
+  layers: HADR
   format: image/png
 - type: wms
   title:
@@ -260,7 +260,7 @@ baselayer:
     fr: Orthophoto région Berne
   url:
     de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_f_fk/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.OBERN_OBERN_MOSAIC
   format: image/png
 - type: wms
@@ -278,6 +278,6 @@ baselayer:
     fr: DTM50 BE
   url:
     de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_f_fk/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?
   layers: GEODB.LDTM50CM_LTRELIEF_KMGDM1
   format: image/png
