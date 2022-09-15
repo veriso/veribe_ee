@@ -16,10 +16,10 @@
     <categories>
       <category label="pont_passerelle" render="true" symbol="0" value="Bruecke_Passerelle" />
       <category label="reservoir" render="true" symbol="1" value="Reservoir" />
-      <category label="Tour panoramique" render="true" symbol="2" value="tour_panoramique" />
+      <category label="tour_panoramique" render="true" symbol="2" value="tour_panoramique" />
       <category label="ruine_objet_archeologique" render="true" symbol="3" value="Ruine_archaeologisches_Objekt" />
       <category label="batiment_souterrain" render="true" symbol="4" value="unterirdisches_Gebaeude" />
-      <category label="Couvert independant" render="true" symbol="5" value="Unterstand" />
+      <category label="couvert_independant" render="true" symbol="5" value="Unterstand" />
       <category symbol="6" label="cheminee" value="Hochkamin" render="true"/>
       <category symbol="7" label="silo_tour_gazometre" value="Silo_Turm_Gasometer" render="true"/>
     </categories>
