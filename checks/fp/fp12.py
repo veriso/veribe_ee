@@ -166,15 +166,26 @@ class ComplexCheck(ComplexCheckBase):
             hfp2 = vlayerHFP2.featureCount()
             lfp2 = vlayerLFP2.featureCount()
 
-            QMessageBox.information(
-                None, "Statistik Fixpunkte",
-                "<b>Statistique points fixes 1/2:</b> <br>"
-                + "<table>"
-                + "<tr> <td>HFP1/PFA1: </td> <td>" + str(hfp1) + "</td> </tr>"
-                + "<tr> <td>LFP1/PFP1: </td> <td>" + str(lfp1) + "</td> </tr>"
-                + "<tr> <td>HFP2/PFA2: </td> <td>" + str(hfp2) + "</td> </tr>"
-                + "<tr> <td>LFP2/PFP2: </td> <td>" + str(lfp2) + "</td> </tr>"
-                + "</table>")
+            if locale == "fr":
+                QMessageBox.information(
+                    None, "Statistique points fixes",
+                    "<b>Statistique points fixes 1/2:</b> <br>"
+                    + "<table>"
+                    + "<tr> <td>PFA1: </td> <td>" + str(hfp1) + "</td> </tr>"
+                    + "<tr> <td>PFP1: </td> <td>" + str(lfp1) + "</td> </tr>"
+                    + "<tr> <td>PFA2: </td> <td>" + str(hfp2) + "</td> </tr>"
+                    + "<tr> <td>PFP2: </td> <td>" + str(lfp2) + "</td> </tr>"
+                    + "</table>")
+            else:
+                QMessageBox.information(
+                    None, "Statistik Fixpunkte",
+                    "<b>Statistik Fixpunkte 1/2:</b> <br>"
+                    + "<table>"
+                    + "<tr> <td>HFP1: </td> <td>" + str(hfp1) + "</td> </tr>"
+                    + "<tr> <td>LFP1: </td> <td>" + str(lfp1) + "</td> </tr>"
+                    + "<tr> <td>HFP2: </td> <td>" + str(hfp2) + "</td> </tr>"
+                    + "<tr> <td>LFP2: </td> <td>" + str(lfp2) + "</td> </tr>"
+                    + "</table>")
 
         except Exception:
             QApplication.restoreOverrideCursor()
