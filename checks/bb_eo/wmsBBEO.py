@@ -47,7 +47,10 @@ class ComplexCheck(ComplexCheckBase):
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO",
                                         "gesch. geol. Objekte", None)
-            layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
+            if locale == "fr":
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_f_fk/MapServer/WMSServer?"
+            else:
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
             layer["layers"] = "GEODB.GGO_GGOP_KMGDM"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
@@ -59,7 +62,10 @@ class ComplexCheck(ComplexCheckBase):
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "Lawinienverb.",
                                         None)
-            layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
+            if locale == "fr":
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_f_fk/MapServer/WMSServer?"
+            else:
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
             layer["layers"] = "GEODB.SCHBLAW_SBLAWP_STANDARD,GEODB.SCHBLAW_SBLAW_STANDARD"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
@@ -72,7 +78,10 @@ class ComplexCheck(ComplexCheckBase):
             layer["title"] = _translate("VeriSO_EE_wmsBBEO",
                                         "GBO (geschuetzte botanische...)",
                                         None)
-            layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
+            if locale == "fr":
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_f_fk/MapServer/WMSServer?"
+            else:
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
             layer["layers"] = "GEODB.GBO_GBOP_KMGDM,GEODB.GBO_GBOF_KMGDM"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
@@ -83,7 +92,10 @@ class ComplexCheck(ComplexCheckBase):
             layer["type"] = "wms"
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "GNBE", None)
-            layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?"
+            if locale == "fr":
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_f_fk/MapServer/WMSServer?"
+            else:
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?"
             layer["layers"] = "GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM2_B"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
@@ -95,7 +107,10 @@ class ComplexCheck(ComplexCheckBase):
             layer["group"] = group
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "Wanderwege",
                                         None)
-            layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?"
+            if locale == "fr":
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_f_fk/MapServer/WMSServer?"
+            else:
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?"
             layer["layers"] = "GEODB.WANDERNS_WEGE_KMGDM1"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"

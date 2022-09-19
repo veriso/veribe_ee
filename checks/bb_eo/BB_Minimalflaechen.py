@@ -170,19 +170,34 @@ class ComplexCheck(ComplexCheckBase):
             Wald = vlayerWald.featureCount()
             BB = vlayerBB.featureCount()
 
-            QMessageBox.information(
-                None,
-                "Surfaces plus petites que criteres de surface",
-                "<b>Flaechen unterhalb Flaechenkriterien:</b> <br>"
-                + "<table>"
-                + "<tr> <td>BB pro LS / CS par BF (10m2): </td> <td>" + str(BB) +  "</td> </tr>"
-                + "<tr> <td>Wasserbecken /bassin (20m2): </td> <td>" + str(Wb) +  "</td> </tr>"
-                + "<tr> <td>Gebaeude / batiment (10m2): </td> <td>" + str(Geb) +  "</td> </tr>"
-                + "<tr> <td>Wald / foret (800m2): </td> <td>" + str(Wald) +  "</td> </tr>"
-                + "<tr> <td>TS 1/2 / NT 1/2 (100m2) : </td> <td>" + str(TS1) +  "</td> </tr>"
-                + "<tr> <td>TS 3 / NT 3 (1000m2): </td> <td>" + str(TS3) +  "</td> </tr>"
-                + "<tr> <td>TS 4/5  / NT 4/5 (2500m2): </td> <td>" + str(TS4) +  "</td> </tr>"
-                + "</table>")
+            if locale == "fr":
+                QMessageBox.information(
+                    None,
+                    "Surfaces plus petites que criteres de surface",
+                    "<b>Surfaces plus petites que criteres de surface:</b> <br>"
+                    + "<table>"
+                    + "<tr> <td>CS par BF (10m2): </td> <td>" + str(BB) +  "</td> </tr>"
+                    + "<tr> <td>bassin (20m2): </td> <td>" + str(Wb) +  "</td> </tr>"
+                    + "<tr> <td>batiment (10m2): </td> <td>" + str(Geb) +  "</td> </tr>"
+                    + "<tr> <td>foret (800m2): </td> <td>" + str(Wald) +  "</td> </tr>"
+                    + "<tr> <td>NT 1/2 (100m2) : </td> <td>" + str(TS1) +  "</td> </tr>"
+                    + "<tr> <td>NT 3 (1000m2): </td> <td>" + str(TS3) +  "</td> </tr>"
+                    + "<tr> <td>NT 4/5 (2500m2): </td> <td>" + str(TS4) +  "</td> </tr>"
+                    + "</table>")
+            else:
+                QMessageBox.information(
+                    None,
+                    "Flaechen unterhalb Flaechenkriterien",
+                    "<b>Flaechen unterhalb Flaechenkriterien:</b> <br>"
+                    + "<table>"
+                    + "<tr> <td>BB pro LS (10m2): </td> <td>" + str(BB) +  "</td> </tr>"
+                    + "<tr> <td>Wasserbecken (20m2): </td> <td>" + str(Wb) +  "</td> </tr>"
+                    + "<tr> <td>Gebaeude (10m2): </td> <td>" + str(Geb) +  "</td> </tr>"
+                    + "<tr> <td>Wald (800m2): </td> <td>" + str(Wald) +  "</td> </tr>"
+                    + "<tr> <td>TS 1/2 (100m2) : </td> <td>" + str(TS1) +  "</td> </tr>"
+                    + "<tr> <td>TS 3 (1000m2): </td> <td>" + str(TS3) +  "</td> </tr>"
+                    + "<tr> <td>TS 4/5 (2500m2): </td> <td>" + str(TS4) +  "</td> </tr>"
+                    + "</table>")
 
         except Exception:
             QApplication.restoreOverrideCursor()

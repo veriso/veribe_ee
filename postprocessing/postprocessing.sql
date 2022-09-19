@@ -49,7 +49,7 @@ GRANT SELECT ON TABLE $$DBSCHEMA.t_gebaeudeadressen_spinnennetz TO $$USER;',1,'W
 )
 WITH (OIDS=FALSE);
 GRANT SELECT ON TABLE $$DBSCHEMA.t_shortestline_hausnummerpos TO $$USER;',1,'Was in table tables',NULL,1),
- (6,'CREATE TABLE $$DBSCHEMA.t_gebaeude_groesser_12m2_ohne_eingang
+ (6,'CREATE TABLE $$DBSCHEMA.t_gebaeude_groesser_10m2_ohne_eingang
 (
   ogc_fid serial NOT NULL,
   tid character varying,
@@ -60,13 +60,13 @@ GRANT SELECT ON TABLE $$DBSCHEMA.t_shortestline_hausnummerpos TO $$USER;',1,'Was
   qualitaet_txt character varying,
   art integer,
   art_txt character varying,
-  CONSTRAINT t_gebaeude_groesser_12m2_ohne_eingang_pkey PRIMARY KEY (ogc_fid)
+  CONSTRAINT t_gebaeude_groesser_10m2_ohne_eingang_pkey PRIMARY KEY (ogc_fid)
 )
 WITH (
   OIDS=FALSE
 );
 
-GRANT SELECT ON TABLE $$DBSCHEMA.t_gebaeude_groesser_12m2_ohne_eingang TO $$USER;',1,'Was in table tables',NULL,1),
+GRANT SELECT ON TABLE $$DBSCHEMA.t_gebaeude_groesser_10m2_ohne_eingang TO $$USER;',1,'Was in table tables',NULL,1),
  (7,'CREATE TABLE $$DBSCHEMA.t_gebaeudeadressen_gebaeudeeingang_ausserhalb
 (
   ogc_fid serial NOT NULL,
@@ -940,7 +940,7 @@ FROM $$DBSCHEMA.v_gebaeudeadressen_hausnummerpos as a,
 WHERE a.hausnummerpos_von::text = b.ogc_fid::text
 AND b.gebaeudeeingang_von::text = c.strassenstueck_von::text
 AND d.benannte = b.gebaeudeeingang_von;',3,'Was in table inserts',NULL,1),
- (74,'INSERT INTO $$DBSCHEMA.t_gebaeude_groesser_12m2_ohne_eingang (tid, entstehung, geometrie, flaeche, qualitaet, qualitaet_txt, art, art_txt)
+ (74,'INSERT INTO $$DBSCHEMA.t_gebaeude_groesser_10m2_ohne_eingang (tid, entstehung, geometrie, flaeche, qualitaet, qualitaet_txt, art, art_txt)
 
 SELECT c.t_ili_tid, c.entstehung, c.geometrie, ST_Area(c.geometrie) as flaeche, c.qualitaet, c.qualitaet_txt, c.art, c.art_txt
 FROM

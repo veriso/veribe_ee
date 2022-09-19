@@ -84,7 +84,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {}
             layer["type"] = "postgres"
             layer["title"] = _translate("VeriSO_EE_gruda",
-                                        "BEGID (EO)", None)
+                                        "BEGID (OD)", None)
             layer["readonly"] = True
             layer["featuretype"] = "z_objektnummer_pos"
             layer["key"] = "ogc_fid"
@@ -397,7 +397,7 @@ class ComplexCheck(ComplexCheckBase):
             layer["featuretype"] = "z_eo_flaeche"
             layer["geom"] = "geometrie"
             layer["key"] = "ctid"
-            layer["sql"] = "art in (1,2,6,9,11,16,21)"
+            layer["sql"] = "art in (1,6,9,11,12,13,16,21)"
             layer["group"] = group4
             layer["style"] = "gebaeudeadressen/EO_Gebaeude.qml"
             vlayerEO = self.layer_loader.load(layer)

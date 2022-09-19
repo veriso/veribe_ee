@@ -5,10 +5,10 @@
       <rasterTransparency/>
       <rastershader>
         <colorrampshader colorRampType="EXACT" clip="0">
-          <item alpha="255" value="0" label="Gebaude" color="#d7191c"/>
-          <item alpha="255" value="1" label="Offen vegetationslos" color="#b6c3b1"/>
+          <item alpha="255" value="0" label="Gebaeude" color="#d7191c"/>
+          <item alpha="255" value="1" label="offen vegetationslos" color="#b6c3b1"/>
           <item alpha="255" value="8" label="Offen vegetation" color="#83de99"/>
-          <item alpha="255" value="14" label="gewaesser" color="#b5c0f1"/>
+          <item alpha="255" value="14" label="Gewaesser" color="#b5c0f1"/>
           <item alpha="255" value="17" label="bestockt" color="#07a644"/>
         </colorrampshader>
       </rastershader>

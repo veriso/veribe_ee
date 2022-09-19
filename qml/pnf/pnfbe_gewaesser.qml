@@ -1,18 +1,37 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis version="3.6.3-Noosa" maxScale="0" styleCategories="AllStyleCategories" minScale="1e+8" hasScaleBasedVisibilityFlag="0">
+<qgis minScale="1e+08" maxScale="0" hasScaleBasedVisibilityFlag="0" version="3.22.10-Białowieża" styleCategories="AllStyleCategories">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
+    <Private>0</Private>
   </flags>
+  <temporal enabled="0" mode="0" fetchMode="0">
+    <fixedRange>
+      <start></start>
+      <end></end>
+    </fixedRange>
+  </temporal>
   <customproperties>
-    <property key="WMSBackgroundLayer" value="false"/>
-    <property key="WMSPublishDataSourceUrl" value="false"/>
-    <property key="embeddedWidgets/count" value="0"/>
-    <property key="identify/format" value="Html"/>
+    <Option type="Map">
+      <Option type="QString" name="WMSBackgroundLayer" value="false"/>
+      <Option type="QString" name="WMSPublishDataSourceUrl" value="false"/>
+      <Option type="QString" name="embeddedWidgets/count" value="0"/>
+      <Option type="QString" name="identify/format" value="Html"/>
+    </Option>
   </customproperties>
+  <pipe-data-defined-properties>
+    <Option type="Map">
+      <Option type="QString" name="name" value=""/>
+      <Option name="properties"/>
+      <Option type="QString" name="type" value="collection"/>
+    </Option>
+  </pipe-data-defined-properties>
   <pipe>
-    <rasterrenderer type="singlebandcolordata" band="1" alphaBand="-1" opacity="0.75">
+    <provider>
+      <resampling enabled="false" zoomedOutResamplingMethod="nearestNeighbour" maxOversampling="2" zoomedInResamplingMethod="nearestNeighbour"/>
+    </provider>
+    <rasterrenderer nodataColor="" opacity="0.75" type="singlebandcolordata" alphaBand="-1" band="1">
       <rasterTransparency/>
       <minMaxOrigin>
         <limits>None</limits>
@@ -23,9 +42,10 @@
         <stdDevFactor>2</stdDevFactor>
       </minMaxOrigin>
     </rasterrenderer>
-    <brightnesscontrast brightness="0" contrast="0"/>
-    <huesaturation colorizeGreen="128" grayscaleMode="0" colorizeStrength="100" saturation="0" colorizeOn="0" colorizeBlue="128" colorizeRed="255"/>
+    <brightnesscontrast contrast="0" gamma="1" brightness="0"/>
+    <huesaturation colorizeRed="255" colorizeGreen="128" colorizeOn="0" invertColors="0" saturation="0" colorizeStrength="100" colorizeBlue="128" grayscaleMode="0"/>
     <rasterresampler maxOversampling="2"/>
+    <resamplingStage>resamplingFilter</resamplingStage>
   </pipe>
   <blendMode>0</blendMode>
 </qgis>

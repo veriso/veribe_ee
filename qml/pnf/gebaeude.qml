@@ -243,11 +243,11 @@
   <aliases>
     <alias field="ogc_fid" index="0" name="" />
     <alias field="t_ili_tid" index="1" name="" />
-    <alias field="qualitaet" index="2" name="" />
-    <alias field="qualitaet_txt" index="3" name="" />
-    <alias field="art" index="4" name="" />
-    <alias field="art_txt" index="5" name="" />
-    <alias field="entstehung" index="6" name="" />
+    <alias field="qualitaet" index="2" name="Qualitaet" />
+    <alias field="qualitaet_txt" index="3" name="Qualitaet_txt" />
+    <alias field="art" index="4" name="Art" />
+    <alias field="art_txt" index="5" name="Art_txt" />
+    <alias field="entstehung" index="6" name="Entstehung" />
   </aliases>
   <excludeAttributesWMS />
   <excludeAttributesWFS />

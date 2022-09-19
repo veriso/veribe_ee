@@ -7,5 +7,11 @@ ilimodels:
 - ilimodel: DM01AVBE11LV95D
   referenceframe: LV95
   epsg: '2056'
+# VeriSO plugin currently only works for the german ili-model
+# So we import french interlis data with the german ili-model
+- ilimodel: DM01AVBE11LV95D
+  referenceframe: LV95
+  epsg: '2056'
+  displayname: MD01MOBE11MN95F
 can_configure_max_scale_role:
   - agi
