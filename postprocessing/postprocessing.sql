@@ -950,14 +950,14 @@ FROM
         bodenbedeckung_boflaeche.qualitaet_txt, bodenbedeckung_boflaeche.art, bodenbedeckung_boflaeche.art_txt
  FROM $$DBSCHEMA.bodenbedeckung_boflaeche
  WHERE bodenbedeckung_boflaeche.art = 0
- AND ST_Area(bodenbedeckung_boflaeche.geometrie) > 12::double precision
+ AND ST_Area(bodenbedeckung_boflaeche.geometrie) > 10::double precision
 
 EXCEPT
 
  SELECT DISTINCT ON (a.ogc_fid) a.ogc_fid, a.t_ili_tid, a.entstehung, a.geometrie, a.qualitaet, a.qualitaet_txt,
         a.art, a.art_txt
  FROM $$DBSCHEMA.bodenbedeckung_boflaeche a, $$DBSCHEMA.gebaeudeadressen_gebaeudeeingang b
- WHERE a.art = 0 AND ST_Area(a.geometrie) > 12::double precision
+ WHERE a.art = 0 AND ST_Area(a.geometrie) > 10::double precision
  AND a.geometrie && b.lage
  AND ST_Distance(a.geometrie, b.lage) = 0::double precision
 ) as c;',3,'Was in table inserts',NULL,1),
