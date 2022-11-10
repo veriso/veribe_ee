@@ -196,8 +196,8 @@ baselayer:
     de: AV Bodenbed.
     fr: MO couverture du sol
   url:
-    de: https://geodienste.ch/db/av/deu?
-    fr: https://geodienste.ch/db/av/fra?
+    de: https://geodienste.ch/db/avc_0/deu?
+    fr: https://geodienste.ch/db/avc_0/fra?
   layers: LCSFC
   format: image/jpeg
 - type: wms
@@ -205,17 +205,17 @@ baselayer:
     de: AV EO Flaechen.
     fr: MO OD surfaciques
   url:
-    de: https://geodienste.ch/db/av/deu?
-    fr: https://geodienste.ch/db/av/fra?
-  layers: SOSF
+    de: https://geodienste.ch/db/avc_0/deu?
+    fr: https://geodienste.ch/db/avc_0/fra?
+  layers: SOSFC
   format: image/png
 - type: wms
   title:
     de: AV EO Linien.
     fr: MO OD lineaires
   url:
-    de: https://geodienste.ch/db/av/deu?
-    fr: https://geodienste.ch/db/av/fra?
+    de: https://geodienste.ch/db/avc_0/deu?
+    fr: https://geodienste.ch/db/avc_0/fra?
   layers: SOLI
   format: image/png
 - type: wms
@@ -223,8 +223,8 @@ baselayer:
     de: AV Liegenschaften
     fr: MO immeubles
   url:
-    de: https://geodienste.ch/db/av/deu?
-    fr: https://geodienste.ch/db/av/fra?
+    de: https://geodienste.ch/db/avc_0/deu?
+    fr: https://geodienste.ch/db/avc_0/fra?
   layers: RESF
   format: image/png
 - type: wms
@@ -232,8 +232,8 @@ baselayer:
     de: AV SDR
     fr: MO DDP
   url:
-    de: https://geodienste.ch/db/av/deu?
-    fr: https://geodienste.ch/db/av/fra?
+    de: https://geodienste.ch/db/avc_0/deu?
+    fr: https://geodienste.ch/db/avc_0/fra?
   layers: DPRSF
   format: image/png
 - type: wms
@@ -241,8 +241,8 @@ baselayer:
     de: AV Geb.-Adr.
     fr: MO adr. bâtiments
   url:
-    de: https://geodienste.ch/db/av/deu?
-    fr: https://geodienste.ch/db/av/fra?
+    de: https://geodienste.ch/db/avc_0/deu?
+    fr: https://geodienste.ch/db/avc_0/fra?
   layers: HADR
   format: image/png
 - type: wms

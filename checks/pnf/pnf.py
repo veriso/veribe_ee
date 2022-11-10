@@ -578,7 +578,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'AV EO Linien', None),
-                'url': 'https://geodienste.ch/db/av/deu?',
+                'url': 'https://geodienste.ch/db/av_0/deu?',
                 'layers': 'SOLI',
                 'format': 'image/png'
                 }
@@ -588,7 +588,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'AV EO Flaechen', None),
-                'url': 'https://geodienste.ch/db/av/deu?',
+                'url': 'https://geodienste.ch/db/av_0/deu?',
                 'layers': 'SOSF',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_av_eo_flaechen.qml'
@@ -600,8 +600,8 @@ class ComplexCheck(ComplexCheckBase):
                 'type': 'wms',
                 'title': _translate(
                     'VeriSO_EE_PNF', 'AV Bodenbedeckung', None),
-                'url': 'https://geodienste.ch/db/av/deu?',
-                'layers': 'Bodenbedeckung',
+                'url': 'https://geodienste.ch/db/av_0/deu?',
+                'layers': 'LCSF',
                 'format': 'image/jpeg',
                 'style': 'pnf/pnfbe_av_bodenbedeckung.qml'
                 }
