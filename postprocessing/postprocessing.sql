@@ -1372,14 +1372,56 @@ AND b.btid::text = c.t_ili_tid::text;',3,'Was in table inserts',NULL,1),
  (96,'GRANT USAGE ON SCHEMA $$DBSCHEMA TO $$USER;
 GRANT SELECT ON ALL TABLES IN SCHEMA $$DBSCHEMA TO $$USER;',5,'Was in table postprocessing',NULL,1),
  (97,'CREATE OR REPLACE VIEW $$DBSCHEMA.v_uebriger_gebaeudeteil_isolierte_flaeche AS
-SELECT elem.ogc_fid, elem.t_ili_tid, elem.geometrie
-FROM $$DBSCHEMA.einzelobjekte_flaechenelement AS elem
-JOIN $$DBSCHEMA.einzelobjekte_einzelobjekt AS obj ON elem.flaechenelement_von = obj.ogc_fid
-LEFT JOIN
-(SELECT DISTINCT elem.ogc_fid FROM $$DBSCHEMA.einzelobjekte_flaechenelement AS elem
-JOIN $$DBSCHEMA.bodenbedeckung_boflaeche AS boden ON ST_DWithin(ST_BUFFER(elem.geometrie, -0.05), boden.geometrie, 0)
-WHERE boden.art_txt = ''Gebaeude'') touches
-ON touches.ogc_fid = elem.ogc_fid WHERE touches.ogc_fid IS NULL AND obj.art_txt = ''uebriger_Gebaeudeteil'';
+with anbau as
+(
+  select *
+  from $$DBSCHEMA.einzelobjekte_flaechenelement_v as anbau
+  WHERE art=2
+),
+haus as (
+  select *
+  from $$DBSCHEMA.bodenbedeckung_boflaeche as haus
+  where art=0
+),
+anbau_points as
+(
+  SELECT ogc_fid, sp, ep
+  FROM
+   -- extract the endpoints for every 2-point line segment for each linestring
+   (SELECT
+      ogc_fid,
+      ST_PointN(geom, generate_series(1, ST_NPoints(geom)-1)) as sp,
+      ST_PointN(geom, generate_series(2, ST_NPoints(geom)  )) as ep
+    FROM
+       -- die Linestings des Anbaupolygons ermitteln
+      (SELECT ogc_fid, (ST_Dump(ST_ExteriorRing(geometrie))).geom
+       FROM anbau
+       ) AS linestrings
+    ) AS segments
+),
+in_tolerance as
+(
+-- Ein Segment des Anbaupolygons liegt vollständig innerhalb der Toleranz
+  select a.ogc_fid, st_distance(h.geometrie,a.sp), a.sp, a.ep, h.geometrie
+  from anbau_points a, haus h
+  where st_distance(h.geometrie,a.sp) < 0.05
+    and st_distance(h.geometrie,a.ep) < 0.05
+),
+broken_ids as
+(
+-- nun noch alle id der Tabelle anbau selektieren, ausser die, die innerhalb der Toleranz liegen
+  select a.ogc_fid
+  from anbau a
+  except
+  select i.ogc_fid
+  from in_tolerance i
+)
+select distinct a.*
+from anbau as a,
+     haus as h,
+     broken_ids as bi
+where a.ogc_fid = bi.ogc_fid
+  and st_distance(a.geometrie, h.geometrie) < 2;
 GRANT SELECT ON TABLE $$DBSCHEMA.v_uebriger_gebaeudeteil_isolierte_flaeche TO $$USER;
 
 CREATE OR REPLACE VIEW $$DBSCHEMA.v_uebriger_gebaeudeteil_isolierte_linien AS
