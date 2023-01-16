@@ -63,9 +63,9 @@ class ComplexCheck(ComplexCheckBase):
             layer["title"] = _translate("VeriSO_EE_wmsBBEO", "Lawinienverb.",
                                         None)
             if locale == "fr":
-                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_f_fk/MapServer/WMSServer?"
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_f_fk/MapServer/WMSServer?"
             else:
-                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_umweltwms_d_fk/MapServer/WMSServer?"
+                layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_geologiewms_d_fk/MapServer/WMSServer?"
             layer["layers"] = "GEODB.SCHBLAW_SBLAWP_STANDARD,GEODB.SCHBLAW_SBLAW_STANDARD"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
