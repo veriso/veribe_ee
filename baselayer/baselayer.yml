@@ -137,7 +137,7 @@ baselayer:
   url:
     de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_ortwms_d_fk/MapServer/WMSServer?
     fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_ortwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.NOMKL_NOMKLPL_STANDARD
+  layers: GEODB.NOMKL_NOMKLPL_KMGDM1
   format: image/png
 - type: wms
   title:
