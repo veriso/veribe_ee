@@ -34,7 +34,7 @@ baselayer:
   url:
     de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?
     fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM2_B
+  layers: GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBELA_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM3,GEODB.GNBE_GNBEAB_KMGDM4,GEODB.GNBE_GNBEAB_KMGDM5,GEODB.GNBE_GNBEAB_KMGDM8_B
   format: image/png
 - type: wms
   title:
@@ -189,7 +189,7 @@ baselayer:
   url:
     de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?
     fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.ERDGAS_GASLEIT_STANDARD
+  layers: GEODB.ERDGAS_GASLEIT_KMGDM1
   format: image/png
 - type: wms
   title:

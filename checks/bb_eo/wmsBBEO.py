@@ -96,7 +96,7 @@ class ComplexCheck(ComplexCheckBase):
                 layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_f_fk/MapServer/WMSServer?"
             else:
                 layer["url"] = "https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?"
-            layer["layers"] = "GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM2_B"
+            layer["layers"] = "GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBELA_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM3,GEODB.GNBE_GNBEAB_KMGDM4,GEODB.GNBE_GNBEAB_KMGDM5,GEODB.GNBE_GNBEAB_KMGDM8_B"
             layer["format"] = "image/png"
             # layer["crs"] ="EPSG:21781"
             layer["sql"] = ""
