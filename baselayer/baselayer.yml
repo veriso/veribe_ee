@@ -14,36 +14,36 @@ baselayer:
     de: Uebersichtsplan
     fr: Plan d'ensemble
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_basiswms_f_fk/MapServer/WMSServer?
-  layers: GEODB.UP5_SITU5_STANDARD
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_imagerybasemapsearthcover01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_imagerybasemapsearthcover01_fr_ms_wms/MapServer/WMSServer?
+  layers: UP5_SITU5_VW_6601
   format: image/png
 - type: wms
   title:
     de: Bauzonen UZP
     fr: Zones à bâtir UZP
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.UZP_BAU_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_fr_ms_wms/MapServer/WMSServer?
+  layers: UZP_BAU_VW_13587
   format: image/png
 - type: wms
   title:
     de: Gewässer des Kantons Bern
     fr: Hydrographie du canton de Berne
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBELA_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM3,GEODB.GNBE_GNBEAB_KMGDM4,GEODB.GNBE_GNBEAB_KMGDM5,GEODB.GNBE_GNBEAB_KMGDM8_B
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_fr_ms_wms/MapServer/WMSServer?
+  layers: GNBE_GNBELA_VW_8089,GNBE_GNBELA_VW_21952,GNBE_GNBEAB_VW_14692,GNBE_GNBEAB_VW_14295,GNBE_GNBEAB_VW_21946,GNBE_GNBEAB_VW_21947,GNBE_GNBEAB_VW_21948,GNBE_GNBEAB_VW_21951
   format: image/png
 - type: wms
   title:
     de: Wanderwege
     fr: Itinéraires de randonnée pédestre
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.WANDERNS_WEGE_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_fr_ms_wms/MapServer/WMSServer?
+  layers: WANDERNS_WEGE_VW_4588
   format: image/png
 - type: wms
   title:
@@ -108,44 +108,44 @@ baselayer:
     de: Kantonsgrenzsteine
     fr: Bornes cantonales
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.STEINV_KTGRST_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_fr_ms_wms/MapServer/WMSServer?
+  layers: STEINV_KTGRST_VW_1690
   format: image/png
 - type: wms
   title:
     de: Historische Grenzsteine
     fr: Bornes historiques
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.STEINV_HISTGRST_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_fr_ms_wms/MapServer/WMSServer?
+  layers: STEINV_HISTGRST_VW_9887
   format: image/png
 - type: wms
   title:
     de: Stundensteine
     fr: Bornes de lieues
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_grenzenwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.STEINV_STDST_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_boundaries01_fr_ms_wms/MapServer/WMSServer?
+  layers: STEINV_STDST_VW_4958
   format: image/png
 - type: wms
   title:
     de: Planeinteilung Nomenklatur
     fr: Répartition des plans de nomenclature
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_ortwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_ortwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.NOMKL_NOMKLPL_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_location01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_location01_fr_ms_wms/MapServer/WMSServer?
+  layers: NOMKL_NOMKLPL_VW_22369
   format: image/png
 - type: wms
   title:
     de: Toleranzstufen
     fr: Niveaux de tolérance
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: AV01.TS_Toleranzstufe
   format: image/png
 - type: wms
@@ -153,18 +153,18 @@ baselayer:
     de: AMO anerkannter Stand
     fr: AMO état approuvé
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.AMO_ACTSTAT_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre04_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre04_fr_ms_wms/MapServer/WMSServer?
+  layers: AMO_ACTSTAT_VW_14038
   format: image/png
 - type: wms
   title:
     de: AMO In Arbeit
     fr: AMO en cours de réalisation
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.AMO_LOT_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre04_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre04_fr_ms_wms/MapServer/WMSServer?
+  layers: AMO_LOT_VW_15451
   format: image/png
 - type: ogr
   title:
@@ -187,9 +187,9 @@ baselayer:
     de: Gasleitungen
     fr: Conduites de gaz
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_versorgungwms_f_fk/MapServer/WMSServer?
-  layers: GEODB.ERDGAS_GASLEIT_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_utilitiescommunication01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_utilitiescommunication01_fr_ms_wms/MapServer/WMSServer?
+  layers: ERDGAS_GASLEIT_VW_22895
   format: image/png
 - type: wms
   title:
@@ -259,8 +259,8 @@ baselayer:
     de: Orthophoto Region Bern
     fr: Orthophoto région Berne
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?
   layers: GEODB.OBERN_OBERN_MOSAIC
   format: image/png
 - type: wms
@@ -268,16 +268,16 @@ baselayer:
     de: Waldgrenzen OEREBK
     fr: Limites de forêt CRDPPF
   url:
-    de: https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de
-    fr: https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_fr
-  layers: geodb.nuplwald_wfwagrz
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre07_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre07_fr_ms_wms/MapServer/WMSServer?
+  layers: NUPLWALD_WFWAGRZ_VW_13674
   format: image/png
 - type: wms
   title:
     de: DTM50 BE
     fr: DTM50 BE
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?
-  layers: GEODB.LDTM50CM_LTRELIEF_KMGDM1
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?
+  layers: LDTM50CM_LTRELIEF_VW_883
   format: image/png

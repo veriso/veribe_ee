@@ -140,8 +140,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Wanderwege', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.WANDERNS_WEGE_KMGDM1',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer?',
+                'layers': 'WANDERNS_WEGE_VW_4588',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_wanderwege.qml'
                 }
@@ -151,8 +151,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Gewässer des Kantons Bern', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_gewaesserwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.GNBE_GNBELA_KMGDM1,GEODB.GNBE_GNBELA_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM1,GEODB.GNBE_GNBEAB_KMGDM2,GEODB.GNBE_GNBEAB_KMGDM3,GEODB.GNBE_GNBEAB_KMGDM4,GEODB.GNBE_GNBEAB_KMGDM5,GEODB.GNBE_GNBEAB_KMGDM8_B',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_inlandwaters01_de_ms_wms/MapServer/WMSServer?',
+                'layers': 'GNBE_GNBELA_VW_8089,GNBE_GNBELA_VW_21952,GNBE_GNBEAB_VW_14692,GNBE_GNBEAB_VW_14295,GNBE_GNBEAB_VW_21946,GNBE_GNBEAB_VW_21947,GNBE_GNBEAB_VW_21948,GNBE_GNBEAB_VW_21951',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_gewaesser.qml'
                 }
@@ -524,8 +524,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Laufende operate', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.AMO_LOT_KMGDM1',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre04_de_ms_wms/MapServer/WMSServer?',
+                'layers': 'AMO_LOT_VW_15451',
                 'format': 'image/png'
                 }
             vlayer = self.layer_loader.load(layer, False, True)
@@ -534,8 +534,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Bauzonen UZP', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_planungwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.UZP_BAU_KMGDM1',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre01_de_ms_wms/MapServer/WMSServer?',
+                'layers': 'UZP_BAU_VW_13587',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_bauzonen.qml'
                 }
@@ -545,7 +545,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Toleranzstufen', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
                 'layers': 'AV01.TS_Toleranzstufe',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_toleranzstufen.qml'
@@ -556,7 +556,7 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Planungsperimeter PNF', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/a42geo_verisowms_d_fk/MapServer/WMSServer?',
                 'layers': 'PNFAK_EDIT.PNFAK_GEMEINDE_PLANUNG',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_planungsperimeter.qml'
@@ -567,8 +567,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'Waldgrenzen', None),
-                'url': 'https://oerebservice.apps.be.ch/cgi-bin/mapserv.fcgi?map=oereb_de',
-                'layers': 'geodb.nuplwald_wfwagrz',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_planningcadastre07_de_ms_wms/MapServer/WMSServer?',
+                'layers': 'NUPLWALD_WFWAGRZ_VW_13674',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_waldgrenzen.qml'
                 }
@@ -611,8 +611,8 @@ class ComplexCheck(ComplexCheckBase):
             layer = {
                 'type': 'wms',
                 'title': _translate('VeriSO_EE_PNF', 'DTM-Relief', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice2/services/a42geo/a42geo_hoehenwms_d_fk/MapServer/WMSServer?',
-                'layers': 'GEODB.LDTM50CM_LTRELIEF_KMGDM1,GEODB.LDTM50CM_LTHOEHE_KMGDM1',
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?',
+                'layers': 'LDTM50CM_LTRELIEF_VW_883,LDTM50CM_LTHOEHE_VW_5806',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_dtm-relief.qml'
                 }
