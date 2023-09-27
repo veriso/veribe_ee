@@ -16,7 +16,7 @@ baselayer:
   url:
     de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_imagerybasemapsearthcover01_de_ms_wms/MapServer/WMSServer?
     fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_imagerybasemapsearthcover01_fr_ms_wms/MapServer/WMSServer?
-  layers: UP5_SITU5_VW_6601
+  layers: UP5_SITU5_MOSAIC_6601
   format: image/png
 - type: wms
   title:
@@ -279,5 +279,5 @@ baselayer:
   url:
     de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?
     fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?
-  layers: LDTM50CM_LTRELIEF_VW_883
+  layers: LDTM50CM_LTRELIEF_883
   format: image/png
