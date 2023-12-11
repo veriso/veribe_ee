@@ -184,6 +184,15 @@ baselayer:
   style: pnf/Von_Vector25_Gebieten.qml
 - type: wms
   title:
+    de: Elektrische Anlagen
+    fr: Installations électriques
+  url:
+    de: https://wms.geo.admin.ch/?
+    fr: https://wms.geo.admin.ch/?lang=fr
+  layers: ch.bfe.elektrische-anlagen_ueber_36
+  format: image/png
+- type: wms
+  title:
     de: Gasleitungen
     fr: Conduites de gaz
   url:
