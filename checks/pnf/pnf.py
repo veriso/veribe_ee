@@ -607,12 +607,12 @@ class ComplexCheck(ComplexCheckBase):
                 }
             vlayer = self.layer_loader.load(layer, False, True)
 
-            # DTM-Relief
+            # Relief Kanton Bern 2025
             layer = {
                 'type': 'wms',
-                'title': _translate('VeriSO_EE_PNF', 'DTM-Relief', None),
-                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?',
-                'layers': 'LDTM50CM_LTRELIEF_883,LDTM50CM_LTHOEHE_5806',
+                'title': _translate('VeriSO_EE_PNF', 'Relief Kanton Bern 2025', None),
+                'url': 'https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation02_de_ms_wms/MapServer/WMSServer?',
+                'layers': 'SWISSALT_SARELI50_MOSAIC_40376',
                 'format': 'image/png',
                 'style': 'pnf/pnfbe_dtm-relief.qml'
                 }

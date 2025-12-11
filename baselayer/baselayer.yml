@@ -85,16 +85,6 @@ baselayer:
   style: baselayer/swissimage_50.qml
 - type: wms
   title:
-    de: Relief (swisstopo)
-    fr: Relief (swisstopo)
-  url:
-    de: https://wms.geo.admin.ch/?
-    fr: https://wms.geo.admin.ch/?lang=fr
-  layers: ch.swisstopo.swissalti3d-reliefschattierung
-  format: image/png
-  style: baselayer/swissimage_50.qml
-- type: wms
-  title:
     de: TLM
     fr: MTP (TLM)
   url:
@@ -283,10 +273,10 @@ baselayer:
   format: image/png
 - type: wms
   title:
-    de: DTM50 BE
-    fr: DTM50 BE
+    de: Relief Kanton Bern 2025
+    fr: Relief du canton de Berne 2025
   url:
-    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?
-    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation01_de_ms_wms/MapServer/WMSServer?
-  layers: LDTM50CM_LTRELIEF_883
+    de: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation02_de_ms_wms/MapServer/WMSServer?
+    fr: https://www.geoservice.apps.be.ch/geoservice3/services/a42geo/of_elevation02_de_ms_wms/MapServer/WMSServer?
+  layers: SWISSALT_SARELI50_MOSAIC_40376
   format: image/png
